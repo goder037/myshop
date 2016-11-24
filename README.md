@@ -7,3 +7,5 @@ springmvc4, spring4, Mybatis3.3, hibernateValidation, solr, double,  shiro, rabb
 fastdfs
 数据库
 redis3集群，mysql5.6集群
+服务器
+tomcat7,nginx
