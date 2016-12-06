@@ -2,10 +2,8 @@ package com.rocket.myshop.controller;
 
 import static org.springframework.web.bind.annotation.RequestMethod.GET;
 
-import javax.annotation.Resource;
 import javax.validation.Valid;
 
-import org.springframework.context.support.ReloadableResourceBundleMessageSource;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
 import org.springframework.validation.Errors;
@@ -20,8 +18,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequestMapping("/users")
 public class UserController {
 
-	@Resource
-	ReloadableResourceBundleMessageSource messageSource;
 	
     @RequestMapping(value = "/{username}", method = GET)
     @ResponseBody

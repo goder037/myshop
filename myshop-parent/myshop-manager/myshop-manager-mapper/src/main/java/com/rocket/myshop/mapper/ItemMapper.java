@@ -1,5 +1,8 @@
 package com.rocket.myshop.mapper;
 
+import java.util.List;
+
+import com.rocket.myshop.domain.Demo;
 import com.rocket.myshop.domain.Item;
 
 public interface ItemMapper {
@@ -50,4 +53,8 @@ public interface ItemMapper {
      * @mbg.generated
      */
     int updateByPrimaryKey(Item record);
+
+	int getCount();
+
+	List<Demo> listAllDemo();
 }

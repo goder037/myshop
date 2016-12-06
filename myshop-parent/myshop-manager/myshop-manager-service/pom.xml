@@ -21,7 +21,7 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-aspects</artifactId>
-			<version>4.1.7.RELEASE</version>
+			<version>${spring.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.mybatis</groupId>
@@ -31,7 +31,47 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
-			<version>4.1.7.RELEASE</version>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.rocket.shop</groupId>
+			<artifactId>myshop-manager-service-interface</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.rocket.shop</groupId>
+			<artifactId>myshop-manager-dto</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
+	<build>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+				<includes>
+					<include>**/*</include>
+				</includes>
+			</resource>
+		</resources>
+	</build>
+	<profiles>
+		<profile>
+			<id>local</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<properties>
+				<mvn.dubbo.registry.center>127.0.0.1:2181</mvn.dubbo.registry.center>
+				<mvn.dubbo.protocol.port>20884</mvn.dubbo.protocol.port>
+				<mvn.al.db.url>jdbc:sqlserver://10.92.1.203:1433;DatabaseName=OBOA</mvn.al.db.url>
+				<mvn.al.db.encrypt.un>43AA823709B1DE67DC1604A03B53F57D</mvn.al.db.encrypt.un>
+				<mvn.al.db.encrypt.pw>FDFA031658E0AC4331F3BFE7026E4FE3</mvn.al.db.encrypt.pw>
+				<mvn.assemble.conf.file>assembly-sit.xml</mvn.assemble.conf.file>
+				<mvn.redis.server>10.92.1.200:6379,10.92.1.201:6379</mvn.redis.server>
+				<mvn.logback.appender>STDOUT</mvn.logback.appender>
+				<mvn.redisDefaultExpiredSeconds>120</mvn.redisDefaultExpiredSeconds>
+			</properties>
+		</profile>
+	</profiles>
 </project>

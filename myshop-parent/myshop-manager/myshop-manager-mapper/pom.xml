@@ -31,7 +31,17 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-jdbc</artifactId>
-			<version>4.1.7.RELEASE</version>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.rocket.shop</groupId>
+			<artifactId>myshop-manager-common</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.rocket.shop</groupId>
+			<artifactId>myshop-manager-dto</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 	<build>

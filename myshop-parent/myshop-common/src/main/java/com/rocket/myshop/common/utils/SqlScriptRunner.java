@@ -13,7 +13,7 @@ import java.sql.Statement;
 
 /**
 * @FullClassName com.rocket.myshop.common.utils.SqlScriptRunner
-* @Description: TODO
+* @Description: sql脚本版本化管理
 * @author  Liu Jie
 * @date 2016年11月22日 上午12:42:51 
 * @version V1.0.0

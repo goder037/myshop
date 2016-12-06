@@ -175,4 +175,12 @@
       update_time_ = #{updateTime,jdbcType=TIMESTAMP}
     where id_ = #{id,jdbcType=INTEGER}
   </update>
+  
+  <select id="listItem" resultMap="BaseResultMap">
+  	select * from shop_item
+  </select>
+  
+  <select id="getCount" resultType="_int">
+  	select count(1) from shop_item
+  </select>
 </mapper>

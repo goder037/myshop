@@ -11,11 +11,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.rocket.myshop.exception.RestError;
-
-/**
- * Default controller that exists to return a proper REST response for unmapped requests.
- */
 /**
 * @FullClassName com.rocket.myshop.controller.DefaultController
 * @Description: 默认控制器处理没有映射的资源请求
@@ -26,7 +21,7 @@ import com.rocket.myshop.exception.RestError;
 @Controller
 public class DefaultController {
 
-    @RequestMapping("/**")
+    @RequestMapping("/*.json")
     public ModelAndView unmappedRequest(HttpServletRequest request, HttpServletResponse response) {
     	Map<String, String> error = new HashMap<>();
     	error.put("code", "Error.1");

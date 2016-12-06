@@ -28,8 +28,9 @@
 		<property name="order" value="1"/>
 		<property name="messageSource" ref="messageSource"/>
 		<property name="localeResolver" ref="localeResolver"/>
+		<!-- 生产环境请将false -->
 		<property name="showDeveloperMessage" value="true"/>
-		<property name="moreInfoUrl" value="mailto:support@rocket.com"/>
+		<property name="moreInfoUrl" value="请发邮件找我----mailto:support@rocket.com"/>
 		<property name="exceptionMappingPropertiesLocations">
 			<list>
 				<value>classpath:/exception/exceptionStatusMapping</value>

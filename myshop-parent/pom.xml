@@ -9,9 +9,23 @@
 		<module>myshop-common</module>
 		<module>myshop-manager</module>
 	</modules>
+	<repositories>
+		<repository>
+			<id>mvnrepository</id>
+			<name>mvnrepository</name>
+			<url>http://maven.aliyun.com/nexus/content/groups/public</url>
+			<layout>default</layout>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<spring.version>4.1.7.RELEASE</spring.version>
+		<spring.version>4.1.5.RELEASE</spring.version>
 		<java.version>1.7</java.version>
 		<junit.version>4.12</junit.version>
 		<jsp.version>2.2</jsp.version>
@@ -31,6 +45,14 @@
 				<configuration>
 					<source>${java.version}</source>
 					<target>${java.version}</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>3.0.1</version>
+				<configuration>
+					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
 		</plugins>
