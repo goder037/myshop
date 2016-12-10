@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.rocket.myshop.mapper.ItemCategoryMapper">
+  <resultMap id="DtoResultMap" type="com.rocket.myshop.dto.ItemCategoryDto">
+    <id column="id_" jdbcType="INTEGER" property="id" />
+    <result column="name_" jdbcType="VARCHAR" property="name" />
+    <result column="status_" jdbcType="BIT" property="status" />
+    <result column="create_time_" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time_" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="parent_id_" jdbcType="INTEGER" property="parentId" />
+  </resultMap>
+  
+  <select id="listItemCategory" resultMap="DtoResultMap" parameterType="map">
+  	select * from shop_item_category 
+  	<where>
+  		<if test="status!=null">
+  			and status=#{status}
+  		</if>
+  		<if test="name!=null">
+  			and name=#{name}
+  		</if>
+  	</where>
+  	LIMIT #{start}, #{length}
+  </select>
+  
+  <select id="getCount" resultType="_int" parameterType="map">
+  	select count(1) from shop_item_category
+  	<where>
+  		<if test="status!=null">
+  			and status=#{status}
+  		</if>
+  		<if test="name!=null">
+  			and name=#{name}
+  		</if>
+  	</where>
+  </select>
+</mapper>
