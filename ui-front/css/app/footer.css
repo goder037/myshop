@@ -1,0 +1,156 @@
+/*
+ 	footer
+*/
+.hm-t-container{
+	display: none;
+}
+.ft-wrap{
+	margin-top: 70px;
+	width: 100%;
+	border-top: 1px solid #eeeff2;
+	background: #fff;
+}
+.ft-main-box{ 	
+	width: 1240px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.ft-main{
+	margin: 35px 0;
+	overflow: hidden;
+}
+.ft-main strong{
+	font-size: 14px;
+	line-height: 30px;
+}
+.ft-main li{
+	width: 148px;
+	height: 142px;
+	padding-left: 20px;
+	border-right: 1px solid #eeeff2;
+}
+.ft-main li.col-1{
+	padding-left: 0;
+}
+.main-wrap .ft-main li{
+	width: 148px;
+}
+.main-wrap .ft-main .ft-mobile{
+	padding-left: 23px;
+}
+.ft-main a{
+	display: block;
+	line-height: 28px;
+	font-size: 13px;
+	color: #71767a;
+}
+.ft-main a.app-h5{
+	text-decoration: underline;
+	color: #fff;
+}
+
+.ft-main a.ft-btn{
+	width: 105px;
+	height: 30px;
+	line-height: 28px;
+	border-radius:3px;
+	text-align: center;
+	color: #fff;
+}
+.ft-main a.app{
+	background-color: #b9c1c7;
+	border: 1px solid #abb4bd;
+}
+.ft-main a.app:hover{
+	background-color: #cad1d7;
+	border: 1px solid #b8c1cb;
+}
+.ft-main a.app-ios{
+	margin-bottom: 10px;
+}
+.ft-main a.app-android{
+	margin-bottom: 10px;
+}
+.ft-main .ft-mobile{
+	width: 192px;
+	border-right: 0;
+	padding-left: 40px;
+}
+.ft-main .ft-mobile strong{
+	font-size: 24px;
+}
+.ft-main .ft-mobile p{
+	margin-bottom: 12px;
+}
+.ft-main .ft-customer {
+	background-color: #e94643;
+	border: 1px solid #e94643;
+}
+.ft-main .ft-customer:hover {
+	background-color: #ff6c69;
+	border: 1px solid #ff7673;
+}
+.ft-copyright{
+	width: 100%;
+	padding-top: 15px;
+	border-top: 1px solid #eeeff2;
+	margin-bottom: 15px;
+	overflow: hidden;
+}
+.ft-copyright a{
+	color: #525558;
+}
+.ft-safety{
+	overflow: hidden;
+	width:548px;
+	margin:24px auto;
+}
+.footer-info{
+	text-align: center;
+	line-height: 22px;
+}
+.ft-safety li{
+	display: block;
+	float: left;
+	height: 44px;
+	width: 125px;
+	margin:0 6px;
+}
+.ft-safety li a{
+	display: block;
+	width: 125px;
+	height: 44px;
+
+}
+.ft-safety .safety-1 a{
+	background: url(../../images/footer_03.png) no-repeat right center;
+
+}
+.ft-safety .safety-2 a{
+	background: url(../../images/footer_05.png) no-repeat right center;
+}
+.ft-safety .safety-3 a{
+	background: url(../../images/footer_07.png) no-repeat right center;
+}
+.ft-safety .safety-4 a{
+	background: url(../../images/footer_09.png) no-repeat right center;
+}
+.icon-uniE615,.icon-uniE60C,.icon-uniE617,.icon-uniE60F,.icon-uniE61C {
+	font-size: 26px;
+	margin-top:12px;
+	margin-left:15px;
+}
+.icon-iconfont-ios,.icon-iconfont-android {
+	font-size:21px;
+	margin-top:3px;
+	margin-left:-5px;
+	margin-right:7px;
+}
+
+
+.loading{
+	display: inline-block; height: 25px; color: #00bdd5; margin-right: 20px;
+}                          
+.loading i{
+	display: inline-block; width: 20px; height: 20px; overflow: hidden; background: url(../../images/load.gif) no-repeat; margin: 0 5px;
+}

@@ -1,0 +1,211 @@
+.r-sidebar{
+    position: fixed;
+    right: 0;
+    top:0;
+    z-index: 9;
+    width: 30px;
+    height: 100%;
+    background-color: #ddd;
+    padding-top: 45px;
+}
+.rbar-ad-box{
+    padding: 20px 0 10px 0;
+    background-color: #b7b7b7;
+    /*visibility: hidden;*/
+}
+.rbar-ad-box .rbar-item{
+    height: 100px;
+}
+.rbar-ad-box .rbar-a{
+    height: 100px;
+}
+.rbar-ad .rbar-icon{
+    background-position: -210px 0;
+}
+.rbar-ad:before,.rbar-ad:after{
+    content: "";
+    width: 20px;
+    height: 1px;
+    background-color: #fff;
+    opacity: 0.5;
+    margin: 0 5px;
+    display: block;
+}
+.rbar-ad-txt{
+    display: block;
+    width: 20px;
+    height: 70px;
+    margin: 0 5px;
+    line-height: 16px;
+    overflow: hidden;
+    text-align: center;
+    color: #fff;
+}
+.rbar-ad:hover{
+    background-color:#00cbe5;
+}
+.rbar-ad:hover:before{
+    background-color: #00cbe5;
+}
+.rbar-ad:hover:after{
+    background-color: transparent;
+}
+.rbar-ad-box .rbar-img{
+    width: 130px;
+    height: 88px;
+    padding: 5px;
+}
+.rbar-ad-box .rbar-img img{
+    width: 130px;
+    height: 88px;
+}
+.rbar-item{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    display: block;
+}
+.rbar-a{
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-color: #b7b7b7;
+}
+.rbar-item:hover .rbar-a{
+     background-color: #00cbe5;
+ }
+.rbar-a .rbar-icon{
+    width: 30px;
+    height: 30px;
+    display: block;
+    background: url(../../images/rsidebar.png) no-repeat ;
+}
+.rbar-app .rbar-icon{
+    background-position: 0 0;
+}
+.rbar-web .rbar-icon{
+    background-position: -30px 0;
+}
+.rbar-wechat .rbar-icon{
+    background-position: -60px 0;
+}
+.rbar-center{
+    margin-top: 100px;
+}
+.rbar-xuexin .rbar-icon{
+    background-position: -90px 0;
+}
+.rbar-qq .rbar-icon{
+    background-position: -120px 0;
+}
+.rbar-feedback .rbar-icon{
+    background-position: -150px 0;
+}
+.rbar-gotop .rbar-icon{
+    background-position: -180px 0;
+}
+.rbar-footer{
+    position: absolute;
+    bottom: 80px;
+}
+.rbar-text , .rbar-img{
+    position: absolute;
+    right: 70px;
+    top: 0;
+    width: 108px;
+    padding: 5px;
+    text-align: center;
+    background-color: #fffef5;
+    border: 1px solid #ffecc6;
+    box-shadow: 1px 0 1px #eee;
+    opacity: 0;
+    transition: all 0.3s ease;
+    color: #666;
+    font-size: 14px;
+    visibility: hidden;
+}
+.rbar-text{
+    height: 18px;
+    line-height: 18px;
+}
+.rbar-img .rbar-wechat-txt{
+    height: 30px;
+    line-height: 30px;
+    display: block;
+}
+.rbar-app .rbar-img{
+    height: 123px;
+    padding: 5px 5px 44px 5px;
+    background: url(../../images/rsidebar-appbg.png) no-repeat center 128px  #fffef5 ;
+}
+.rbar-item:hover .rbar-text,
+.rbar-item:hover .rbar-img{
+    right: 31px;
+    opacity: 1;
+    visibility: visible;
+}
+.rbar-arr{
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: -11px;
+    top: 10px;
+    border: 5px solid transparent;
+    border-left-color: #ffecc6;
+}
+.rbar-arr:before{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: -3px;
+    top: -5px;
+    border: 5px solid transparent;
+    border-left-color: #fffef5;
+}
+
+#help_home{
+    display: block;
+    visibility: visible;
+    z-index: 9999;
+    opacity: 1;
+    width: 350px;
+    right: 30px;
+}
+#help_home .help_title{
+    height: 40px;
+    line-height: 40px;
+    margin: 0px 10px 20px 10px;
+    border-bottom: 1px solid #ffecc6;
+}
+#help_home .content{
+    margin: 0px 10px 20px 10px;
+}
+#help_home .content p{
+    height:30px;
+    line-height:30px;
+}
+.btn_cover{
+    margin-bottom:20px;
+}
+.help_first_button{
+    height: 32px;
+    line-height:32px;
+    width:86px;
+    border: 1px solid #14acba;
+    background: #00bdd5;
+    color: white;
+    border-radius: 2px;
+    display:inline-block;
+}
+.help_second_button{
+    height: 32px;
+    line-height:32px;
+    width:86px;
+    margin-left: 10px;
+    background:#fff;
+    border-radius: 2px;
+    display:inline-block;
+    border:1px solid #999999;
+    color:#333;
+}

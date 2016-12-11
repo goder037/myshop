@@ -1,0 +1,224 @@
+/* reset */
+html, body, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, pre, form, p,
+	blockquote, fieldset, input, abbr, article, aside, command, details,
+	figcaption, figure, footer, header, hgroup, mark, meter, nav, output,
+	progress, section, summary, time, td {
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, pre, code, address, caption, cite, code, em, th,
+	figcaption,i {
+	font-weight: normal;
+	font-style: normal;
+}
+
+ul {
+	list-style: none outside;
+}
+
+article, aside, footer, header, hgroup, nav, section, figure, figcaption,
+	details, summary {
+	display: block;
+}
+
+img, a img {
+	border: none;
+}
+
+a {
+	text-decoration: none;
+	color: #999;
+	outline: none; 
+}
+
+body {
+	
+    -moz-box-sizing:border-box; /* Firefox */
+	font: 12px arial,'\5FAE\8F6F\96C5\9ED1', 'Hiragino Sans GB', Verdana;
+	color: #333;
+}
+
+button::-moz-focus-inner {  border:none; } /* ::-moz-focus-inner无边框*/
+
+
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+.block{
+	display:block;
+	vertical-align: top;
+}
+.inline-block{
+	display:inline-block;
+	vertical-align: top;
+	*display: inline;
+    *zoom: 1; 
+}
+.ml {
+    margin-left: 0px;
+}
+.mr {
+	margin-right: 0px;;
+}
+.table,
+.c12 {
+	width: 100%
+}
+.c11 {
+	width: 91.66%
+}
+.c10 {
+	width: 83.33%
+}
+.c9 {
+	width: 75%
+}
+.c8 {
+	width: 66.66%
+}
+.c7 {
+	width: 58.33%
+}
+.c6 {
+	width: 50%
+}
+.c5 {
+	width: 41.66%
+}
+.c4 {
+	width: 33.33%
+}
+.c3 {
+	width: 25%
+}
+.c2 {
+	width: 16.66%
+}
+.c1 {
+	width: 8.33%
+}
+.font1{
+	color:#333;
+}
+.font2{
+	color:#555;
+}
+.font3{
+	color:#666;
+}
+.font4{
+	color:#999;
+}
+.font5{
+    color:#e6e6e6;
+}
+.font6 {
+    color:#ccc;
+}
+.font-red{
+	color:#e94643;
+}
+.font-black{
+	color:#0d0409;
+}
+.font-white{
+	color:#fff;
+}
+.font-blue{
+	color:#0099e5;
+}
+.font-bd{
+	color: #00bdd5;
+}
+.font-ublack {
+	color:#040000;
+}
+.font-ufblack {
+	color:#282522;
+}
+
+.font-size0{
+    font-size:12px;
+	font-weight: 400;
+}
+.font-size1{
+    font-size:13px;
+	font-weight: 400;
+}
+.font-size2{
+    font-size:14px;
+	font-weight: 400;
+}
+.font-size3{
+    font-size:16px;
+	font-weight: 400;
+}
+.font-size4{
+    font-size:18px;
+	font-weight: 400;
+}
+.font-size5{
+    font-size:20px;
+	font-weight: 400;
+}
+.font-size6{
+    font-size:22px;
+	font-weight: 400;
+}
+.font-size7{
+    font-size:24px;
+	font-weight: 400;
+}
+.font-size8{
+    font-size:26px;
+	font-weight: 400;
+}
+/*浮动清除*/
+.clearfix{
+	*display:inline-block;
+	*display:block;
+	*zoom:1;
+}
+.clearfix:after{
+    content:".";
+	visibility:hidden;
+	display:block;
+	height:0;
+	clear:both;	
+}
+
+.dib-wrap {
+	font-size:0;/* 所有浏览器 */
+	*word-spacing:-1px;/* IE6、7 */
+}
+.dib-wrap .dib{
+	
+	letter-spacing: normal;
+	word-spacing: normal;
+	vertical-align:top;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0){
+	/* firefox 中 letter-spacing 会导致脱离普通流的元素水平位移 */
+	.dib-wrap{
+letter-spacing:-5px;/* Safari 等不支持字体大小为 0 的浏览器, N 根据父级字体调节*/
+	}
+}
+.dib {
+	vertical-align: top;
+	display: inline-block;
+	*display:inline;
+	*zoom:1;
+}
+.none{
+	display: none;
+}
+.hidden{
+	visibility: hidden;
+}
+div.nohidden{
+	overflow: inherit;
+}

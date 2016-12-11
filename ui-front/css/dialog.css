@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+/* dialog
+-----------------------------------------------*/
+.rDialog{ position:fixed; _position:absolute;}
+.rDialog-wrap{ position:relative; background:#fff; background-clip:padding-box; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px;border: 5px solid rgba(0,0,0,0.2);}
+.rDialog-close{ display:block; position:absolute; right:15px; top:13px; z-index:1; width:10px; height:9px; background:url(icon-close.png) 0 0 no-repeat; text-indent:-9999em; overflow:hidden;}
+.rDialog-close:hover{ background-position:0 -9px;}
+.rDialog-header{ height:36px; padding:0 15px; font-size:14px; line-height:36px; background:#f0f0f0;}
+.rDialog-content{ padding:20px 15px; font-size:14px; overflow:hidden;}
+.rDialog-footer{ padding-left:15px; text-align:center;}
+.rDialog-footer a{ display:inline-block; margin:0 15px 15px 0; height:32px; line-height:32px; padding:0 30px; font-size:14px; -moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px;}
+.rDialog-footer a:link, .rDialog-footer a:visited, .rDialog-footer a:hover{ color:#fff; text-decoration:none;}
+.rDialog-ok{ background:#4eaccc;}
+.rDialog-ok:hover{ background:#45a4c5;}
+.rDialog-cancel{ background:#ccc;}
+.rDialog-cancel:hover{ background:#c1c1c1;}
+.rDialog-mask{ position:fixed; _position:absolute; left:0; top:0; width:100%; height:100%; background:#000; filter:alpha(opacity=50); opacity:.5;}
+.rDialog-content input{ margin:10px 0 0 0;}
+
+.item-info, .ufund-item{line-height: 35px;width: 100%;}
+.ufund-item{text-align:center; font-size:medium;}
+.dlg-tip{float:left;}
+.rDialog-ok{ background:#fc6710;}
+.rDialog-ok:hover{ background:#f05b02;}
+.rDialog-cancel{ background:#4eaccc;}
+.rDialog-cancel:hover{ background:#3C94B3;}
+/*.rDialog-content{*/
+	/*padding-bottom: 0;*/
+/*}*/
+.rDialog-content input{margin:0;}
+input[type=text], input[type=password]{padding:5px 0 5px 5px;}
+.item-info input[type=text] ,
+.item-info input[type=password] ,
+.item-info textarea,
+.item-info select {width:100%; float: left; font-size: 12px;}
+.font-fc { color: #fc6710;}

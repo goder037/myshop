@@ -1,0 +1,19 @@
+
+/*section*/
+.banner-wrap{width: 1000px;margin: auto; height:355px;}
+.lideshow{ width:800px;  height:355px; position:relative;margin-left: 200px;}
+#banner{position:relative;width:100%; }
+.banner1{display:block;  position:absolute; width:100%; height:355px;}
+.banner2{display:none;  position:absolute; width:100%;height:355px; }
+.banner3{display:none;  position:absolute; width:100%; height:355px; }
+.banner4{display:none; position:absolute; width:100%;height:355px; }
+.banner5{display:none; position:absolute; width:100%;height:355px; }
+.lideshow-content{ width:800px; margin:0 auto; }
+.lideshow-content img{  display:block }
+.lideshow-num{ position:absolute; z-index:999; left:353px; bottom:15px; }
+.lideshow-num li{ width:10px; height:10px; background:#fff; border:solid 1px #fc6710; border-radius:5px;  float:left; margin-right:6px; cursor:pointer; }
+.lideshow-num li.native{ width:10px; height:10px; background:#fc6710;}
+
+.lideshow-prev,.lideshow-next{width:23px; height:44px; background:url(../img/allIcon.png) no-repeat ; position:absolute; top:155px; z-index:999; display:none;}
+.lideshow-prev{ background-position:-160px -248px;left: 20px }
+.lideshow-next{  background-position:-160px -204px; right: 20px;}

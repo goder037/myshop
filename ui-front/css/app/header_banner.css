@@ -1,0 +1,35 @@
+/**banner**/
+.ufenqi-banner {
+	width:100%;
+	height:450px;
+	position: relative;
+}
+.banner-list,.banner-list li{
+	width: 100%; height: 450px;
+}
+.banner-list li{ position: absolute;}
+.ufenqi-banner .bx-wrapper{
+	margin: 0;
+}
+.ufenqi-banner .bx-wrapper .bx-viewport{
+	border:0;
+}
+.ufenqi-banner .bx-wrapper .bx-pager,.ufenqi-banner .bx-wrapper .bx-controls-auto{
+	bottom: 15px;
+	z-index: 51;
+}
+.slider li{
+	overflow:hidden;
+	display:inline-block; margin: 0 4px; border: 1px solid #333; border-radius: 50%;position: relative; top: -30px;left:45%;width: 8px; height: 8px;
+}
+.active{background: #59d1e0; border:2px solid #00bdd5;width: 8px; height: 8px;border-radius: 50%;}
+.slider li:hover{
+	background: rgba(255,255,255,.5); border:2px solid #00bdd5;  
+}
+.ufenqi-banner .bx-wrapper a{
+	display: block;
+}
+
+.ufenqi-banner .bx-wrapper img{
+	width: 1240px; height: 450px; overflow: hidden;
+}

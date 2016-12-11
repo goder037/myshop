@@ -1,0 +1,291 @@
+.main{
+    width:1000px;
+    margin: 0 auto;
+    position: relative;
+}
+.iphone-android{
+    position: absolute;
+    top:245px;
+    right:0;
+    width: 320px;
+    height:216px;
+    overflow: hidden;
+    clear: both;
+}
+
+.QR-code{
+    width: 150px;
+    height:150px;
+    background:#fff;
+}
+.QR-code img{width:100%;height:100%;}
+.iphone-top{
+    float:left;
+    width: 150px;
+}
+.android-top{
+    float: right;
+    width: 150px;
+}
+.iphone-top-a1{
+    background: url(../images/iphone-top1.png) no-repeat center;
+    width: 150px;
+    height:53px;
+    display: inline-block;
+    margin-top:10px;
+    background-size:contain;
+}
+.iphone-top-a1:hover{
+    background: url(../images/iphone-top-hover.png) no-repeat center;
+    background-size:contain;
+}
+.iphone-top-a2{
+    background: url(../images/andriod-top1.png) no-repeat center;
+    width: 150px;
+    height:53px;
+    display: inline-block;
+    margin-top:10px;
+    background-size:contain;
+}
+.iphone-top-a2:hover{
+    background: url(../images/andrion-top-hover.png) no-repeat center;
+    background-size:contain;
+}
+.line-span{
+    border-bottom: 1px solid #00bdd5;
+    width: 400px;
+    display: inline-block;
+    float:left;
+    vertical-align: middle;
+    margin-top:13px;
+}
+.word-span{
+    border-radius: 16px ;
+    background: #00bdd5;
+    color: #fff;
+    display: inline-block;
+    width: 200px;
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+    float:left;
+    font-family:"微软雅黑";
+    font-size:16px;
+}
+.middle-title{
+    width: 1000px;
+    margin: 50px auto;
+    overflow: hidden;
+    clear: both;
+}
+
+.iphone-a1{
+    background: url(../images/iphone.png) no-repeat center;
+    width: 184px;
+    height:60px;
+    display: inline-block;
+}
+.iphone-a1:hover{
+    background: url(../images/iphone-hover.png) no-repeat center;
+    background-size:contain;
+}
+.iphone-a2{
+    background: url(../images/android.png) no-repeat center;
+    width: 184px;
+    height:60px;
+    display: inline-block;
+}
+.iphone-a2:hover{
+    background: url(../images/andrion-hover.png) no-repeat center;
+    background-size:contain;
+}
+.download-box{
+    width: 450px;
+    margin: 0 auto;
+    margin-top:50px ;
+    overflow: hidden;
+    clear: both;
+}
+
+.QR-code1{
+    width: 180px;
+    height:180px;
+    border:1px solid #eee;
+    margin-bottom:8px;
+}
+.QR-code1 img{width:100%;height:100%;}
+.iphone-div{
+    float:left;
+    width: 200px;
+
+}
+
+.android-div{
+    float: right;
+    width: 200px;
+
+}
+.last-box{
+    width: 1000px;
+    margin: 0 auto;
+    border-top: 1px solid #00BDD5;
+    padding-top:60px;
+    margin-bottom: 30px;
+}
+.last-box p{
+    text-align: center;
+    font-size:30px;
+    color: #666;
+    font-family:"微软雅黑";
+}
+.step-div{
+    width: 844px;
+    margin: 0 auto;
+}
+.step-div img{margin-bottom: 80px;}
+
+.block-one-wrap{
+    width: 100%;
+    overflow: hidden;
+}
+.block-one{
+    height:502px;
+    width:810px;
+    margin: 0 auto;
+    position: relative;
+}
+.block-one-img{
+    position: absolute;
+    left: -560px;
+    width:1920px;
+}
+.btn-list{
+    position: absolute;
+    left: 0;
+    top: 355px;
+    width: 500px;
+}
+.btn-list li{
+    width: 186px;
+    height: 63px;
+    background: url(../images/banner-bg.png) no-repeat 0 0;
+}
+.btn-list .btn-1{
+    margin-bottom: 10px;
+    /*background-position: -420px -5px;*/
+    background-position: -420px -3px;
+}
+.btn-list .btn-1 a{
+    width: 100%; height: 100%; display: inline-block;
+}
+.btn-list .btn-2{
+    margin-bottom: 20px;
+    background-position: -420px -73px;
+    /*background-position: -19px -345px;*/
+}
+.btn-list .btn-3{
+    height:48px;
+    position: relative;
+    background-position: -166px -14px;
+}
+.btn-list .btn-3:hover{
+    background-position: -166px -68px;
+}
+
+.btn-hover{
+    position: absolute;
+    left: 28px;
+    top: -160px;
+    width: 135px;
+    height: 165px;
+    z-index: 10;
+    padding: 7px 6px 0 5px;
+     display: none;
+    background: url(../images/banner-bg.png) no-repeat -443px -148px;
+}
+.btn-list .btn-3:hover .btn-hover{
+    display: block;
+}
+/**/
+.banner-wrap{
+    width: 400%;
+    height: 560px;
+    position: absolute;
+    z-index: 1;
+}
+
+.banner-wrap li{
+float: left;
+}
+.banner-wrap .banner-item{
+    display: block;
+}
+
+.arrow {
+    cursor: pointer;
+    width: 33px;
+    height: 56px;
+    position: absolute;
+    z-index: 2;
+    top: 220px;
+}
+.arrow-lt{
+    left: 20px;
+}
+.arrow-gt{
+    right: 20px;
+}
+
+.arrow i{
+    width: 33px;
+    height: 56px;
+    display: block;
+    background: url(../images/banner-bg.png) no-repeat 0 0;
+}
+.arrow-lt i{
+    background-position: -10px -74px;
+
+}
+#container:hover .arrow-lt i{
+    background-position: -83px -74px;
+}
+.arrow-gt i{
+    background-position: -49px -74px;
+}
+#container:hover .arrow-gt i{
+    background-position: -120px -74px;
+}
+/**/
+
+/**/
+.code-box{
+    background-color: #fff;
+    padding: 6px;
+    position: absolute;
+}
+.code-samll{
+    width: 120px;
+    height: 120px;
+}
+.block-one .code-box{
+    left: 208px;
+    top: 357px;
+}
+.block-one .code-text{
+    position: absolute;
+    left: 15px;
+    bottom: -20px;
+}
+
+.code-large{
+    width: 163px;
+    height: 163px;
+}
+.block-three .code-box{
+    left: 414px;
+    bottom: 160px;
+}
+
+.iphonelink{
+    position: absolute; bottom: 75px; left: 352px; width: 151px; height: 43px;
+}

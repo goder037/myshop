@@ -1,0 +1,2111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>html5优分期大学生分期购物商城模板源码</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/app/reset.css">
+	<link rel="stylesheet" href="css/app/header.css">
+	<link rel="stylesheet" href="css/app/header_banner.css">
+	<link rel="stylesheet" href="css/app/right_sidebar.css">
+	<link rel="stylesheet" href="css/app/footer.css">
+	<link rel="stylesheet" href="css/bin/index.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="fonts/u-fonticon.css">
+</head>
+<body style="overflow:-Scroll;overflow-x:hidden" id="top">
+	<!-- header -->
+	<div class="head-top">
+  <div class="head-wrap">
+    <p class="head-top-left">
+        <span>欢迎来到优分期，更快更好的大学生信用消费平台，憋说话，吻我！</span>
+        <span class="vertical-line"></span>
+       <a href="shoujiyoufenqi.html" target="_blank"><i></i>手机优分期</a>
+    </p>
+    <ul class="head-top-right">
+            <li class="login list-item"><a href="login.html" rel="nofollow" class="grade-one">请【登录】</a></li>
+      <li class="login list-item"><a href="register.html"  rel="nofollow" class="grade-one" style="padding-right: 5px"> 【免费注册】</a></li>
+      <input type="hidden" name="_csrf" id="_csrf" value="b3c33d40-5de3-4ab7-a0dd-abef38a8626a" />
+            <li class="vertical-line"></li>
+      <li class="user-box list-item top-hover-box">
+        <a href="/user/home" class="top-hover-link grade-one">我的优分期<var class="down-arrow icon-iconfont-arrow3"></var></a>
+          <ul class="top-hover">
+            <li class=""><a href="#" rel="nofollow">我的信用</a></li>
+            <li class=""><a href="#" rel="nofollow">我的收藏</a></li>
+            <li class=""><a href="#" rel="nofollow">我是大使</a></li>
+          </ul>
+      </li>
+      <li class="vertical-line"></li>
+      <li class="list-item"><a href="#" rel="nofollow" class="grade-one">我的订单</a></li>
+      <li class="vertical-line"></li>
+      <li class="list-item"><a href="#" rel="nofollow" class="grade-one">我要还款</a></li>
+      <li class="vertical-line"></li>
+      <li class="help-box list-item top-hover-box"><a href="#" rel="nofollow" class="top-hover-link grade-one">帮助中心<var class="down-arrow icon-iconfont-arrow3"></var></a>
+       <ul class="top-hover" id="help_nav_list">
+         <!-- <li><a href="/help/info/help_center#duola" rel="nofollow" target="_blank">哆啦钱包  </a></li> -->
+         <li><a href="#" rel="nofollow" target="_blank">分期说明</a></li>
+         <li><a href="#" rel="nofollow" target="_blank">售后说明</a></li>
+         <li><a href="#" rel="nofollow" target="_blank">信用提现</a></li>
+         <li><a href="#" rel="nofollow" target="_blank">还款说明</a></li>
+         <li><a href="#" rel="nofollow" target="_blank">反欺诈</a></li>
+       </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div id="top-ad"><a class="top_active_ad" href="#" title=""><img src="images/dingbubanner.jpg" alt=""></a></div>
+  <div id="top-notice"></div>
+<div id="top-ad"></div>
+
+<div class="header-search dib-wrap">
+	<a class="ulogo left" href="/"></a>
+	<div class="search-box left dib">
+		<input type="text" placeholder="搜索您需要的商品" class="dib" id="searchTxtId" name="q" value="">
+		<button class="dib" id="keyWordSearchId">
+			<!-- <i class="icon-search" id="keyWordSearchId"></i> -->
+      搜索
+		</button>
+	</div>
+  <ul class="right header-qq-num">
+    <li class="r-item top-qq">
+      <a href="#" target="_blank">
+        <i></i>在线咨询
+      </a>
+    </li>
+	<li class="r-item tel-num"><i></i>400-081-0707</li>
+    <li class="r-item anti-cheat">
+      <a href="/help/info/fanqizha" target="_blank">
+        <i></i>反欺诈
+      </a>
+    </li>
+	</ul>
+</div>
+
+	<div class="r-sidebar"  id="float_bar" style="display:none;">
+    <div class="rbar-top">
+        <div class="rbar-ad-box">
+        </div>
+        <ul class="rbar">
+            <li class="rbar-item">
+                <a class="rbar-a rbar-app" href="javascript:;">
+                    <i class="rbar-icon"></i>
+                </a>
+                <span class="rbar-img">
+                    <img src="images/rbar-app.png" alt="扫码下载客户端" width="100%"/>
+                    <var class="rbar-arr"></var>
+                </span>
+            </li>
+            <li class="rbar-item">
+                <a class="rbar-a rbar-web"  href="#" target="_blank">
+                    <i class="rbar-icon"></i>
+                </a>
+                <span class="rbar-text">
+                    新浪微博
+                    <var class="rbar-arr"></var>
+                </span>
+            </li>
+            <li class="rbar-item">
+                <a class="rbar-a rbar-wechat" href="javascript:;">
+                    <i class="rbar-icon"></i>
+                </a>
+                <span  class="rbar-img">
+                    <img src="images/rbar-wechat.png" alt="官方微信" width="100%"/>
+                    <span class="rbar-wechat-txt">官方微信</span>
+                    <var class="rbar-arr"></var>
+                </span>
+            </li>
+                </ul>
+    </div>
+    <ul class="rbar-center">
+        <li class="rbar-item">
+            <a class="rbar-a rbar-xuexin" href="#" target="_blank">
+                <i class="rbar-icon"></i>
+            </a>
+            <span class="rbar-text">
+                学信网注册
+                <var class="rbar-arr"></var>
+            </span>
+        </li>
+        <li class="rbar-item">
+            <a class="rbar-a  rbar-qq" href="#" target="_blank"">
+                <i class="rbar-icon"></i>
+            </a>
+             <span class="rbar-text">
+                在线咨询
+                <var class="rbar-arr"></var>
+            </span>
+        </li>
+    </ul>
+    <ul class="rbar-footer">
+        <li class="rbar-item">
+            <a class=" rbar-a rbar-feedback" href="#" target="_blank">
+                <i class="rbar-icon"></i>
+            </a>
+            <span class="rbar-text">
+               意见反馈
+               <var class="rbar-arr"></var>
+           </span>
+        </li>
+        <li class="rbar-item ">
+            <a class="rbar-a rbar-gotop" href="#top" id="to_top">
+                <i class="rbar-icon"></i>
+            </a>
+            <span class="rbar-text">
+                返回顶部
+                <var class="rbar-arr"></var>
+            </span>
+        </li>
+    </ul>
+</div>
+	<div class="header-main">
+		<div class="nav">
+	<div class="main-content u-nav">
+		<div class="nav-list">
+		   <p class="font-size3 font-white">全部分类</p>
+		   <ul class="navlist-ul" id="top_nav"><li>
+    <div class="navlist-li-cover" data-navid="1">
+        <img src="images/navicon1508052010559940003.png" class="navlist-li-icon ">
+        <span class="nalist-li-span">
+            <a href="##" class="navlist-li-a" target="_blank">手机通讯<span>/</span></a>
+        </span>
+        <span class="arrow-r"></span>
+        <span class="arrow-l"></span>
+    </div>
+    <div class="navlist-active" style="top: 0px;">
+        <div class="navlist-active-left">
+            <div class="nav_link_ad">
+                <a class="nav_links_item" href="#" title="1000元免息">1000元免息</a>
+                <a class="nav_links_item" href="#" title="哆啦钱包">哆啦钱包</a>
+                <a class="nav_links_item" href="#" title="iPhone6S专场">iPhone6S专场</a>
+            </div>
+            <div class="nav-hidden-title">
+                <i class="navlist-li-bg"><img src="images/categoryImg1508051949025990000.png" width="100%"></i>
+                <a href="#" class="navlist-li-a" target="_blank">手机通讯</a>
+                <a href="#" class="hidden-more" target="_blank">更多 &gt;&gt;</a>
+            </div>
+            <dl>
+                <dt><a class="category_s" href="#" target="_blank">手机</a></dt>
+                <dd>
+                    <a href="#" target="_blank">手机</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt><a class="category_s" href="#" target="_blank">对讲机</a></dt>
+                <dd>
+                    <a href="#" target="_blank">手台</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt><a class="category_s" href="#" target="_blank">手机配件</a></dt>
+                <dd>
+                    <a href="#" target="_blank">创意配件</a>
+                    <a href="#" target="_blank">读卡器</a>
+                    <a href="#" target="_blank">存储卡</a>
+                    <a href="#" target="_blank">iphone配件</a>
+                    <a href="#" target="_blank">手机壳</a>
+                    <a href="#" target="_blank">贴膜</a>
+                    <a href="#" target="_blank">充电器/数据线</a>
+                    <a href="#" target="_blank">移动电源</a>
+                </dd>
+            </dl>
+        </div>
+        <div class="navlist-img">
+            <a href="#" title="" target="_blank"><img class="nav_img_ad" src="images/categoryRightAdv1511041438210840014.jpg" alt=""></a>
+            <a href="#" title="" target="_blank"><img class="nav_img_ad" src="images/categoryRightAdv1511301020315630000.jpg" alt=""></a>
+        </div>
+    </div>
+</li>
+<li>
+    <div class="navlist-li-cover" data-navid="2">
+        <img src="images/navicon1508052016560240010.png" class="navlist-li-icon ">
+        <span class="nalist-li-span">
+            <a href="#" class="navlist-li-a" target="_blank">电脑/平板<span>/</span></a>
+        </span>
+        <span class="arrow-r"></span>
+        <span class="arrow-l"></span>
+    </div>
+    <div class="navlist-active" style="top: -50px;">
+        <div class="navlist-active-left">
+            <div class="nav_link_ad">
+                <a class="nav_links_item" href="#" title="1000元免息">1000元免息</a>
+                <a class="nav_links_item" href="#" title="哆啦钱包">哆啦钱包</a>
+                <a class="nav_links_item" href="#" title="iPhone6S专场">iPhone6S专场</a>
+            </div>
+            <div class="nav-hidden-title">
+                <i class="navlist-li-bg"><img src="images/categoryImg1508052039324010021.png" width="100%"></i>
+                <a href="#" class="navlist-li-a" target="_blank">电脑/平板</a>
+                <a href="#" class="hidden-more" target="_blank">更多 &gt;&gt;</a>
+            </div>
+            <dl>
+                <dt><a class="category_s" href="#" target="_blank">电脑整机</a></dt>
+                <dd>
+                    <a href="#" target="_blank">笔记本电脑</a>
+                    <a href="#" target="_blank">平板电脑</a>
+                    <a href="#" target="_blank">台式电脑</a>
+                    <a href="#" target="_blank">游戏本</a>
+                    <a href="#" target="_blank">超极本</a>
+                    <a href="#" target="_blank">一体机</a>
+                    <a href="#" target="_blank">显示器</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt><a class="category_s" href="#" target="_blank">电脑外设</a></dt>
+                <dd>
+                    <a href="#" target="_blank">移动硬盘</a>
+                    <a href="#" target="_blank">硬盘</a>
+                    <a href="#" target="_blank">键盘</a>
+                    <a href="#" target="_blank">鼠标</a>
+                    <a href="#" target="_blank">U盘</a>
+                    <a href="#" target="_blank">电脑周边</a>
+                    <a href="#" target="_blank">网络设备</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt><a class="category_s" href="#" target="_blank">组装配件</a></dt>
+                <dd>
+                    <a href="#" target="_blank">组装电脑</a>
+                    <a href="#" target="_blank">CPU</a>
+                    <a href="#" target="_blank">内存</a>
+                    <a href="#" target="_blank">固态硬盘</a>
+                    <a href="#" target="_blank">主板</a>
+                    <a href="#" target="_blank">显卡</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt><a class="category_s" href="#" target="_blank">文具耗材</a></dt>
+                <dd>
+                    <a href="#" target="_blank">笔类</a>
+                </dd>
+            </dl>
+        </div>
+        <div class="navlist-img">
+            <a href="#" title="" target="_blank"><img class="nav_img_ad" src="images/categoryRightAdv1511301021317350001.jpg" alt=""></a>
+            <a href="#" title="" target="_blank"><img class="nav_img_ad" src="images/categoryRightAdv1511301022251830002.jpg" alt=""></a>
+        </div>
+    </div>
+</li>
+<li>
+    <div class="navlist-li-cover" data-navid="3">
+        <img src="images/navicon1508052017037220011.png" class="navlist-li-icon ">
+        <span class="nalist-li-span">
+            <a href="" class="navlist-li-a" target="_blank">摄影摄像<span>/</span></a>
+        </span>
+        <span class="arrow-r"></span>
+        <span class="arrow-l"></span>
+    </div>
+    <div class="navlist-active" style="top: -100px;">
+        <div class="navlist-active-left">
+            <div class="nav_link_ad">
+                <a class="nav_links_item" href="#" title="1000元免息">1000元免息</a>
+                <a class="nav_links_item" href="#" title="哆啦钱包">哆啦钱包</a>
+                <a class="nav_links_item" href="#" title="iPhone6S专场">iPhone6S专场</a>
+            </div>
+            <div class="nav-hidden-title">
+                <i class="navlist-li-bg"><img src="images/categoryImg1508052039556090022.png" width="100%"></i>
+                <a href="" class="navlist-li-a" target="_blank">摄影摄像</a>
+                <a href="" class="hidden-more" target="_blank">更多 &gt;&gt;</a>
+            </div>
+            <dl>
+                <dt><a class="category_s" href="#" target="_blank">数码相机</a></dt>
+                <dd>
+                    <a href="#" target="_blank">专业相机</a>
+                    <a href="#" target="_blank">家庭用机</a>
+                    <a href="#" target="_blank">美颜自拍</a>
+                    <a href="#" target="_blank">智能相机</a>
+                    <a href="#" target="_blank">三防相机</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt><a class="category_s" href="#" target="_blank">单反相机</a></dt>
+                <dd>
+                    <a href="#" target="_blank">入门级</a>
+                    <a href="#" target="_blank">中高级</a>
+                    <a href="#" target="_blank">专业级</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt><a class="category_s" href="#" target="_blank">运动相机</a></dt>
+                <dd>
+                    <a href="#" target="_blank">运动相机</a>
+                    <a href="#" target="_blank">航拍器</a>
+                    <a href="#" target="_blank">运动相机配件</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt><a class="category_s" href="#" target="_blank">摄像机</a></dt>
+                <dd>
+                    <a href="#" target="_blank">家用</a>
+                    <a href="#" target="_blank">专业</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt><a class="category_s" href="#" target="_blank">拍立得</a></dt>
+                <dd>
+                    <a href="#" target="_blank">拍立得相机</a>
+                    <a href="#" target="_blank">照片打印机</a>
+                    <a href="#" target="_blank">相纸/相册/相框</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt><a class="category_s" href="#" target="_blank">单电/微单相机</a></dt>
+                <dd>
+                    <a href="#" target="_blank">微单相机</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt><a class="category_s" href="#" target="_blank">户外器材</a></dt>
+                <dd>
+                    <a href="#" target="_blank">自拍杆/架</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt><a class="category_s" href="#" target="_blank">镜头</a></dt>
+                <dd>
+                    <a href="#" target="_blank">单反镜头</a>
+                    <a href="#" target="_blank">微单镜头</a>
+                    <a href="#" target="_blank">其它</a>
+                </dd>
+            </dl>
+        </div>
+        <div class="navlist-img">
+            <a href="#" title="" target="_blank"><img class="nav_img_ad" src="images/categoryRightAdv1511301023545800003.jpg" alt=""></a>
+            <a href="#" title="" target="_blank"><img class="nav_img_ad" src="images/categoryRightAdv1511301024256060004.jpg" alt=""></a>
+        </div>
+    </div>
+</li>
+<li>
+    <div class="navlist-li-cover" data-navid="4">
+        <img src="images/navicon1508052017122740012.png" class="navlist-li-icon ">
+        <span class="nalist-li-span">
+            <a href="#" class="navlist-li-a" target="_blank">数码产品<span>/</span></a>
+        </span>
+        <span class="arrow-r"></span>
+        <span class="arrow-l"></span>
+    </div>
+    <div class="navlist-active" style="top: -150px;">
+        <div class="navlist-active-left">
+            <div class="nav_link_ad">
+                <a class="nav_links_item" href="#" title="1000元免息">1000元免息</a>
+                <a class="nav_links_item" href="#" title="哆啦钱包">哆啦钱包</a>
+                <a class="nav_links_item" href="#" title="iPhone6S专场">iPhone6S专场</a>
+            </div>
+            <div class="nav-hidden-title">
+                <i class="navlist-li-bg"><img src="images/categoryImg1508052040190770023.png" width="100%"></i>
+                <a href="#" class="navlist-li-a" target="_blank">数码产品</a>
+                <a href="#" class="hidden-more" target="_blank">更多 &gt;&gt;</a>
+            </div>
+            <dl>
+                <dt><a class="category_s" href="/list?c1=206&amp;c2=209" target="_blank">智能设备</a></dt>
+                <dd>
+                    <a href="#" target="_blank">智能穿戴</a>
+                    <a href="#" target="_blank">电子画板</a>
+                    <a href="#" target="_blank">游戏设备</a>
+                    <a href="#" target="_blank">智能家居</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt><a class="category_s" href="/list?c1=206&amp;c2=208" target="_blank">时尚影音</a></dt>
+                <dd>
+                    <a href="#" target="_blank">耳机/耳麦</a>
+                    <a href="#" target="_blank">蓝牙耳机</a>
+                    <a href="#" target="_blank">蓝牙音箱</a>
+                    <a href="#" target="_blank">音箱/音响</a>
+                    <a href="#" target="_blank">苹果周边</a>
+                    <a href="#" target="_blank">游戏耳机</a>
+                    <a href="#" target="_blank">MP3/MP4</a>
+                    <a href="#" target="_blank">电子教育</a>
+                </dd>
+            </dl>
+        </div>
+        <div class="navlist-img">
+            <a href="#" title="" target="_blank"><img class="nav_img_ad" src="images/categoryRightAdv1511301044398710002.jpg" alt=""></a>
+            <a href="#" title="" target="_blank"><img class="nav_img_ad" src="images/categoryRightAdv1511301045327260003.jpg" alt=""></a>
+        </div>
+    </div>
+</li>
+<li>
+    <div class="navlist-li-cover" data-navid="5">
+        <img src="images/navicon1508052017276400013.png" class="navlist-li-icon ">
+        <span class="nalist-li-span">
+            <a href="" class="navlist-li-a" target="_blank">美妆/健康<span>/</span></a>
+        </span>
+        <span class="arrow-r"></span>
+        <span class="arrow-l"></span>
+    </div>
+    <div class="navlist-active" style="top: -200px;">
+        <div class="navlist-active-left">
+            <div class="nav_link_ad">
+                <a class="nav_links_item" href="#" title="1000元免息">1000元免息</a>
+                <a class="nav_links_item" href="#" title="哆啦钱包">哆啦钱包</a>
+                <a class="nav_links_item" href="#" title="iPhone6S专场">iPhone6S专场</a>
+            </div>
+            <div class="nav-hidden-title">
+                <i class="navlist-li-bg"><img src="images/categoryImg1508052040363710024.png" width="100%"></i>
+                <a href="#" class="navlist-li-a" target="_blank">美妆/健康</a>
+                <a href="#" class="hidden-more" target="_blank">更多 &gt;&gt;</a>
+            </div>
+            <dl>
+                <dt><a class="category_s" href="&amp;c2=54" target="_blank">香水彩妆</a></dt>
+                <dd>
+                    <a href="#" target="_blank">香水</a>
+                    <a href="#" target="_blank">彩妆</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt><a class="category_s" href="&amp;c2=57" target="_blank">面部护理</a></dt>
+                <dd>
+                    <a href="#" target="_blank">清洁/保湿</a>
+                    <a href="#" target="_blank">面膜</a>
+                    <a href="#" target="_blank">护肤</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt><a class="category_s" href="&amp;c2=58" target="_blank">洗发护发</a></dt>
+                <dd>
+                    <a href="#" target="_blank">洗发</a>
+                    <a href="#" target="_blank">护发</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt><a class="category_s" href="&amp;c2=59" target="_blank">身体护理</a></dt>
+                <dd>
+                    <a href="#" target="_blank">手足</a>
+                    <a href="#" target="_blank">润肤</a>
+                    <a href="#" target="_blank">沐浴</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt><a class="category_s" href="&amp;c2=319" target="_blank">美容工具</a></dt>
+                <dd>
+                    <a href="#" target="_blank">美发工具</a>
+                    <a href="#" target="_blank">美体工具</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt><a class="category_s" href="&amp;c2=60" target="_blank">健康用品</a></dt>
+                <dd>
+                    <a href="#" target="_blank">安全避孕</a>
+                </dd>
+            </dl>
+        </div>
+        <div class="navlist-img">
+            <a href="#" title="" target="_blank">
+			<img class="nav_img_ad" src="images/categoryRightAdv1511041518103290012.jpg" alt=""></a>
+            <a href="#" title="" target="_blank">
+			<img class="nav_img_ad" src="images/categoryRightAdv1511301025162170005.jpg" alt=""></a>
+        </div>
+    </div>
+</li>
+<li>
+    <div class="navlist-li-cover" data-navid="6">
+        <img src="images/navicon1508052018093520014.png" class="navlist-li-icon ">
+        <span class="nalist-li-span">
+            <a href="#" class="navlist-li-a" target="_blank">日用<span>/</span></a>
+        </span>
+        <span class="arrow-r"></span>
+        <span class="arrow-l"></span>
+    </div>
+    <div class="navlist-active" style="top: -250px;">
+        <div class="navlist-active-left">
+            <div class="nav_link_ad">
+                <a class="nav_links_item" href="#" title="1000元免息">1000元免息</a>
+                <a class="nav_links_item" href="#" title="哆啦钱包">哆啦钱包</a>
+                <a class="nav_links_item" href="#" title="iPhone6S专场">iPhone6S专场</a>
+            </div>
+            <div class="nav-hidden-title">
+                <i class="navlist-li-bg"><img src="images/categoryImg1508052040522320025.png" width="100%"></i>
+                <a href="#" class="navlist-li-a" target="_blank">日用</a>
+                <a href="#" class="hidden-more" target="_blank">更多 &gt;&gt;</a>
+            </div>
+            <dl>
+                <dt><a class="category_s" href="/list?c1=130&amp;c2=131" target="_blank">生活家电</a></dt>
+                <dd>
+                    <a href="#" target="_blank">电吹风</a>
+                    <a href="#" target="_blank">剃须刀</a>
+                    <a href="#" target="_blank">美容仪器</a>
+                    <a href="#" target="_blank">按摩仪器</a>
+                    <a href="#" target="_blank">电水壶</a>
+                    <a href="#" target="_blank">美发器</a>
+                    <a href="#" target="_blank">电饭煲</a>
+                    <a href="#" target="_blank">台灯</a>
+                    <a href="#" target="_blank">面包机</a>
+                    <a href="#" target="_blank">加湿器</a>
+                    <a href="#" target="_blank">蒸脸器</a>
+                    <a href="#" target="_blank">电动牙刷</a>
+                    <a href="#" target="_blank">榨汁机</a>
+                    <a href="#" target="_blank">压缩面膜机</a>
+                    <a href="#" target="_blank">酸奶机</a>
+                    <a href="#" target="_blank">电磁炉</a>
+                    <a href="#" target="_blank">烘干机</a>
+                    <a href="#" target="_blank">豆浆机</a>
+                    <a href="#" target="_blank">风扇</a>
+                    <a href="#" target="_blank">空气净化器</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt><a class="category_s" href="#" target="_blank">日用品</a></dt>
+                <dd>
+                    <a href="#" target="_blank">饭盒/保鲜盒</a>
+                    <a href="#" target="_blank">保温杯/水杯</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt><a class="category_s" href="#" target="_blank">床上用品</a></dt>
+                <dd>
+                    <a href="#" target="_blank">床品套装</a>
+                    <a href="#" target="_blank">枕芯</a>
+                    <a href="#" target="_blank">电热毯/毯子</a>
+                    <a href="#" target="_blank">床垫/床褥</a>
+                    <a href="#" target="_blank">窗帘/窗纱</a>
+                    <a href="#" target="_blank">蚊帐/床幔</a>
+                    <a href="#" target="_blank">被子</a>
+                </dd>
+            </dl>
+        </div>
+        <div class="navlist-img">
+            <a href="/items/detail/14964?hmsr=m" title="" target="_blank"><img class="nav_img_ad" src="images/categoryRightAdv1511301036160020007.jpg" alt=""></a>
+            <a href="/items/detail/4594?hmsr=m" title="" target="_blank"><img class="nav_img_ad" src="images/categoryRightAdv1511301041567910008.jpg" alt=""></a>
+        </div>
+    </div>
+</li>
+<li>
+    <div class="navlist-li-cover" data-navid="7">
+        <img src="images/navicon1508052018184690015.png" class="navlist-li-icon ">
+        <span class="nalist-li-span">
+            <a href="" class="navlist-li-a" target="_blank">运动户外<span>/</span></a>
+        </span>
+        <span class="arrow-r"></span>
+        <span class="arrow-l"></span>
+    </div>
+    <div class="navlist-active" style="top: -300px;">
+        <div class="navlist-active-left">
+            <div class="nav_link_ad">
+                <a class="nav_links_item" href="#" title="1000元免息">1000元免息</a>
+                <a class="nav_links_item" href="#" title="哆啦钱包">哆啦钱包</a>
+                <a class="nav_links_item" href="#" title="iPhone6S专场">iPhone6S专场</a>
+            </div>
+            <div class="nav-hidden-title">
+                <i class="navlist-li-bg"><img src="images/categoryImg1508052041107210027.png" width="100%"></i>
+                <a href="#" class="navlist-li-a" target="_blank">运动户外</a>
+                <a href="" class="hidden-more" target="_blank">更多 &gt;&gt;</a>
+            </div>
+            <dl>
+                <dt><a class="category_s" href="#" target="_blank">运动鞋/包</a></dt>
+                <dd>
+                    <a href="#" target="_blank">跑步鞋</a>
+                    <a href="#" target="_blank">休闲鞋</a>
+                    <a href="#" target="_blank">篮球鞋</a>
+                    <a href="#" target="_blank">板鞋</a>
+                    <a href="#" target="_blank">运动包</a>
+                    <a href="#" target="_blank">足球鞋</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt><a class="category_s" href="&amp;c2=327" target="_blank">运动服饰</a></dt>
+                <dd>
+                    <a href="#" target="_blank">运动上衣</a>
+                    <a href="#" target="_blank">T恤衫</a>
+                    <a href="#" target="_blank">运动裤</a>
+                    <a href="#" target="_blank">紧身裤/打底裤</a>
+                    <a href="#" target="_blank">运动配饰</a>
+                    <a href="#" target="_blank">体育用品</a>
+                    <a href="#" target="_blank">卫衣/套头衫</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt><a class="category_s" href="&amp;c2=329" target="_blank">户外鞋服</a></dt>
+                <dd>
+                    <a href="#" target="_blank">徒步鞋</a>
+                    <a href="#" target="_blank">沙滩/凉拖</a>
+                    <a href="#" target="_blank">溯溪鞋</a>
+                    <a href="#" target="_blank">羽绒服/棉服</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt><a class="category_s" href="&amp;c2=330" target="_blank">骑车运动</a></dt>
+                <dd>
+                    <a href="#" target="_blank">山地/公路车</a>
+                    <a href="#" target="_blank">折叠车</a>
+                    <a href="#" target="_blank">体感车</a>
+                    <a href="#" target="_blank">电动车</a>
+                </dd>
+            </dl>
+        </div>
+        <div class="navlist-img">
+            <a href="#" title="" target="_blank"><img class="nav_img_ad" src="images/categoryRightAdv1511301019128770000.jpg" alt=""></a>
+            <a href="#" title="" target="_blank"><img class="nav_img_ad" src="images/categoryRightAdv1511301046288810004.jpg" alt=""></a>
+        </div>
+    </div>
+</li>
+<li>
+    <div class="navlist-li-cover" data-navid="8">
+        <img src="images/navicon1508052018269380016.png" class="navlist-li-icon ">
+        <span class="nalist-li-span">
+            <a href="#" class="navlist-li-a" target="_blank">奢侈品<span>/</span></a>
+        </span>
+        <span class="arrow-r"></span>
+        <span class="arrow-l"></span>
+    </div>
+    <div class="navlist-active" style="top: -350px;">
+        <div class="navlist-active-left">
+            <div class="nav_link_ad">
+                <a class="nav_links_item" href="#" title="1000元免息">1000元免息</a>
+                <a class="nav_links_item" href="#" title="哆啦钱包">哆啦钱包</a>
+                <a class="nav_links_item" href="#" title="iPhone6S专场">iPhone6S专场</a>
+            </div>
+            <div class="nav-hidden-title">
+                <i class="navlist-li-bg"><img src="images/categoryImg1508052041282870028.png" width="100%"></i>
+                <a href="#" class="navlist-li-a" target="_blank">奢侈品</a>
+                <a href="#" class="hidden-more" target="_blank">更多 &gt;&gt;</a>
+            </div>
+            <dl>
+                <dt><a class="category_s" href="#" target="_blank">箱包/钱包</a></dt>
+                <dd>
+                    <a href="#" target="_blank">精品男包</a>
+                    <a href="#" target="_blank">潮流女包</a>
+                    <a href="#" target="_blank">拉杆箱</a>
+                    <a href="#" target="_blank">箱包</a>
+                    <a href="#" target="_blank">钱包</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt><a class="category_s" href="#" target="_blank">眼镜</a></dt>
+                <dd>
+                    <a href="#" target="_blank">太阳镜</a>
+                    <a href="#" target="_blank">镜框</a>
+                    <a href="#" target="_blank">光学镜</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt><a class="category_s" href="#" target="_blank">手表</a></dt>
+                <dd>
+                    <a href="#" target="_blank">男士手表</a>
+                    <a href="#" target="_blank">女士手表</a>
+                    <a href="#" target="_blank">智能手表</a>
+                    <a href="#" target="_blank">情侣对表</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt><a class="category_s" href="#" target="_blank">饰品</a></dt>
+                <dd>
+                    <a href="#" target="_blank">首饰套装</a>
+                    <a href="#" target="_blank">头饰</a>
+                    <a href="#" target="_blank">项链</a>
+                    <a href="#" target="_blank">耳环</a>
+                    <a href="#" target="_blank">戒指</a>
+                    <a href="#" target="_blank">配饰</a>
+                    <a href="#" target="_blank">手链/手镯</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt><a class="category_s" href="#" target="_blank">服饰鞋靴</a></dt>
+                <dd>
+                    <a href="#" target="_blank">女鞋</a>
+                    <a href="#" target="_blank">男鞋</a>
+                    <a href="#" target="_blank">女装</a>
+                    <a href="#" target="_blank">男装</a>
+                </dd>
+            </dl>
+        </div>
+        <div class="navlist-img">
+            <a href="#" title="" target="_blank"><img class="nav_img_ad" src="images/categoryRightAdv1602171830181300018.jpg" alt=""></a>
+            <a href="#" title="" target="_blank"><img class="nav_img_ad" src="images/categoryRightAdv1512231551572000041.jpg" alt=""></a>
+        </div>
+    </div>
+</li>
+<li>
+    <div class="navlist-li-cover" data-navid="9">
+        <img src="images/navicon1512161142126460000.png" class="navlist-li-icon ">
+        <span class="nalist-li-span">
+            <a href="/list?c1=246" class="navlist-li-a" target="_blank">礼品<span>/</span></a>
+        </span>
+        <span class="arrow-r"></span>
+        <span class="arrow-l"></span>
+    </div>
+    <div class="navlist-active" style="top: -400px;">
+        <div class="navlist-active-left">
+            <div class="nav_link_ad">
+                <a class="nav_links_item" href="#" title="1000元免息">1000元免息</a>
+                <a class="nav_links_item" href="#" title="哆啦钱包">哆啦钱包</a>
+                <a class="nav_links_item" href="#" title="iPhone6S专场">iPhone6S专场</a>
+            </div>
+            <div class="nav-hidden-title">
+                <i class="navlist-li-bg"><img src="images/categoryImg1508052035363960019.png" width="100%"></i>
+                <a href="/list?c1=246" class="navlist-li-a" target="_blank">礼品</a>
+                <a href="/list?c1=246" class="hidden-more" target="_blank">更多 &gt;&gt;</a>
+            </div>
+            <dl>
+                <dt><a class="category_s" href="/list?c1=246&amp;c2=447" target="_blank">配饰</a></dt>
+                <dd>
+                    <a href="#" target="_blank">丝袜</a>
+                    <a href="#" target="_blank">腰带</a>
+                    <a href="#" target="_blank">手链/手镯</a>
+                    <a href="#" target="_blank">项链</a>
+                    <a href="#" target="_blank">耳饰</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt><a class="category_s" href="/list?c1=246&amp;c2=446" target="_blank">创意礼品</a></dt>
+                <dd>
+                    <a href="#" target="_blank">创意摆件/挂饰</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt><a class="category_s" href="/list?c1=246&amp;c2=249" target="_blank">生活礼品</a></dt>
+                <dd>
+                    <a href="#" target="_blank">保温杯</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt><a class="category_s" href="/list?c1=246&amp;c2=247" target="_blank">火机烟具</a></dt>
+                <dd>
+                    <a href="#" target="_blank">打火机</a>
+                    <a href="#" target="_blank">电子烟</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt><a class="category_s" href="/list?c1=246&amp;c2=546" target="_blank">乐器</a></dt>
+                <dd>
+                    <a href="" target="_blank">吉他</a>
+                </dd>
+            </dl>
+        </div>
+        <div class="navlist-img">
+            <a href="/items/detail/17298?hmsr=m" title="" target="_blank"><img class="nav_img_ad" src="images/categoryRightAdv1512161152053210001.jpg" alt=""></a>
+            <a href="/items/detail/17416?hmsr=m" title="" target="_blank"><img class="nav_img_ad" src="images/categoryRightAdv1512161152086930000.jpg" alt=""></a>
+        </div>
+    </div>
+</li>
+</ul>
+
+		</div>
+		<div class="nav-title font-size2">
+		   <ul>
+		   	   <li><a href="index.html">首页</a></li>
+		   	   <li><a href="benzhoutemai.html" target="_blank">本周热卖</a></li>
+		   	   <li><a href="ujijin.html" target="_blank">U基金</a></li>
+		   	   <li><a href="doraemon.html" target="_blank">哆啦钱包</a></li>
+		   </ul>	
+		</div>
+		<a href="/user/home" class="nav-myu">
+			<i class="icon-- inline-block"></i>
+			<span class="font-size2 font-white">我的优分期</span>
+		</a>
+		<div class="nav-renzheng" style="z-index:2;">
+				<a href="index.html" target="_blank" class="nav-box"> 
+					<img src="images/banneryouce120150602.png" /> 
+				</a>
+				<a href="index.html" target="_blank" class="nav-box"> 
+					<img src="images/indexbanner1510311756565030000.png" /> 
+				</a>
+		</div>
+	</div>
+</div>
+		<div class="ufenqi-banner">
+	<div class="u-banner">
+	   <ul class="bxslider banner-list" style="z-index:1;">
+	   	   	   <li style="background:#00deff;" class="active">
+	   	   		<a href="cms/active/iphone6s-pc" target="_blank" class="main-content" title=""><img src="images/indexbanner1603281855450690001.jpg"></a>
+	   	   </li>
+	   	   	   <li style="background:#0b0437;">
+	   	   		<a href="images/main_pc.html" target="_blank" class="main-content" title=""><img src="images/indexbanner1602292034123860003.jpg"></a>
+	   	   </li>
+	   	   	   <li style="background:#8000bf;">
+	   	   		<a href="cms/active/0301_main" target="_blank" class="main-content" title=""><img src="images/indexbanner1603111535203220000.jpg"></a>
+	   	   </li>
+	   	   	   <li style="background:#ee5243;">
+	   	   		<a href="cms/active/shuma0328-pc" target="_blank" class="main-content" title=""><img src="images/indexbanner1603281655074440000.jpg"></a>
+	   	   </li>
+	   	   	   <li style="background:#34bfff;">
+	   	   		<a href="cms/active/hongji0301-pc" target="_blank" class="main-content" title=""><img src="images/indexbanner1603141726321690000.jpg"></a>
+	   	   </li>
+	   	   </ul>
+		   <ol class="slider">
+				<li></li>
+		   </ol>
+	</div>
+</div>	</div>
+	<!-- end header -->
+	<!-- content -->
+	<div class="main-content" id="index_container">
+		<ul class="aside-banner">
+			<li class="js">
+				<a href="#" target="_blank" class="aside-bannera">
+					<i></i>
+					<h2 class="left">
+						<p class="font-size5 font3 ">极速分期</p>
+						<p class="font-size2">一分钟系统自动认证</p>
+					</h2>
+					<span class="line"></span>
+				</a>
+			</li>
+			<li class="xs">
+				<a href="#" target="_blank" class="aside-bannera">
+					<i></i>
+					<h2 class="left">
+						<p class="font-size5 font3 ">线上认证</p>
+						<p class="font-size2">凭学生证即可办理</p>
+					</h2>
+					<span class="line"></span>
+				</a>
+			</li>
+			<li class="quality">
+				<a href="zhengpinchengnuo" target="_blank" class="aside-bannera">
+					<i></i>
+					<h2 class="left">
+						<p class="font-size5 font3 ">卓越品质</p>
+						<p class="font-size2">100%正品行货</p>
+					</h2>
+					<span class="line"></span>
+				</a>
+			</li>
+			
+			<li class="back">
+				<a href="/user/home" target="_blank" class="aside-bannera">
+					<i></i>
+					<h2 class="left">
+						<p class="font-size5 font3 ">轻松还款</p>
+						<p class="font-size2">足不出户在线还款</p>
+					</h2>
+					<span class="line"></span>
+				</a>
+			</li>
+			<li class="linebuy">
+				<a href="gouwuliucheng.html" target="_blank" class="aside-bannera">
+					<i></i>
+					<h2 class="left ">
+						<p class="font-size5 font3 ">线上购买</p>
+						<p class="font-size2">免面签线下零打扰</p>
+					</h2>
+				</a>
+			</li>
+		</ul>
+		
+		<!--优分期明星单品 -->
+										<section class="u-star">
+			<div class="ustar-box">
+				<div class="ustar-p">
+			    	<p class="left">
+			    		<em class="dib font-size2 font-white ulabel-c7">优分期明星单品</em>
+			    					    	</p>
+			    	
+			    </div>
+			    <div class="ustar-list">
+			    	<div class="slider-container star">
+		     	  	   <div class="list1 left">
+		     	  	   				     	  	   				     	  	   		<a href="/items/detail/30144?hmsr=h" class="dib" target="_blank">
+		     	  	   			<img class="slider-img1" src="images/itemfloor1603291623559100006.jpg" data-original="images/itemfloor1603291623559100006.jpg" alt="【预售】Apple iPhone SE 16GB 玫瑰金色 移动联通电信4G手机 赠资生堂，赠完为止"/>
+		     	  	   		</a>
+		     	  	   				     	  	   </div>
+		     	  	   <div class="list2 left">
+														<a target="_blank" href="/items/detail/30585?hmsr=h" class="block ustar-wa">
+								<img src="images/itemfloor1603291625113140008.jpg" data-original="images/itemfloor1603291625113140008.jpg" alt="【预售】Apple iPad Pro平板电脑 9.7英寸32G WLAN版/A9X芯片/Retina"/>
+							</a>
+									     	  	   	   
+		     	  	   	   <p class="dib-wrap">
+		     	  	   	   				     	  	   	   		<a target="_blank" href="/items/detail/30843?hmsr=h" class="dib ustar-wh">
+		     	  	   	   			<img src="images/itemfloor1603291631291580010.jpg" data-original="images/itemfloor1603291631291580010.jpg" alt="OPPO R9 4GB+64GB内存版玫瑰金全网通4G手机 双卡双待"/>
+		     	  	   	   		</a>
+		     	  	   	   	   	<a target="_blank" href="/items/detail/30024?hmsr=h" class="dib ustar-wh" style="margin-left:20px;">
+		     	  	   	   	   		<img src="images/itemfloor1603291624555860006.jpg" alt="OPPO R9 4GB+64GB内存版玫瑰金全网通4G手机 双卡双待"/> 
+		     	  	   	   	   	</a>
+		     	  	   	   				     	  	   	   </p>
+		     	  	   </div>
+		     	  	   <div class="list1 left">
+						  						  <a target="_blank" href="/items/detail/28468?hmsr=h" class="block ustar-wh" style="margin-top:0px;">
+						  	<img class="margin0" src="images/itemfloor1603291631114540009.jpg" alt="小米 5 全网通标准版 3GB内存 32GB ROM 白色 移动联通电信4G手机(赠送自拍杆）"/>
+						  </a>
+						  		     	  	   	  <a target="_blank" href="/items/detail/20457?hmsr=h" class="block ustar-wh">
+		     	  	   	  	<img src="images/itemfloor1603291631425110007.jpg" alt="神舟 战神 游戏笔记本"/>
+		     	  	   	  </a>
+		     	  	   	  						  		     	  	   </div>
+		     	  	</div>
+		     	</div>
+			</div>
+		</section>
+								
+					 					<section class="unew">
+			<div class="unew-box">
+				<div class="unew-h1">
+					<p class="left">
+						<em class="dib font-size2 font-white ulabel-c8">新人特惠（每周三上新）</em>
+				     	  	 			     	</p>
+			     				     	<p class="right">
+			     		<a href="#" class="inline-block iconi prev disable" data-category="2"><i class="icon-iconfont-arrowleft"></i></a>
+			     	  	<a href="#" class="inline-block iconi next"  data-category="2"><i class="icon-iconfont-arrow2"></i></a>
+			     	</p>
+			     					</div>
+				<div class="list-content unew-list">
+					<ul class="slider-container">
+						
+																	   						   	   					   		<li class="unew-li">
+								<a target="_blank" class="unewli-box" href="/items/detail/28437?hmsr=h" title="【赠自拍杆】小米4S  全网通手机 金">
+									<div class="unewli-img"><img src="images/itemfloor1603291111021700002.jpg" /></div> 
+				     	       	   	<h2 class="font-ublack font-title">
+				     	       	   		【赠自拍杆】小米4S  全网通手机 金
+				     	       	   	</h2>
+				     	       	   	<p class="price-box">
+				     	       	   					     	       	   	  	<span class="font-size2 font-ufblack">月供</span>
+				     	       	   	  	<span class="font-red font-size3">￥</span>
+				     	       	   	  	<span class="font-red font-size8">121.80</span>
+				     	       	   	  	<span class="font-size0 font3">x</span>
+				     	       	   	  	<span class="font-size2 font3">18期</span>
+				     	       	   	  											<span class="tag-notice">
+											<var class="tag-icon"></var>
+											<i class="tag-icon-1" id="saleIcon">5折服务费</i>
+										</span>
+																							     	       	   	</p>
+				     	       	   	<p class="font3 font-size2" style="padding-top:0px;">
+				     	       	   	  	<span>售价￥1858</span>
+				     	       	   	  	<span style="margin-left:50px;">市场价</span>
+				     	       	   	  	<span class=" text-de">￥2199</span>
+				     	       	   	</p>
+				     	       </a>
+		     	   		</li>
+		     	       					   	   					   		<li class="unew-li">
+								<a target="_blank" class="unewli-box" href="/items/detail/29335?hmsr=h" title="vivo Xplay5曲屏手机 香槟金">
+									<div class="unewli-img"><img src="images/itemfloor1603291112206710003.jpg" /></div> 
+				     	       	   	<h2 class="font-ublack font-title">
+				     	       	   		vivo Xplay5曲屏手机 香槟金
+				     	       	   	</h2>
+				     	       	   	<p class="price-box">
+				     	       	   					     	       	   	  	<span class="font-size2 font-ufblack">月供</span>
+				     	       	   	  	<span class="font-red font-size3">￥</span>
+				     	       	   	  	<span class="font-red font-size8">192.91</span>
+				     	       	   	  	<span class="font-size0 font3">x</span>
+				     	       	   	  	<span class="font-size2 font3">24期</span>
+				     	       	   	  											<span class="tag-notice">
+											<var class="tag-icon"></var>
+											<i class="tag-icon-1" id="saleIcon">5折服务费</i>
+										</span>
+																							     	       	   	</p>
+				     	       	   	<p class="font3 font-size2" style="padding-top:0px;">
+				     	       	   	  	<span>售价￥3698</span>
+				     	       	   	  	<span style="margin-left:50px;">市场价</span>
+				     	       	   	  	<span class=" text-de">￥3698</span>
+				     	       	   	</p>
+				     	       </a>
+		     	   		</li>
+		     	       					   	   					   		<li class="unew-li">
+								<a target="_blank" class="unewli-box" href="/items/detail/30905?hmsr=h" title="【太阳的后裔同款】DW 简约镶钻时装表  宋慧乔同款">
+									<div class="unewli-img"><img src="images/itemfloor1603291111389870003.jpg" /></div> 
+				     	       	   	<h2 class="font-ublack font-title">
+				     	       	   		【太阳的后裔同款】DW 简约镶钻时装表  宋慧乔同款
+				     	       	   	</h2>
+				     	       	   	<p class="price-box">
+				     	       	   					     	       	   	  	<span class="font-size2 font-ufblack">月供</span>
+				     	       	   	  	<span class="font-red font-size3">￥</span>
+				     	       	   	  	<span class="font-red font-size8">104.03</span>
+				     	       	   	  	<span class="font-size0 font3">x</span>
+				     	       	   	  	<span class="font-size2 font3">9期</span>
+				     	       	   	  											<span class="tag-notice">
+											<var class="tag-icon"></var>
+											<i class="tag-icon-1" id="saleIcon">5折服务费</i>
+										</span>
+																							     	       	   	</p>
+				     	       	   	<p class="font3 font-size2" style="padding-top:0px;">
+				     	       	   	  	<span>售价￥859</span>
+				     	       	   	  	<span style="margin-left:50px;">市场价</span>
+				     	       	   	  	<span class=" text-de">￥1360</span>
+				     	       	   	</p>
+				     	       </a>
+		     	   		</li>
+		     	       					   	   					   		<li class="unew-li">
+								<a target="_blank" class="unewli-box" href="/items/detail/29336?hmsr=h" title="三星S7 32G版 铂光金手机">
+									<div class="unewli-img"><img src="images/itemfloor1603291113358460004.jpg" data-original="images/itemfloor1603291113358460004.jpg" /></div> 
+				     	       	   	<h2 class="font-ublack font-title">
+				     	       	   		三星S7 32G版 铂光金手机
+				     	       	   	</h2>
+				     	       	   	<p class="price-box">
+				     	       	   					     	       	   	  	<span class="font-size2 font-ufblack">月供</span>
+				     	       	   	  	<span class="font-red font-size3">￥</span>
+				     	       	   	  	<span class="font-red font-size8">302.57</span>
+				     	       	   	  	<span class="font-size0 font3">x</span>
+				     	       	   	  	<span class="font-size2 font3">24期</span>
+				     	       	   	  											<span class="tag-notice">
+											<var class="tag-icon"></var>
+											<i class="tag-icon-1" id="saleIcon">5折服务费</i>
+										</span>
+																							     	       	   	</p>
+				     	       	   	<p class="font3 font-size2" style="padding-top:0px;">
+				     	       	   	  	<span>售价￥5800</span>
+				     	       	   	  	<span style="margin-left:50px;">市场价</span>
+				     	       	   	  	<span class=" text-de">￥6888</span>
+				     	       	   	</p>
+				     	       </a>
+		     	   		</li>
+		     	       					   	                                                       	     	   		</ul>
+				</div>
+			</div>
+		</section>
+				
+										<section class="unew">
+			<div class="unew-box">
+				<div class="unew-h1">
+					<p class="left">
+						<em class="dib font-size2 font-white ulabel-c1">1F手机通讯</em>
+				     	  	 						<a target="_blank" class="dib font-size0 lits" href="#"><span>苹果</span></a>
+				     	  	 						<a target="_blank" class="dib font-size0 lits" href="#"><span>三星</span></a>
+				     	  	 						<a target="_blank" class="dib font-size0 lits" href="#"><span>vivo</span></a>
+				     	  	 						<a target="_blank" class="dib font-size0 lits" href="#"><span>华为</span></a>
+				     	  	 						<a target="_blank" class="dib font-size0 lits" href="#"><span>oppo</span></a>
+				     	  	 				     	 				     	<a target="_blank" class="forMore" href="/list?c1=155">查看更多&gt;&gt;</a>
+				     						</p>
+				</div>
+				<div class="list-content unew-list">
+					<ul class="slider-container">
+			     				     	  							<li class="unew-li">
+							<a target="_blank" href="/items/detail/12042?hmsr=h" class="unewli-box">
+								<!-- 商品头部标签-->
+								<!--<div class="u-fivefree"></div>-->
+
+								<div class="unewli-img"><img src="images/ITEM_12042_1441174812822_1.jpg" data-original="images/ITEM_12042_1441174812822_1.jpg" /></div> 
+			     	       	   	<h2 class="font-ublack font-title">华为 荣耀 7i 3GB内存增强版 全网通4G 冰川白 </h2>
+			     	       	   	<p class="price-box">
+			     	       	   				     	       	   	  	<span class="font-size2 font-ufblack">月供</span>
+			     	       	   	 	<span class="font-red font-size3">￥</span>
+			     	       	   	  	<span class="font-red font-size8">124.58</span>
+			     	       	   	  	<span class="font-size0 font3">x</span>
+			     	       	   	  	<span class="font-size2 font3">18期</span>
+			     	       	   	  												     	       	   	</p>
+			     	       	   	<p class="font3 font-size2" style="padding-top:0px;">
+			     	       	   	  	<span>售价￥1725</span>
+			     	       	   	  	<span style="margin-left:50px;">市场价</span>
+			     	       	   	  	<span class=" text-de">￥2699</span>
+			     	       	   	</p>
+							</a>
+						</li>
+		     	  				     	  							<li class="unew-li">
+							<a target="_blank" href="#" class="unewli-box">
+								<!-- 商品头部标签-->
+								<!--<div class="u-fivefree"></div>-->
+
+								<div class="unewli-img"><img src="images/itemfloor1512301659507060072.jpg" data-original="images/itemfloor1512301659507060072.jpg" /></div> 
+			     	       	   	<h2 class="font-ublack font-title">Apple iPhone 6s 16G 金色</h2>
+			     	       	   	<p class="price-box">
+			     	       	   				     	       	   	  	<span class="font-size2 font-ufblack">月供</span>
+			     	       	   	 	<span class="font-red font-size3">￥</span>
+			     	       	   	  	<span class="font-red font-size8">263.76</span>
+			     	       	   	  	<span class="font-size0 font3">x</span>
+			     	       	   	  	<span class="font-size2 font3">24期</span>
+			     	       	   	  												     	       	   	</p>
+			     	       	   	<p class="font3 font-size2" style="padding-top:0px;">
+			     	       	   	  	<span>售价￥4458</span>
+			     	       	   	  	<span style="margin-left:50px;">市场价</span>
+			     	       	   	  	<span class=" text-de">￥5288</span>
+			     	       	   	</p>
+							</a>
+						</li>
+		     	  				     	  							<li class="unew-li">
+							<a target="_blank" href="/items/detail/14798?hmsr=h" class="unewli-box">
+								<!-- 商品头部标签-->
+								<!--<div class="u-fivefree"></div>-->
+
+								<div class="unewli-img"><img src="images/ITEM_14798_1444385609409_1.jpg" data-original="images/ITEM_14798_1444385609409_1.jpg" /></div> 
+			     	       	   	<h2 class="font-ublack font-title">Apple iPhone 6s plus 16G 玫瑰金色</h2>
+			     	       	   	<p class="price-box">
+			     	       	   				     	       	   	  	<span class="font-size2 font-ufblack">月供</span>
+			     	       	   	 	<span class="font-red font-size3">￥</span>
+			     	       	   	  	<span class="font-red font-size8">336.54</span>
+			     	       	   	  	<span class="font-size0 font3">x</span>
+			     	       	   	  	<span class="font-size2 font3">24期</span>
+			     	       	   	  												     	       	   	</p>
+			     	       	   	<p class="font3 font-size2" style="padding-top:0px;">
+			     	       	   	  	<span>售价￥5688</span>
+			     	       	   	  	<span style="margin-left:50px;">市场价</span>
+			     	       	   	  	<span class=" text-de">￥6088</span>
+			     	       	   	</p>
+							</a>
+						</li>
+		     	  				     	  							<li class="unew-li">
+							<a target="_blank" href="#" class="unewli-box">
+								<!-- 商品头部标签-->
+								<!--<div class="u-fivefree"></div>-->
+
+								<div class="unewli-img"><img src="images/itemfloor1601141756248050005.jpg" data-original="images/itemfloor1601141756248050005.jpg" /></div> 
+			     	       	   	<h2 class="font-ublack font-title">Apple iPhone 6s 16G 玫瑰金</h2>
+			     	       	   	<p class="price-box">
+			     	       	   				     	       	   	  	<span class="font-size2 font-ufblack">月供</span>
+			     	       	   	 	<span class="font-red font-size3">￥</span>
+			     	       	   	  	<span class="font-red font-size8">263.76</span>
+			     	       	   	  	<span class="font-size0 font3">x</span>
+			     	       	   	  	<span class="font-size2 font3">24期</span>
+			     	       	   	  												     	       	   	</p>
+			     	       	   	<p class="font3 font-size2" style="padding-top:0px;">
+			     	       	   	  	<span>售价￥4458</span>
+			     	       	   	  	<span style="margin-left:50px;">市场价</span>
+			     	       	   	  	<span class=" text-de">￥5288</span>
+			     	       	   	</p>
+							</a>
+						</li>
+		     	  			     	  	</ul>
+		     	</div>
+			</div>
+		</section>
+					<section class="unew">
+			<div class="unew-box">
+				<div class="unew-h1">
+					<p class="left">
+						<em class="dib font-size2 font-white ulabel-c2">2F电脑/平板</em>
+				     	  	 						<a target="_blank" class="dib font-size0 lits" href="#"><span>联想</span></a>
+				     	  	 						<a target="_blank" class="dib font-size0 lits" href="#"><span>戴尔</span></a>
+				     	  	 						<a target="_blank" class="dib font-size0 lits" href="#"><span>神舟</span></a>
+				     	  	 						<a target="_blank" class="dib font-size0 lits" href="#"><span>华硕</span></a>
+				     	  	 						<a target="_blank" class="dib font-size0 lits" href="#"><span>苹果</span></a>
+				     	  	 				     	 				     	<a target="_blank" class="forMore" href="/list?c1=229">查看更多&gt;&gt;</a>
+				     						</p>
+				</div>
+				<div class="list-content unew-list">
+					<ul class="slider-container">
+			     				     	  							<li class="unew-li">
+							<a target="_blank" href="/items/detail/671?hmsr=h" class="unewli-box">
+								<!-- 商品头部标签-->
+								<!--<div class="u-fivefree"></div>-->
+
+								<div class="unewli-img"><img src="images/item_671_1.jpg" data-original="images/item_671_1.jpg" /></div> 
+			     	       	   	<h2 class="font-ublack font-title">Apple ipad mini2 32G wifi版</h2>
+			     	       	   	<p class="price-box">
+			     	       	   				     	       	   	  	<span class="font-size2 font-ufblack">月供</span>
+			     	       	   	 	<span class="font-red font-size3">￥</span>
+			     	       	   	  	<span class="font-red font-size8">135.96</span>
+			     	       	   	  	<span class="font-size0 font3">x</span>
+			     	       	   	  	<span class="font-size2 font3">24期</span>
+			     	       	   	  												     	       	   	</p>
+			     	       	   	<p class="font3 font-size2" style="padding-top:0px;">
+			     	       	   	  	<span>售价￥2298</span>
+			     	       	   	  	<span style="margin-left:50px;">市场价</span>
+			     	       	   	  	<span class=" text-de">￥2988</span>
+			     	       	   	</p>
+							</a>
+						</li>
+		     	  				     	  							<li class="unew-li">
+							<a target="_blank" href="/items/detail/18656?hmsr=h" class="unewli-box">
+								<!-- 商品头部标签-->
+								<!--<div class="u-fivefree">5折服务费</div>-->
+
+								<div class="unewli-img"><img src="images/SKUGROUP_8065_1.jpg" data-original="images/SKUGROUP_8065_1.jpg" /></div> 
+			     	       	   	<h2 class="font-ublack font-title">戴尔 灵越15.6英寸笔记本电脑银色</h2>
+			     	       	   	<p class="price-box">
+			     	       	   				     	       	   	  	<span class="font-size2 font-ufblack">月供</span>
+			     	       	   	 	<span class="font-red font-size3">￥</span>
+			     	       	   	  	<span class="font-red font-size8">222.18</span>
+			     	       	   	  	<span class="font-size0 font3">x</span>
+			     	       	   	  	<span class="font-size2 font3">24期</span>
+			     	       	   	  										<span class="tag-notice">
+										<var class="tag-icon"></var>
+										<i class="tag-icon-1" id="saleIcon">5折服务费</i>
+									</span>
+																				     	       	   	</p>
+			     	       	   	<p class="font3 font-size2" style="padding-top:0px;">
+			     	       	   	  	<span>售价￥4259</span>
+			     	       	   	  	<span style="margin-left:50px;">市场价</span>
+			     	       	   	  	<span class=" text-de">￥4999</span>
+			     	       	   	</p>
+							</a>
+						</li>
+		     	  				     	  							<li class="unew-li">
+							<a target="_blank" href="#" class="unewli-box">
+								<!-- 商品头部标签-->
+								<!--<div class="u-fivefree">5折服务费</div>-->
+
+								<div class="unewli-img"><img src="images/SKUGROUP_3669_1.jpg" data-original="images/SKUGROUP_3669_1.jpg" /></div> 
+			     	       	   	<h2 class="font-ublack font-title">神舟 战神 游戏本</h2>
+			     	       	   	<p class="price-box">
+			     	       	   				     	       	   	  	<span class="font-size2 font-ufblack">月供</span>
+			     	       	   	 	<span class="font-red font-size3">￥</span>
+			     	       	   	  	<span class="font-red font-size8">225.83</span>
+			     	       	   	  	<span class="font-size0 font3">x</span>
+			     	       	   	  	<span class="font-size2 font3">24期</span>
+			     	       	   	  										<span class="tag-notice">
+										<var class="tag-icon"></var>
+										<i class="tag-icon-1" id="saleIcon">5折服务费</i>
+									</span>
+																				     	       	   	</p>
+			     	       	   	<p class="font3 font-size2" style="padding-top:0px;">
+			     	       	   	  	<span>售价￥4329</span>
+			     	       	   	  	<span style="margin-left:50px;">市场价</span>
+			     	       	   	  	<span class=" text-de">￥5699</span>
+			     	       	   	</p>
+							</a>
+						</li>
+		     	  				     	  							<li class="unew-li">
+							<a target="_blank" href="#" class="unewli-box">
+								<!-- 商品头部标签-->
+								<!--<div class="u-fivefree">5折服务费</div>-->
+
+								<div class="unewli-img"><img src="images/itemfloor1602171808220700005.jpg" data-original="images/itemfloor1602171808220700005.jpg" /></div> 
+			     	       	   	<h2 class="font-ublack font-title">宁美国度 四核i5 台式电脑主机</h2>
+			     	       	   	<p class="price-box">
+			     	       	   				     	       	   	  	<span class="font-size2 font-ufblack">月供</span>
+			     	       	   	 	<span class="font-red font-size3">￥</span>
+			     	       	   	  	<span class="font-red font-size8">175.18</span>
+			     	       	   	  	<span class="font-size0 font3">x</span>
+			     	       	   	  	<span class="font-size2 font3">24期</span>
+			     	       	   	  										<span class="tag-notice">
+										<var class="tag-icon"></var>
+										<i class="tag-icon-1" id="saleIcon">5折服务费</i>
+									</span>
+																				     	       	   	</p>
+			     	       	   	<p class="font3 font-size2" style="padding-top:0px;">
+			     	       	   	  	<span>售价￥3358</span>
+			     	       	   	  	<span style="margin-left:50px;">市场价</span>
+			     	       	   	  	<span class=" text-de">￥4530</span>
+			     	       	   	</p>
+							</a>
+						</li>
+		     	  			     	  	</ul>
+		     	</div>
+			</div>
+		</section>
+					<section class="unew">
+			<div class="unew-box">
+				<div class="unew-h1">
+					<p class="left">
+						<em class="dib font-size2 font-white ulabel-c3">3F数码/摄影</em>
+				     	  	 						<a target="_blank" class="dib font-size0 lits" href="#"><span>佳能</span></a>
+				     	  	 						<a target="_blank" class="dib font-size0 lits" href="#"><span>尼康</span></a>
+				     	  	 						<a target="_blank" class="dib font-size0 lits" href="#"><span>卡西欧</span></a>
+				     	  	 						<a target="_blank" class="dib font-size0 lits" href="#"><span>BEATS</span></a>
+				     	  	 						<a target="_blank" class="dib font-size0 lits" href="#"><span>Apple</span></a>
+				     	  	 				     	 				     	<a target="_blank" class="forMore" href="">查看更多&gt;&gt;</a>
+				     						</p>
+				</div>
+				<div class="list-content unew-list">
+					<ul class="slider-container">
+			     				     	  							<li class="unew-li">
+							<a target="_blank" href="#" class="unewli-box">
+								<!-- 商品头部标签-->
+								<!--<div class="u-fivefree"></div>-->
+
+								<div class="unewli-img"><img src="images/ITEM_13064_1442375445404_1.jpg" data-original="images/ITEM_13064_1442375445404_1.jpg" /></div> 
+			     	       	   	<h2 class="font-ublack font-title">卡西欧 EX-TR500 自拍神器</h2>
+			     	       	   	<p class="price-box">
+			     	       	   				     	       	   	  	<span class="font-size2 font-ufblack">月供</span>
+			     	       	   	 	<span class="font-red font-size3">￥</span>
+			     	       	   	  	<span class="font-red font-size8">262.05</span>
+			     	       	   	  	<span class="font-size0 font3">x</span>
+			     	       	   	  	<span class="font-size2 font3">24期</span>
+			     	       	   	  												     	       	   	</p>
+			     	       	   	<p class="font3 font-size2" style="padding-top:0px;">
+			     	       	   	  	<span>售价￥4429</span>
+			     	       	   	  	<span style="margin-left:50px;">市场价</span>
+			     	       	   	  	<span class=" text-de">￥6829</span>
+			     	       	   	</p>
+							</a>
+						</li>
+		     	  				     	  							<li class="unew-li">
+							<a target="_blank" href="/items/detail/29245?hmsr=h" class="unewli-box">
+								<!-- 商品头部标签-->
+								<!--<div class="u-fivefree">5折服务费</div>-->
+
+								<div class="unewli-img"><img src="images/SKUGROUP_12552_1.jpg" data-original="images/SKUGROUP_12552_1.jpg" /></div> 
+			     	       	   	<h2 class="font-ublack font-title">大疆 精灵3  无人机</h2>
+			     	       	   	<p class="price-box">
+			     	       	   				     	       	   	  	<span class="font-size2 font-ufblack">月供</span>
+			     	       	   	 	<span class="font-red font-size3">￥</span>
+			     	       	   	  	<span class="font-red font-size8">156.45</span>
+			     	       	   	  	<span class="font-size0 font3">x</span>
+			     	       	   	  	<span class="font-size2 font3">24期</span>
+			     	       	   	  										<span class="tag-notice">
+										<var class="tag-icon"></var>
+										<i class="tag-icon-1" id="saleIcon">5折服务费</i>
+									</span>
+																				     	       	   	</p>
+			     	       	   	<p class="font3 font-size2" style="padding-top:0px;">
+			     	       	   	  	<span>售价￥2999</span>
+			     	       	   	  	<span style="margin-left:50px;">市场价</span>
+			     	       	   	  	<span class=" text-de">￥2999</span>
+			     	       	   	</p>
+							</a>
+						</li>
+		     	  				     	  							<li class="unew-li">
+							<a target="_blank" href="#" class="unewli-box">
+								<!-- 商品头部标签-->
+								<!--<div class="u-fivefree">5折服务费</div>-->
+
+								<div class="unewli-img"><img src="images/ITEM_30843_1459150421481_1.jpg" data-original="images/ITEM_30843_1459150421481_1.jpg" /></div> 
+			     	       	   	<h2 class="font-ublack font-title">Apple Watch Sport 42毫米深空灰色铝金属表壳 黑色精织尼龙表带</h2>
+			     	       	   	<p class="price-box">
+			     	       	   				     	       	   	  	<span class="font-size2 font-ufblack">月供</span>
+			     	       	   	 	<span class="font-red font-size3">￥</span>
+			     	       	   	  	<span class="font-red font-size8">140.22</span>
+			     	       	   	  	<span class="font-size0 font3">x</span>
+			     	       	   	  	<span class="font-size2 font3">24期</span>
+			     	       	   	  										<span class="tag-notice">
+										<var class="tag-icon"></var>
+										<i class="tag-icon-1" id="saleIcon">5折服务费</i>
+									</span>
+																				     	       	   	</p>
+			     	       	   	<p class="font3 font-size2" style="padding-top:0px;">
+			     	       	   	  	<span>售价￥2688</span>
+			     	       	   	  	<span style="margin-left:50px;">市场价</span>
+			     	       	   	  	<span class=" text-de">￥2988</span>
+			     	       	   	</p>
+							</a>
+						</li>
+		     	  				     	  							<li class="unew-li">
+							<a target="_blank" href="/items/detail/29301?hmsr=h" class="unewli-box">
+								<!-- 商品头部标签-->
+								<!--<div class="u-fivefree">5折服务费</div>-->
+
+								<div class="unewli-img"><img src="images/ITEM_29301_1457921660355_1.jpg" data-original="images/ITEM_29301_1457921660355_1.jpg" /></div> 
+			     	       	   	<h2 class="font-ublack font-title">索尼【PS4国行主机】PlayStation 4 星际战甲套装 （黑色）</h2>
+			     	       	   	<p class="price-box">
+			     	       	   				     	       	   	  	<span class="font-size2 font-ufblack">月供</span>
+			     	       	   	 	<span class="font-red font-size3">￥</span>
+			     	       	   	  	<span class="font-red font-size8">129.79</span>
+			     	       	   	  	<span class="font-size0 font3">x</span>
+			     	       	   	  	<span class="font-size2 font3">24期</span>
+			     	       	   	  										<span class="tag-notice">
+										<var class="tag-icon"></var>
+										<i class="tag-icon-1" id="saleIcon">5折服务费</i>
+									</span>
+																				     	       	   	</p>
+			     	       	   	<p class="font3 font-size2" style="padding-top:0px;">
+			     	       	   	  	<span>售价￥2488</span>
+			     	       	   	  	<span style="margin-left:50px;">市场价</span>
+			     	       	   	  	<span class=" text-de">￥2888</span>
+			     	       	   	</p>
+							</a>
+						</li>
+		     	  			     	  	</ul>
+		     	</div>
+			</div>
+		</section>
+					<section class="unew">
+			<div class="unew-box">
+				<div class="unew-h1">
+					<p class="left">
+						<em class="dib font-size2 font-white ulabel-c4">4F手表专区</em>
+				     	  	 						<a target="_blank" class="dib font-size0 lits" href="#"><span>浪琴</span></a>
+				     	  	 						<a target="_blank" class="dib font-size0 lits" href="#"><span>CK</span></a>
+				     	  	 						<a target="_blank" class="dib font-size0 lits" href="#"><span>美度</span></a>
+				     	  	 						<a target="_blank" class="dib font-size0 lits" href="#"><span>海鸥</span></a>
+				     	  	 						<a target="_blank" class="dib font-size0 lits" href="#"><span>巴宝莉</span></a>
+				     	  	 				     	 				     	<a target="_blank" class="forMore" href="/list?c1=257">查看更多&gt;&gt;</a>
+				     						</p>
+				</div>
+				<div class="list-content unew-list">
+					<ul class="slider-container">
+			     				     	  							<li class="unew-li">
+							<a target="_blank" href="/items/detail/14695?hmsr=h" class="unewli-box">
+								<!-- 商品头部标签-->
+								<!--<div class="u-fivefree">5折服务费</div>-->
+
+								<div class="unewli-img"><img src="images/ITEM_14695_1451548265213_1.jpg" data-original="images/ITEM_14695_1451548265213_1.jpg" /></div> 
+			     	       	   	<h2 class="font-ublack font-title">巴宝莉(BURBERRY)英伦式复古时尚女表BU9109</h2>
+			     	       	   	<p class="price-box">
+			     	       	   				     	       	   	  	<span class="font-size2 font-ufblack">月供</span>
+			     	       	   	 	<span class="font-red font-size3">￥</span>
+			     	       	   	  	<span class="font-red font-size8">110.82</span>
+			     	       	   	  	<span class="font-size0 font3">x</span>
+			     	       	   	  	<span class="font-size2 font3">9期</span>
+			     	       	   	  										<span class="tag-notice">
+										<var class="tag-icon"></var>
+										<i class="tag-icon-1" id="saleIcon">5折服务费</i>
+									</span>
+																				     	       	   	</p>
+			     	       	   	<p class="font3 font-size2" style="padding-top:0px;">
+			     	       	   	  	<span>售价￥915</span>
+			     	       	   	  	<span style="margin-left:50px;">市场价</span>
+			     	       	   	  	<span class=" text-de">￥1899</span>
+			     	       	   	</p>
+							</a>
+						</li>
+		     	  				     	  							<li class="unew-li">
+							<a target="_blank" href="/items/detail/14356?hmsr=h" class="unewli-box">
+								<!-- 商品头部标签-->
+								<!--<div class="u-fivefree">5折服务费</div>-->
+
+								<div class="unewli-img"><img src="images/ITEM_14356_1451386616146_1.jpg" data-original="images/ITEM_14356_1451386616146_1.jpg" /></div> 
+			     	       	   	<h2 class="font-ublack font-title">天梭 俊雅系列石英男表</h2>
+			     	       	   	<p class="price-box">
+			     	       	   				     	       	   	  	<span class="font-size2 font-ufblack">月供</span>
+			     	       	   	 	<span class="font-red font-size3">￥</span>
+			     	       	   	  	<span class="font-red font-size8">109.41</span>
+			     	       	   	  	<span class="font-size0 font3">x</span>
+			     	       	   	  	<span class="font-size2 font3">18期</span>
+			     	       	   	  										<span class="tag-notice">
+										<var class="tag-icon"></var>
+										<i class="tag-icon-1" id="saleIcon">5折服务费</i>
+									</span>
+																				     	       	   	</p>
+			     	       	   	<p class="font3 font-size2" style="padding-top:0px;">
+			     	       	   	  	<span>售价￥1669</span>
+			     	       	   	  	<span style="margin-left:50px;">市场价</span>
+			     	       	   	  	<span class=" text-de">￥2550</span>
+			     	       	   	</p>
+							</a>
+						</li>
+		     	  				     	  							<li class="unew-li">
+							<a target="_blank" href="/items/detail/16130?hmsr=h" class="unewli-box">
+								<!-- 商品头部标签-->
+								<!--<div class="u-fivefree">0服务费</div>-->
+
+								<div class="unewli-img"><img src="images/ITEM_16130_1451542627556_1.jpg" data-original="images/ITEM_16130_1451542627556_1.jpg" /></div> 
+			     	       	   	<h2 class="font-ublack font-title">CK CITY系列石英男表</h2>
+			     	       	   	<p class="price-box">
+			     	       	   				     	       	   	  	<span class="font-size2 font-ufblack">月供</span>
+			     	       	   	 	<span class="font-red font-size3">￥</span>
+			     	       	   	  	<span class="font-red font-size8">93.25</span>
+			     	       	   	  	<span class="font-size0 font3">x</span>
+			     	       	   	  	<span class="font-size2 font3">12期</span>
+			     	       	   	  										<span class="tag-notice">
+										<var class="tag-icon"></var>
+										<i class="tag-icon-1" id="saleIcon">0服务费</i>
+									</span>
+																				     	       	   	</p>
+			     	       	   	<p class="font3 font-size2" style="padding-top:0px;">
+			     	       	   	  	<span>售价￥1119</span>
+			     	       	   	  	<span style="margin-left:50px;">市场价</span>
+			     	       	   	  	<span class=" text-de">￥2399</span>
+			     	       	   	</p>
+							</a>
+						</li>
+		     	  				     	  							<li class="unew-li">
+							<a target="_blank" href="/items/detail/17778?hmsr=h" class="unewli-box">
+								<!-- 商品头部标签-->
+								<div class="unewli-img"><img src="images/ITEM_17778_1451386585051_1.jpg" data-original="images/ITEM_17778_1451386585051_1.jpg" /></div> 
+			     	       	   	<h2 class="font-ublack font-title">卡西欧(CASIO) G-SHOCK系列多功能运动男表GA-110GB-1A</h2>
+			     	       	   	<p class="price-box">
+			     	       	   				     	       	   	  	<span class="font-size2 font-ufblack">月供</span>
+			     	       	   	 	<span class="font-red font-size3">￥</span>
+			     	       	   	  	<span class="font-red font-size8">105.25</span>
+			     	       	   	  	<span class="font-size0 font3">x</span>
+			     	       	   	  	<span class="font-size2 font3">9期</span>
+			     	       	   	  										<span class="tag-notice">
+										<var class="tag-icon"></var>
+										<i class="tag-icon-1" id="saleIcon">5折服务费</i>
+									</span>
+																				     	       	   	</p>
+			     	       	   	<p class="font3 font-size2" style="padding-top:0px;">
+			     	       	   	  	<span>售价￥869</span>
+			     	       	   	  	<span style="margin-left:50px;">市场价</span>
+			     	       	   	  	<span class=" text-de">￥1799</span>
+			     	       	   	</p>
+							</a>
+						</li>
+		     	  			     	  	</ul>
+		     	</div>
+			</div>
+		</section>
+					<section class="unew">
+			<div class="unew-box">
+				<div class="unew-h1">
+					<p class="left">
+						<em class="dib font-size2 font-white ulabel-c5">5F美妆/健康</em>
+				     	  	 						<a target="_blank" class="dib font-size0 lits" href="&si=0&bid=436"><span>兰蔻</span></a>
+				     	  	 						<a target="_blank" class="dib font-size0 lits" href="&si=0&bid=420"><span>迪奥</span></a>
+				     	  	 						<a target="_blank" class="dib font-size0 lits" href="&si=0&bid=422"><span>雅诗兰黛</span></a>
+				     	  	 						<a target="_blank" class="dib font-size0 lits" href="&si=0&bid=423"><span>SK-II</span></a>
+				     	  	 						<a target="_blank" class="dib font-size0 lits" href="&si=0&bid=810"><span>香奈儿</span></a>
+				     	  	 				     	 				     	<a target="_blank" class="forMore" href="">查看更多&gt;&gt;</a>
+				     						</p>
+				</div>
+				<div class="list-content unew-list">
+					<ul class="slider-container">
+			     				     	  							<li class="unew-li">
+							<a target="_blank" href="/items/detail/12610?hmsr=h" class="unewli-box">
+								<!-- 商品头部标签-->
+								<!--<div class="u-fivefree">5折服务费</div>-->
+
+								<div class="unewli-img"><img src="images/SKUGROUP_5002_1.jpg" data-original="images/SKUGROUP_5002_1.jpg" /></div> 
+			     	       	   	<h2 class="font-ublack font-title">兰芝气垫粉凝霜</h2>
+			     	       	   	<p class="price-box">
+			     	       	   				     	       	   	  	<span class="font-size2 font-ufblack">月供</span>
+			     	       	   	 	<span class="font-red font-size3">￥</span>
+			     	       	   	  	<span class="font-red font-size8">91.51</span>
+			     	       	   	  	<span class="font-size0 font3">x</span>
+			     	       	   	  	<span class="font-size2 font3">3期</span>
+			     	       	   	  										<span class="tag-notice">
+										<var class="tag-icon"></var>
+										<i class="tag-icon-1" id="saleIcon">5折服务费</i>
+									</span>
+																				     	       	   	</p>
+			     	       	   	<p class="font3 font-size2" style="padding-top:0px;">
+			     	       	   	  	<span>售价￥265</span>
+			     	       	   	  	<span style="margin-left:50px;">市场价</span>
+			     	       	   	  	<span class=" text-de">￥825</span>
+			     	       	   	</p>
+							</a>
+						</li>
+		     	  				     	  							<li class="unew-li">
+							<a target="_blank" href="/items/detail/30099?hmsr=h" class="unewli-box">
+								<!-- 商品头部标签-->
+								<div class="unewli-img"><img src="images/SKUGROUP_12866_1.jpg" data-original="images/SKUGROUP_12866_1.jpg" /></div> 
+			     	       	   	<h2 class="font-ublack font-title">miumiu缪缪女士香水30ml EDP</h2>
+			     	       	   	<p class="price-box">
+			     	       	   				     	       	   	  	<span class="font-size2 font-ufblack">月供</span>
+			     	       	   	 	<span class="font-red font-size3">￥</span>
+			     	       	   	  	<span class="font-red font-size8">88.16</span>
+			     	       	   	  	<span class="font-size0 font3">x</span>
+			     	       	   	  	<span class="font-size2 font3">6期</span>
+			     	       	   	  										<span class="tag-notice">
+										<var class="tag-icon"></var>
+										<i class="tag-icon-1" id="saleIcon">5折服务费</i>
+									</span>
+																				     	       	   	</p>
+			     	       	   	<p class="font3 font-size2" style="padding-top:0px;">
+			     	       	   	  	<span>售价￥499</span>
+			     	       	   	  	<span style="margin-left:50px;">市场价</span>
+			     	       	   	  	<span class=" text-de">￥958</span>
+			     	       	   	</p>
+							</a>
+						</li>
+		     	  				     	  							<li class="unew-li">
+							<a target="_blank" href="/items/detail/30102?hmsr=h" class="unewli-box">
+								<!-- 商品头部标签-->
+								<!--<div class="u-fivefree">5折服务费</div>-->
+
+								<div class="unewli-img"><img src="images/SKUGROUP_12869_1.jpg" data-original="images/SKUGROUP_12869_1.jpg" /></div> 
+			     	       	   	<h2 class="font-ublack font-title">Kiehl's科颜氏/契尔氏黄瓜植物精华爽肤水500ml</h2>
+			     	       	   	<p class="price-box">
+			     	       	   				     	       	   	  	<span class="font-size2 font-ufblack">月供</span>
+			     	       	   	 	<span class="font-red font-size3">￥</span>
+			     	       	   	  	<span class="font-red font-size8">102.91</span>
+			     	       	   	  	<span class="font-size0 font3">x</span>
+			     	       	   	  	<span class="font-size2 font3">3期</span>
+			     	       	   	  										<span class="tag-notice">
+										<var class="tag-icon"></var>
+										<i class="tag-icon-1" id="saleIcon">5折服务费</i>
+									</span>
+																				     	       	   	</p>
+			     	       	   	<p class="font3 font-size2" style="padding-top:0px;">
+			     	       	   	  	<span>售价￥298</span>
+			     	       	   	  	<span style="margin-left:50px;">市场价</span>
+			     	       	   	  	<span class=" text-de">￥335</span>
+			     	       	   	</p>
+							</a>
+						</li>
+		     	  				     	  							<li class="unew-li">
+							<a target="_blank" href="/items/detail/16172?hmsr=h" class="unewli-box">
+								<!-- 商品头部标签-->
+								<!--<div class="u-fivefree">5折服务费</div>-->
+
+								<div class="unewli-img"><img src="images/ITEM_16172_1459132274490_1.jpg" data-original="images/ITEM_16172_1459132274490_1.jpg" /></div> 
+			     	       	   	<h2 class="font-ublack font-title">韩束 嫩莲水凝倍润礼盒</h2>
+			     	       	   	<p class="price-box">
+			     	       	   				     	       	   	  	<span class="font-size2 font-ufblack">月供</span>
+			     	       	   	 	<span class="font-red font-size3">￥</span>
+			     	       	   	  	<span class="font-red font-size8">85.99</span>
+			     	       	   	  	<span class="font-size0 font3">x</span>
+			     	       	   	  	<span class="font-size2 font3">3期</span>
+			     	       	   	  										<span class="tag-notice">
+										<var class="tag-icon"></var>
+										<i class="tag-icon-1" id="saleIcon">5折服务费</i>
+									</span>
+																				     	       	   	</p>
+			     	       	   	<p class="font3 font-size2" style="padding-top:0px;">
+			     	       	   	  	<span>售价￥249</span>
+			     	       	   	  	<span style="margin-left:50px;">市场价</span>
+			     	       	   	  	<span class=" text-de">￥568</span>
+			     	       	   	</p>
+							</a>
+						</li>
+		     	  			     	  	</ul>
+		     	</div>
+			</div>
+		</section>
+					<section class="unew">
+			<div class="unew-box">
+				<div class="unew-h1">
+					<p class="left">
+						<em class="dib font-size2 font-white ulabel-c6">6F奢侈品</em>
+				     	  	 						<a target="_blank" class="dib font-size0 lits" href="/list?c1=257&si=0&bid=692"><span>COACH</span></a>
+				     	  	 						<a target="_blank" class="dib font-size0 lits" href="/list?c1=257&si=0&bid=720"><span>MK</span></a>
+				     	  	 						<a target="_blank" class="dib font-size0 lits" href="/list?c1=257&si=0&bid=702"><span>雷朋</span></a>
+				     	  	 						<a target="_blank" class="dib font-size0 lits" href="/list?c1=257&si=0&bid=481"><span>GUCCI</span></a>
+				     	  	 						<a target="_blank" class="dib font-size0 lits" href="/list?c1=257&c2=258&si=0&bid=786"><span>施华洛世奇</span></a>
+				     	  	 				     	 				     	<a target="_blank" class="forMore" href="/list?c1=257">查看更多&gt;&gt;</a>
+				     						</p>
+				</div>
+				<div class="list-content unew-list">
+					<ul class="slider-container">
+			     				     	  							<li class="unew-li">
+							<a target="_blank" href="/items/detail/28946?hmsr=h" class="unewli-box">
+								<!-- 商品头部标签-->
+								<!--<div class="u-fivefree">5折服务费</div>-->
+
+								<div class="unewli-img"><img src="images/SKUGROUP_12442_1.jpg" data-original="images/SKUGROUP_12442_1.jpg" /></div> 
+			     	       	   	<h2 class="font-ublack font-title">MK天蓝色斜挎包</h2>
+			     	       	   	<p class="price-box">
+			     	       	   				     	       	   	  	<span class="font-size2 font-ufblack">月供</span>
+			     	       	   	 	<span class="font-red font-size3">￥</span>
+			     	       	   	  	<span class="font-red font-size8">111.91</span>
+			     	       	   	  	<span class="font-size0 font3">x</span>
+			     	       	   	  	<span class="font-size2 font3">12期</span>
+			     	       	   	  										<span class="tag-notice">
+										<var class="tag-icon"></var>
+										<i class="tag-icon-1" id="saleIcon">5折服务费</i>
+									</span>
+																				     	       	   	</p>
+			     	       	   	<p class="font3 font-size2" style="padding-top:0px;">
+			     	       	   	  	<span>售价￥1199</span>
+			     	       	   	  	<span style="margin-left:50px;">市场价</span>
+			     	       	   	  	<span class=" text-de">￥2200</span>
+			     	       	   	</p>
+							</a>
+						</li>
+		     	  				     	  							<li class="unew-li">
+							<a target="_blank" href="/items/detail/27902?hmsr=h" class="unewli-box">
+								<!-- 商品头部标签-->
+								<div class="unewli-img"><img src="images/SKUGROUP_12187_1.jpg" data-original="images/SKUGROUP_12187_1.jpg" /></div> 
+			     	       	   	<h2 class="font-ublack font-title">施华洛世奇 金属环形镶水晶手镯</h2>
+			     	       	   	<p class="price-box">
+			     	       	   				     	       	   	  	<span class="font-size2 font-ufblack">月供</span>
+			     	       	   	 	<span class="font-red font-size3">￥</span>
+			     	       	   	  	<span class="font-red font-size8">107.55</span>
+			     	       	   	  	<span class="font-size0 font3">x</span>
+			     	       	   	  	<span class="font-size2 font3">9期</span>
+			     	       	   	  										<span class="tag-notice">
+										<var class="tag-icon"></var>
+										<i class="tag-icon-1" id="saleIcon">5折服务费</i>
+									</span>
+																				     	       	   	</p>
+			     	       	   	<p class="font3 font-size2" style="padding-top:0px;">
+			     	       	   	  	<span>售价￥888</span>
+			     	       	   	  	<span style="margin-left:50px;">市场价</span>
+			     	       	   	  	<span class=" text-de">￥1650</span>
+			     	       	   	</p>
+							</a>
+						</li>
+		     	  				     	  							<li class="unew-li">
+							<a target="_blank" href="#" class="unewli-box">
+								<!-- 商品头部标签-->
+								<div class="unewli-img"><img src="images/SKUGROUP_11731_1.jpg" data-original="images/SKUGROUP_11731_1.jpg" /></div> 
+			     	       	   	<h2 class="font-ublack font-title">Prada 牛皮男士长款拉链手拿包</h2>
+			     	       	   	<p class="price-box">
+			     	       	   				     	       	   	  	<span class="font-size2 font-ufblack">月供</span>
+			     	       	   	 	<span class="font-red font-size3">￥</span>
+			     	       	   	  	<span class="font-red font-size8">213.83</span>
+			     	       	   	  	<span class="font-size0 font3">x</span>
+			     	       	   	  	<span class="font-size2 font3">24期</span>
+			     	       	   	  										<span class="tag-notice">
+										<var class="tag-icon"></var>
+										<i class="tag-icon-1" id="saleIcon">5折服务费</i>
+									</span>
+																				     	       	   	</p>
+			     	       	   	<p class="font3 font-size2" style="padding-top:0px;">
+			     	       	   	  	<span>售价￥4099</span>
+			     	       	   	  	<span style="margin-left:50px;">市场价</span>
+			     	       	   	  	<span class=" text-de">￥5650</span>
+			     	       	   	</p>
+							</a>
+						</li>
+		     	  				     	  							<li class="unew-li">
+							<a target="_blank" href="#" class="unewli-box">
+								<!-- 商品头部标签-->
+								<!--<div class="u-fivefree">5折服务费</div>-->
+
+								<div class="unewli-img"><img src="images/ITEM_30078_1458293381466_1.jpg" data-original="images/ITEM_30078_1458293381466_1.jpg" /></div> 
+			     	       	   	<h2 class="font-ublack font-title">COACH 男士迷彩绿帆布配皮双肩包</h2>
+			     	       	   	<p class="price-box">
+			     	       	   				     	       	   	  	<span class="font-size2 font-ufblack">月供</span>
+			     	       	   	 	<span class="font-red font-size3">￥</span>
+			     	       	   	  	<span class="font-red font-size8">105.90</span>
+			     	       	   	  	<span class="font-size0 font3">x</span>
+			     	       	   	  	<span class="font-size2 font3">24期</span>
+			     	       	   	  										<span class="tag-notice">
+										<var class="tag-icon"></var>
+										<i class="tag-icon-1" id="saleIcon">5折服务费</i>
+									</span>
+																				     	       	   	</p>
+			     	       	   	<p class="font3 font-size2" style="padding-top:0px;">
+			     	       	   	  	<span>售价￥2030</span>
+			     	       	   	  	<span style="margin-left:50px;">市场价</span>
+			     	       	   	  	<span class=" text-de">￥3250</span>
+			     	       	   	</p>
+							</a>
+						</li>
+		     	  			     	  	</ul>
+		     	</div>
+			</div>
+		</section>
+					<section class="unew">
+			<div class="unew-box">
+				<div class="unew-h1">
+					<p class="left">
+						<em class="dib font-size2 font-white ulabel-c7">7F运动户外</em>
+				     	  	 						<a target="_blank" class="dib font-size0 lits" href="#"><span>Adidas</span></a>
+				     	  	 						<a target="_blank" class="dib font-size0 lits" href="#"><span>NIKE</span></a>
+				     	  	 						<a target="_blank" class="dib font-size0 lits" href="#"><span>New</span></a>
+				     	  	 						<a target="_blank" class="dib font-size0 lits" href="#"><span>迈博</span></a>
+				     	  	 						<a target="_blank" class="dib font-size0 lits" href="#"><span>彪马</span></a>
+				     	  	 				     	 				     	<a target="_blank" class="forMore" href="">查看更多&gt;&gt;</a>
+				     						</p>
+				</div>
+				<div class="list-content unew-list">
+					<ul class="slider-container">
+			     				     	  							<li class="unew-li">
+							<a target="_blank" href="#" class="unewli-box">
+								<!-- 商品头部标签-->
+								<!--<div class="u-fivefree">5折服务费</div>-->
+
+								<div class="unewli-img"><img src="images/SKUGROUP_12973_1.jpg" data-original="images/SKUGROUP_12973_1.jpg" /></div> 
+			     	       	   	<h2 class="font-ublack font-title">Adidas阿迪达斯三叶草ZX系列男鞋 2016新款休闲板鞋AQ3183 39</h2>
+			     	       	   	<p class="price-box">
+			     	       	   				     	       	   	  	<span class="font-size2 font-ufblack">月供</span>
+			     	       	   	 	<span class="font-red font-size3">￥</span>
+			     	       	   	  	<span class="font-red font-size8">119.25</span>
+			     	       	   	  	<span class="font-size0 font3">x</span>
+			     	       	   	  	<span class="font-size2 font3">6期</span>
+			     	       	   	  										<span class="tag-notice">
+										<var class="tag-icon"></var>
+										<i class="tag-icon-1" id="saleIcon">5折服务费</i>
+									</span>
+																				     	       	   	</p>
+			     	       	   	<p class="font3 font-size2" style="padding-top:0px;">
+			     	       	   	  	<span>售价￥675</span>
+			     	       	   	  	<span style="margin-left:50px;">市场价</span>
+			     	       	   	  	<span class=" text-de">￥899</span>
+			     	       	   	</p>
+							</a>
+						</li>
+		     	  				     	  							<li class="unew-li">
+							<a target="_blank" href="#" class="unewli-box">
+								<!-- 商品头部标签-->
+								<!--<div class="u-fivefree">5折服务费</div>-->
+
+								<div class="unewli-img"><img src="images/SKUGROUP_12468_1.jpg" data-original="images/SKUGROUP_12468_1.jpg" /></div> 
+			     	       	   	<h2 class="font-ublack font-title">Adidas阿迪达斯男鞋 2016春新款NEO运动休闲板鞋AW4513 42</h2>
+			     	       	   	<p class="price-box">
+			     	       	   				     	       	   	  	<span class="font-size2 font-ufblack">月供</span>
+			     	       	   	 	<span class="font-red font-size3">￥</span>
+			     	       	   	  	<span class="font-red font-size8">109.36</span>
+			     	       	   	  	<span class="font-size0 font3">x</span>
+			     	       	   	  	<span class="font-size2 font3">6期</span>
+			     	       	   	  										<span class="tag-notice">
+										<var class="tag-icon"></var>
+										<i class="tag-icon-1" id="saleIcon">5折服务费</i>
+									</span>
+																				     	       	   	</p>
+			     	       	   	<p class="font3 font-size2" style="padding-top:0px;">
+			     	       	   	  	<span>售价￥619</span>
+			     	       	   	  	<span style="margin-left:50px;">市场价</span>
+			     	       	   	  	<span class=" text-de">￥729</span>
+			     	       	   	</p>
+							</a>
+						</li>
+		     	  				     	  							<li class="unew-li">
+							<a target="_blank" href="#" class="unewli-box">
+								<!-- 商品头部标签-->
+								<!--<div class="u-fivefree">5折服务费</div>-->
+
+								<div class="unewli-img"><img src="images/SKUGROUP_12775_1.jpg" data-original="images/SKUGROUP_12775_1.jpg" /></div> 
+			     	       	   	<h2 class="font-ublack font-title">NIKE(耐克)2016新款运动生活系列MAX AIR低帮男鞋子705297011 42</h2>
+			     	       	   	<p class="price-box">
+			     	       	   				     	       	   	  	<span class="font-size2 font-ufblack">月供</span>
+			     	       	   	 	<span class="font-red font-size3">￥</span>
+			     	       	   	  	<span class="font-red font-size8">93.13</span>
+			     	       	   	  	<span class="font-size0 font3">x</span>
+			     	       	   	  	<span class="font-size2 font3">9期</span>
+			     	       	   	  										<span class="tag-notice">
+										<var class="tag-icon"></var>
+										<i class="tag-icon-1" id="saleIcon">5折服务费</i>
+									</span>
+																				     	       	   	</p>
+			     	       	   	<p class="font3 font-size2" style="padding-top:0px;">
+			     	       	   	  	<span>售价￥769</span>
+			     	       	   	  	<span style="margin-left:50px;">市场价</span>
+			     	       	   	  	<span class=" text-de">￥899</span>
+			     	       	   	</p>
+							</a>
+						</li>
+		     	  				     	  							<li class="unew-li">
+							<a target="_blank" href="#" class="unewli-box">
+								<!-- 商品头部标签-->
+								<!--<div class="u-fivefree">5折服务费</div>-->
+
+								<div class="unewli-img"><img src="images/ITEM_26594_1453795526153_1.jpg" data-original="images/ITEM_26594_1453795526153_1.jpg" /></div> 
+			     	       	   	<h2 class="font-ublack font-title">NIKE耐克2016年新款男鞋AIR MAX全掌气垫跑步鞋805941-001 42</h2>
+			     	       	   	<p class="price-box">
+			     	       	   				     	       	   	  	<span class="font-size2 font-ufblack">月供</span>
+			     	       	   	 	<span class="font-red font-size3">￥</span>
+			     	       	   	  	<span class="font-red font-size8">90.71</span>
+			     	       	   	  	<span class="font-size0 font3">x</span>
+			     	       	   	  	<span class="font-size2 font3">9期</span>
+			     	       	   	  										<span class="tag-notice">
+										<var class="tag-icon"></var>
+										<i class="tag-icon-1" id="saleIcon">5折服务费</i>
+									</span>
+																				     	       	   	</p>
+			     	       	   	<p class="font3 font-size2" style="padding-top:0px;">
+			     	       	   	  	<span>售价￥749</span>
+			     	       	   	  	<span style="margin-left:50px;">市场价</span>
+			     	       	   	  	<span class=" text-de">￥999</span>
+			     	       	   	</p>
+							</a>
+						</li>
+		     	  			     	  	</ul>
+		     	</div>
+			</div>
+		</section>
+					<section class="unew">
+			<div class="unew-box">
+				<div class="unew-h1">
+					<p class="left">
+						<em class="dib font-size2 font-white ulabel-c8">8F礼品</em>
+				     	  	 						<a target="_blank" class="dib font-size0 lits" href="#"><span>Zippo</span></a>
+				     	  	 						<a target="_blank" class="dib font-size0 lits" href="#"><span>电子烟</span></a>
+				     	  	 						<a target="_blank" class="dib font-size0 lits" href="#"><span>玩偶</span></a>
+				     	  	 						<a target="_blank" class="dib font-size0 lits" href="#"><span>55度</span></a>
+				     	  	 				     	 				     	<a target="_blank" class="forMore" href="/list?c1=246">查看更多&gt;&gt;</a>
+				     						</p>
+				</div>
+				<div class="list-content unew-list">
+					<ul class="slider-container">
+			     				     	  							<li class="unew-li">
+							<a target="_blank" href="#" class="unewli-box">
+								<!-- 商品头部标签-->
+								<!--<div class="u-fivefree">5折服务费</div>-->
+
+								<div class="unewli-img"><img src="images/ITEM_24296_1452159066600_1.jpg" data-original="images/ITEM_24296_1452159066600_1.jpg" /></div> 
+			     	       	   	<h2 class="font-ublack font-title">卡马kepma初学指弹吉他木吉他40寸吉它a2c民谣吉他日落色</h2>
+			     	       	   	<p class="price-box">
+			     	       	   				     	       	   	  	<span class="font-size2 font-ufblack">月供</span>
+			     	       	   	 	<span class="font-red font-size3">￥</span>
+			     	       	   	  	<span class="font-red font-size8">97.98</span>
+			     	       	   	  	<span class="font-size0 font3">x</span>
+			     	       	   	  	<span class="font-size2 font3">9期</span>
+			     	       	   	  										<span class="tag-notice">
+										<var class="tag-icon"></var>
+										<i class="tag-icon-1" id="saleIcon">5折服务费</i>
+									</span>
+																				     	       	   	</p>
+			     	       	   	<p class="font3 font-size2" style="padding-top:0px;">
+			     	       	   	  	<span>售价￥809</span>
+			     	       	   	  	<span style="margin-left:50px;">市场价</span>
+			     	       	   	  	<span class=" text-de">￥1799</span>
+			     	       	   	</p>
+							</a>
+						</li>
+		     	  				     	  							<li class="unew-li">
+							<a target="_blank" href="#" class="unewli-box">
+								<!-- 商品头部标签-->
+								<!--<div class="u-fivefree"></div>-->
+
+								<div class="unewli-img"><img src="images/SKUGROUP_3627_1.jpg" data-original="images/SKUGROUP_3627_1.jpg" /></div> 
+			     	       	   	<h2 class="font-ublack font-title">芝宝（ZIPPO）打火机 哑漆/雕刻/彩印 小丑彩色骷髅 24894</h2>
+			     	       	   	<p class="price-box">
+			     	       	   									    <span class="font-red font-size6">40天免息</span>
+											     	       	   	</p>
+			     	       	   	<p class="font3 font-size2" style="padding-top:0px;">
+			     	       	   	  	<span>售价￥160</span>
+			     	       	   	  	<span style="margin-left:50px;">市场价</span>
+			     	       	   	  	<span class=" text-de">￥228</span>
+			     	       	   	</p>
+							</a>
+						</li>
+		     	  				     	  							<li class="unew-li">
+							<a target="_blank" href="#" class="unewli-box">
+								<!-- 商品头部标签-->
+								<!--<div class="u-fivefree"></div>-->
+
+								<div class="unewli-img"><img src="images/ITEM_22794_1450416667675_1.jpg" data-original="images/ITEM_22794_1450416667675_1.jpg" /></div> 
+			     	       	   	<h2 class="font-ublack font-title">迪士尼  围兜系列 维尼熊3#</h2>
+			     	       	   	<p class="price-box">
+			     	       	   									    <span class="font-red font-size6">40天免息</span>
+											     	       	   	</p>
+			     	       	   	<p class="font3 font-size2" style="padding-top:0px;">
+			     	       	   	  	<span>售价￥99</span>
+			     	       	   	  	<span style="margin-left:50px;">市场价</span>
+			     	       	   	  	<span class=" text-de">￥139</span>
+			     	       	   	</p>
+							</a>
+						</li>
+		     	  				     	  							<li class="unew-li">
+							<a target="_blank" href="#" class="unewli-box">
+								<!-- 商品头部标签-->
+								<!--<div class="u-fivefree"></div>-->
+
+								<div class="unewli-img"><img src="images/SKUGROUP_4877_1.jpg" data-original="images/SKUGROUP_4877_1.jpg" /></div> 
+			     	       	   	<h2 class="font-ublack font-title">比得兔红色思瀚玻璃泡茶杯 PR-2433</h2>
+			     	       	   	<p class="price-box">
+			     	       	   									    <span class="font-red font-size6">40天免息</span>
+											     	       	   	</p>
+			     	       	   	<p class="font3 font-size2" style="padding-top:0px;">
+			     	       	   	  	<span>售价￥56</span>
+			     	       	   	  	<span style="margin-left:50px;">市场价</span>
+			     	       	   	  	<span class=" text-de">￥198</span>
+			     	       	   	</p>
+							</a>
+						</li>
+		     	  			     	  	</ul>
+		     	</div>
+			</div>
+		</section>
+					  				
+		
+		<!--品牌推荐-->
+		<section class="u-recommed">
+			<div class="urecommed-box">
+				<p class="font3 font-size4">
+					<strong>品牌推荐</strong>/Brand recommended
+				</p>
+				<ul class="da-thumbs" id="da-thumbs">
+					<li>
+						<a href="#" target="_blank" title="苹果"><img src="images/iphone.jpg"> <div><span>苹果</span></div></a>
+                       
+					</li>
+					<li>
+                        <a href="#" target="_blank" title="三星"><img src="images/sumsung.jpg"><div><span>三星</span></div></a>
+                        
+                    </li>
+					<li>
+                        <a href="#" target="_blank" title="华为"><img src="images/huawei.jpg"><div><span>华为</span></div></a>
+                        
+                    </li>
+					<li>
+                        <a href="#" target="_blank" title="魅族"><img src="images/meizu.jpg"><div><span>魅族</span></div></a>
+                        
+                    </li>
+					<li>
+                        <a href="#" target="_blank" title="诺基亚"><img src="images/nokia.jpg"><div><span>诺基亚</span></div></a>
+                        
+                    </li>
+					<li>
+                        <a href="#" target="_blank" title="联想"><img src="images/lenovo.jpg"><div><span>联想</span></div></a>
+                        
+                    </li>
+					<li>
+                        <a href="#" target="_blank" title="戴尔"><img src="images/dell.jpg"><div><span>戴尔</span></div></a>
+                        
+                    </li>
+					<li>
+                        <a href="#" target="_blank" title="惠普"><img src="images/hp.jpg"><div><span>惠普</span></div></a>
+                        
+                    </li>
+					<li>
+                        <a href="#" target="_blank" title="宏碁"><img src="images/acer.jpg"><div><span>宏碁</span></div></a>
+                        
+                    </li>
+					<li>
+                        <a href="#" target="_blank" title="尼康"><img src="images/nikon.jpg"><div><span>尼康</span></div></a>
+                        
+                    </li>
+					<li>
+                        <a href="#" target="_blank" title="佳能"><img src="images/canon.jpg"><div><span>佳能</span></div></a>
+                        
+                    </li>
+					<li>
+                        <a href="#" target="_blank" title="索尼"><img src="images/sony.jpg"><div><span>索尼</span></div></a>
+                        
+                    </li>
+					<li>
+                        <a href="#" target="_blank" title="宾得"><img src="images/pentax.jpg"><div><span>宾得</span></div></a>
+                        
+                    </li>
+					<li>
+                        <a href="#" target="_blank" title="卡西欧"><img src="images/casio.jpg"><div><span>卡西欧噢</span></div></a>
+                        
+                    </li>
+					<li>
+                        <a href="#" target="_blank" title="BEATS"><img src="images/beats.jpg"><div><span>BEATS</span></div></a>
+                        
+                    </li>
+					<li>
+                        <a href="#" target="_blank" title="duleisi"><img src="images/dls.jpg"><div><span>duleisi</span></div></a>
+                        
+                    </li>
+					<li>
+                        <a href="#" target="_blank" title="Dior 迪奥"><img src="images/dior.jpg"><div><span>Dior 迪奥</span></div></a>
+                         
+                    </li>
+					<li>
+                        <a href="#" target="_blank" title="Lancome兰蔻"><img src="images/lancome.jpg"><div><span>Lancome兰蔻</span></div></a>
+                        
+                    </li>
+					<li>
+                        <a href="#" target="_blank" title="雅诗兰黛"><img src="images/estee.jpg"><div><span>雅诗兰黛</span></div></a>
+                        
+                    </li>
+					<li>
+                        <a href="#" target="_blank" title="SK-II"><img src="images/skii.jpg"><div><span>SK-II</span></div></a>
+                        
+                    </li>
+				</ul>
+			</div>
+		</section>
+		<!--友情链接-->
+		<section class="u-link">
+			<div class="uLink-box">
+				<p class="font3 font-size5">
+					友情链接<span>/Links</span>
+				</p>
+				<ul class="link-list">
+					<li><a href="#" target="_blank" class="borderLeft">pc6官方下载</a></li>
+					<li><a href="#" target="_blank">9号下载</a></li>
+					<li><a href="#" target="_blank">7230下载</a></li>
+					<li><a href="#" target="_blank">shouji56</a></li>
+					<li><a href="#" target="_blank">统一手机站</a></li>
+					<li><a href="#" target="_blank">西西软件园</a></li>
+					<li><a href="#" target="_blank">当下软件园</a></li>
+				</ul>
+			</div>
+		</section>
+	</div>
+	<!-- end content -->
+	<!-- footer -->
+	<footer class="ft-wrap">
+		<div class="ft-main-box">
+		
+<ul class="ft-main">
+	<li class="left">
+		<strong class="block">分期说明</strong>
+		<a href="#" rel="nofollow" target="_blank">分期购物</a>
+	<li class="left">
+		<strong class="block">售后说明</strong>
+		<a href="#" rel="nofollow" target="_blank">退换货说明</a>
+		<a href="#" rel="nofollow" target="_blank">品牌真伪查询</a>
+
+	</li>
+	<li class="left">
+		<strong class="block">信用提现</strong>
+		<a href="#" rel="nofollow" target="_blank">提现（U基金）</a>
+	</li>
+	<li class="left">
+		<strong class="block">关于优分期</strong>
+		<a href="#" rel="nofollow" target="_blank">关于我们</a>
+		<a href="#" rel="nofollow" target="_blank">联系我们</a>
+		<a href="#" rel="nofollow" target="_blank">牛人加入</a>
+		<a href="#" rel="nofollow" target="_blank">校园招聘</a>
+	</li>
+	<li class="left ft-phoneapp">
+		<strong class="block">手机优分期</strong>
+		<a href="#" target="_blank" class="app-h5">http://www.17sucai.com/</a>
+		<a href="#" target="_blank" class="ft-btn app app-ios"><i class="icon-iconfont-ios inline-block"></i>iPhone</a>
+		<a href="/app/" target="_blank" class="ft-btn app app-android"><i class="icon-iconfont-android inline-block"></i>Android</a>
+	</li>
+	<li class="left ft-mobile">
+		<p><strong>400-081-0707</strong>
+			</br>周一至周日9：00-22：00</p>
+		<a href="#" target="_blank" class="ft-btn ft-customer">在线客服</a>
+	</li>
+</ul>			<div class="ft-copyright">
+		<ul class="ft-safety">
+			<li id="kx_verify" class="safety-1"><a href="#" target="_blank"></a></li>
+			<li class="safety-2">
+				<a href="#" target="_blank"></a>
+			</li>
+			<li class="safety-3">
+				<a href="#" target="_blank"></a>
+			</li>
+			<li class="safety-4">
+				<a href="#" target="_blank"></a>
+			</li>
+		</ul>
+		<div class="footer-info" >
+			<p>北京市公安局朝阳分局备案编号11010802015956|<a href="#" target="_blank">京ICP证备14020586号</a>|<a href="images/businessLicence.jpg" target="_blank">营业执照号：110108016963882</a>|<a href="javascript:void(0);" target="_blank">食品流通许可证号：SP1101081510244633</a> </p>
+			<p>京海食药监械经营许20150358号 | 京海食药监械经营备20150440号</p>
+			<p>公司名称：北京和创未来网络科技有限公司|公司地址：北京市海淀区上地东路5号院京蒙高科A座6层|联系方式：400-081-0707</p>
+			<p>Copyright 2014-2015,版权所有UFENQI.COM</p>
+		</div>
+	</div>
+		</div>
+	</footer>
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery.hoverdir.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
+

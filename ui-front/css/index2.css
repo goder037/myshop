@@ -1,0 +1,345 @@
+.wrapper{
+    width:1240px;
+    margin:0 auto;
+}
+.nmr{margin-right: 0!important;}
+/*banner图片*/
+.main-slide{
+    position:relative;
+     background:url(../images/ufund_pc_banner.jpg) no-repeat center center;
+    height:360px;
+    width:1420px;
+    margin:0 auto;
+}
+.main_btn{
+	background:url(../images/ufund_btn.png) no-repeat;
+	height:64px;
+	width:230px;
+	display:block;
+	position:absolute;
+	left:16.5%;
+	bottom:50px;
+}
+.main_box{
+	background:url(../images/ufund_bjj.png) no-repeat;
+	width:224px;
+	height:129px;
+	position:absolute;
+	right:16%;
+	bottom:108px;
+	padding:40px 0 0 5px;
+}
+.main_box .main_ios{
+	margin-right:13px;
+	
+}
+.main_box .main_and{
+	
+}
+.slide-items{
+    width:100%;
+    overflow: hidden;
+}
+.slide-items li{
+    text-align: center;
+    display:none;
+}
+.slide-items li.active{
+    display: block;
+}
+.slide-items li img{
+    width:100%;
+}
+/*.slide-buttons{*/
+    /*width:1000px;*/
+    /*margin: 0 auto;*/
+    /*position: relative;*/
+    /*top:40%;*/
+/*}*/
+.slide-prev,.slide-next{
+    position: absolute;
+    top:45%;
+    z-index: 99;
+    width:50px;
+    height: 50px;
+    border-radius: 5px;
+}
+.slide-prev{
+    left:20%;
+}
+.slide-next{
+    right:20%;
+}
+.icon-prev{
+    display: block;
+    width: 50px;
+    height: 50px;
+    z-index: 100;
+    background:url(../images/left-icon.png) no-repeat ;
+}
+.icon-next{
+    display: block;
+    width: 50px;
+    height: 50px;
+    z-index: 100;
+    background:url(../images/right-icon.png) no-repeat ;
+}
+.slide-prev:hover{
+    background-color: #E1E1E1;
+    border-radius: 5px;
+    opacity: 0.75;
+}
+.slide-prev:hover>.icon-prev{
+    background:url(../images/left-icon-hover.png) no-repeat ;
+}
+.slide-next:hover{
+    background-color: #E1E1E1;
+    border-radius: 5px;
+    opacity: 0.75;
+}
+.slide-next:hover>.icon-next{
+    background:url(../images/right-icon-hover.png) no-repeat ;
+}
+
+.slide-num{
+    position:absolute;
+    left:50%;
+    margin-left:-42.5px;
+    bottom:15px;
+    z-index:100;
+}
+.slide-num li{
+    width:15px;
+    height:15px;
+    float:left;
+    margin-left:15px;
+    background:#fff;
+    border-radius:50%;
+    display:inline margin-left:15px;
+    cursor:pointer;
+    opacity:0.5;
+}
+.slide-num li:last-child{
+    margin-right:15px;
+}
+.slide-num li.active{
+    width:15px;
+    height:15px;
+    background:#fc6710;
+}
+/*申请我的U基金*/
+.apply-my{
+    height:109px;
+    margin-top:32px;
+    background:url(../images/u_jijin.png) no-repeat center center;
+}
+.apply h1{
+    font-weight: bold;
+    margin-top:30px;
+}
+
+.apply{
+    width:980px;
+    margin:0 auto;
+}
+/*U基金选项*/
+.apply-options{
+    margin-top:10px;
+    overflow: hidden;
+}
+.apply-options li{
+    float:left;
+    position:relative;
+    border:1px solid #E1E1E1;
+    border-radius: 3px;
+    width:220px;
+    height:55px;
+    line-height: 55px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+    margin-right:25px;
+    cursor: pointer;
+}
+
+ #showFundInterestFreeSpan{
+	margin-left:250px;
+	display:inline-block;
+	width: 220px;
+	height: 35px;
+	text-align:center;
+	line-height: 35px;
+	color: #f00;
+	z-index: 222;
+}
+
+i.icon{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left:35px;
+    top:12.5px;
+}
+li.option-shop i.icon{
+    background:url(../images/icon-shop.png) no-repeat;
+}
+li.option-shop.active i.icon{
+    background:url(../images/icon-shop-hover.png) no-repeat;
+}
+li.option-dream i.icon{
+    background:url(../images/icon-dream.png) no-repeat;
+}
+li.option-dream.active i.icon{
+    background:url(../images/icon-dream-hover.png) no-repeat;
+}
+li.option-em i.icon{
+    background:url(../images/icon-em.png) no-repeat;
+}
+li.option-em.active i.icon{
+    background:url(../images/icon-em-hover.png) no-repeat;
+}
+li.option-emotion i.icon{
+    background:url(../images/icon-emotion.png) no-repeat;
+}
+li.option-emotion.active i.icon{
+    background:url(../images/icon-emotion-hover.png) no-repeat;
+}
+.apply-options li.active{
+    border:1px solid #fc6710;
+    color:#fc6710;
+}
+.apply-options li.active i.check{
+    position: absolute;
+    width:24px;
+    height: 21px;
+    right: -1px;
+    bottom:0;
+    background:url(../images/check-icon.png) no-repeat;
+}
+/*申请按钮*/
+.apply-button-box{
+    width:325px;
+    text-align: center;
+    /*height:74px;*/
+    margin:10px auto 30px auto;
+}
+.apply-button{
+    border:none;
+    display: block;
+    width:325px;
+    height:74px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    background:url(../images/u_button.png) no-repeat;
+}
+.apply-button:hover{
+    background:url(../images/u-buttonhover.png) no-repeat;
+}
+.u-service{
+    width:100%;
+    height:403px;
+    padding-top:35px;
+    padding-bottom: 75px;
+    background-color: #f6f6f6;
+}
+.u-howto{
+    width:100%;
+    height:744px;
+    margin-top:55px;
+    background:url(../images/fund-howandto.png) no-repeat center center;
+}
+#message{
+	text-align: center;
+	color: red;
+	height:50px;
+	line-height:50px;
+	font-size:16px;
+}
+/*U基金说明*/
+.ufund-tips-wrap{
+    width: 100%;
+    background-color: #efefef;
+    /*height: 100px;*/
+}
+.ufund-tips{
+    width: 1240px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.footer{
+    margin: 0!important;
+}
+.ufund-tips dt{
+    height: 35px;
+    line-height: 25px;
+    padding-top:10px ;
+    font-size: 16px;
+}
+.ufund-tips dd a{
+    color: #4eaccc;
+}
+.ufund-tips dd a:hover{
+    text-decoration: underline;
+}
+
+.ufund-tips dd{
+    height: 25px;
+    line-height: 25px;
+
+}
+/*还款计算器*/
+.count-wrap{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    background-color: #202020;
+    filter:alpha(opacity=90);
+    opacity:0.9;
+    font-size: 14px;
+    z-index: 100;
+}
+.count-close{
+    width:16px;
+    height:17px;
+    position:absolute;
+    top:-17px;
+    right:0;
+    background-image:url(../images/close.png);
+}
+.count-content{
+    margin: auto;
+    width: 974px;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    color:#fff;
+
+}
+.count-icon{
+    position: absolute;
+    left: -15px;
+    top: 17px;
+    width:19px;
+    height: 19px;
+    display: block;
+    background: url(../images/count-icon.png) no-repeat ;
+}
+.count-content span{
+    padding-left: 10px;
+}
+.count-content select{
+    width:100px;}
+.ffa{
+    color: #ff632a;}
+.count-content strong{
+    font-size: 18px;
+}
+.count-content var{
+    font-style: normal;
+}
+
+.img_center{
+	display: block; margin: 0 auto;
+}

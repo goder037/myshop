@@ -1,0 +1,78 @@
+.font-ea {
+    color: #4eaccc;
+}
+.font-fc {
+    color: #fc6710;
+}
+.font-error{
+    color: #f00;
+}
+.bg-ea{
+    background-color: #4eaccc;
+}
+.bg-ea:hover{
+    background-color: #3C94B3;
+}
+.bg-fc{
+    background-color: #FC6710;
+}
+.bg-fc:hover{
+    background-color: #F05602;
+}
+.bg-6,.bg-disable{
+    background-color: #999;
+}
+.bg-6:hover{
+    background-color: #666;
+}
+.bg-error{
+    background-color: #f00;
+}
+.bg-error:hover{
+    background-color: #C80C0C;
+ }
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.clearfix{
+    clear: both;
+}
+.clearfix:before{
+    content: "";
+    clear: both;
+}
+.clearfix:after{
+    content: "";
+    clear: both;
+
+}
+.pl{
+    padding-left: 10px;
+}
+.pr{
+    padding-right: 10px;
+}
+.tc{
+    text-align: center;
+}
+.disnone{
+    display: none;
+}
+.display {
+     display: block;
+ }
+.common-btn {
+    padding: 6px 10px;
+    /*height: 30px;*/
+    line-height: 18px!important;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px;
+    border: 0;
+    color: #FFF;
+    font-size: 14px;
+}
+input[type='checkbox'], input[type='radio']{_vertical-align:-1px;vertical-align:-2px;}

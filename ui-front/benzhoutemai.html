@@ -1,0 +1,2155 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>优分期大学生分期购物商城模板源码</title>
+<link type="text/css" rel="stylesheet" href="css/banner.css">
+<link type="text/css" rel="stylesheet" href="css/bin/index.css">
+<link type="text/css" rel="stylesheet" href="css/list.css">
+<link rel="stylesheet" href="css/app/header.css">
+<link rel="stylesheet" href="css/app/footer.css">
+<link rel="stylesheet" href="css/app/reset.css">
+<style>
+	section *{box-sizing:border-box;-moz-box-sizing:border-box; /* Firefox */}
+</style>
+</head>
+<body>
+<div class="head-top">
+  <div class="head-wrap">
+    <p class="head-top-left">
+        <span>欢迎来到优分期，更快更好的大学生信用消费平台，憋说话，吻我！</span>
+        <span class="vertical-line"></span>
+       <a href="shoujiyoufenqi.html" target="_blank"><i></i>手机优分期</a>
+    </p>
+    <ul class="head-top-right">
+            <li class="login list-item"><a href="login.html" rel="nofollow" class="grade-one">请【登录】</a></li>
+      <li class="login list-item"><a href="register.html"  rel="nofollow" class="grade-one" style="padding-right: 5px"> 【免费注册】</a></li>
+      <input type="hidden" name="_csrf" id="_csrf" value="49ae70ec-fc3e-4659-9981-2bb91805fe5b" />
+            <li class="vertical-line"></li>
+      <li class="user-box list-item top-hover-box">
+        <a href="/user/home" class="top-hover-link grade-one">我的优分期<var class="down-arrow icon-iconfont-arrow3"></var></a>
+          <ul class="top-hover">
+            <li class=""><a href="#" rel="nofollow">我的信用</a></li>
+            <li class=""><a href="#" rel="nofollow">我的收藏</a></li>
+            <li class=""><a href="#" rel="nofollow">我是大使</a></li>
+          </ul>
+      </li>
+      <li class="vertical-line"></li>
+      <li class="list-item"><a href="/user/order" rel="nofollow" class="grade-one">我的订单</a></li>
+      <li class="vertical-line"></li>
+      <li class="list-item"><a href="/user/payment/list" rel="nofollow" class="grade-one">我要还款</a></li>
+      <li class="vertical-line"></li>
+      <li class="help-box list-item top-hover-box"><a href="/help/info/help_center" rel="nofollow" class="top-hover-link grade-one">帮助中心<var class="down-arrow icon-iconfont-arrow3"></var></a>
+       <ul class="top-hover" id="help_nav_list">
+         <!-- <li><a href="/help/info/help_center#duola" rel="nofollow" target="_blank">哆啦钱包  </a></li> -->
+         <li><a href="#" rel="nofollow" target="_blank">分期说明</a></li>
+         <li><a href="#" rel="nofollow" target="_blank">售后说明</a></li>
+         <li><a href="#" rel="nofollow" target="_blank">信用提现</a></li>
+         <li><a href="#" rel="nofollow" target="_blank">还款说明</a></li>
+         <li><a href="#" rel="nofollow" target="_blank">反欺诈</a></li>
+
+       </ul>
+      </li>
+    </ul>
+  </div>
+
+</div>
+
+<div id="top-ad"><a class="top_active_ad" href="millions.html" title=""><img src="images/dingbubanner.jpg" alt=""></a></div>
+  <div id="top-notice"></div>
+<div id="top-ad"></div>
+
+<div class="header-search dib-wrap">
+	<a class="ulogo left" href="/"></a>
+	<div class="search-box left dib">
+		<input type="text" placeholder="搜索您需要的商品" class="dib" id="searchTxtId" name="q" value="">
+		<button class="dib" id="keyWordSearchId">
+			搜索
+		</button>
+	</div>
+  <ul class="right header-qq-num">
+    <li class="r-item top-qq">
+      <a href="#" target="_blank">
+        <i></i>在线咨询
+      </a>
+    </li>
+	<li class="r-item tel-num"><i></i>400-081-0707</li>
+    <li class="r-item anti-cheat">
+      <a href="/help/info/fanqizha" target="_blank">
+        <i></i>反欺诈
+      </a>
+    </li>
+	</ul>
+</div>
+
+
+<section>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css"/>
+		<style>
+		*{margin: 0;padding:0;}
+		ul li{
+			list-style: none;
+		}
+		html{
+			font-family: "微软雅黑";
+		}
+		a{
+			text-decoration: none;
+			color:#333;
+		}		
+        .top-qq{padding: 0 6px!important;}
+		.com_main{
+		     background-color: #38d6f4;
+		     padding-bottom: 1%;
+		     padding-top:1%;		    
+		}		
+		.main_div{
+			width:24%;
+			float:left;
+			background-color: #fff;
+			margin-right: 1%;
+			margin-bottom: 1%;	
+			overflow: hidden;	
+			position: relative;	
+		}				
+		.price{
+			font-size: 24px;
+		}		
+		.com_list{
+			width:1000px;
+			margin: 0 auto;			
+			background-color:rgba(252,252,252,0.2);
+			padding-left: 10px;
+			padding-top:10px;
+		}		
+	    .title_img{		   	
+	   		display: block;		   
+	    }		   
+		.cover_a{
+		  	padding: 10px;	 
+		  	display: block;
+		}
+	  	.cover_a img{
+		    width: 220px;
+		  	height:220px;
+		  	overflow: hidden;
+		  	display: block;
+		  	margin: 0 auto;
+	  	}
+		dl{
+		    padding: 2%;		    
+		}		
+		dt{
+			line-height: 22px;
+			height:22px;
+			overflow:hidden;
+			text-overflow:ellipsis;            
+            white-space:nowrap;
+            text-align: center; 
+            font-size: 14px;  
+            font-weight:bold;
+		}
+		dd{
+			line-height: 22px;
+			height:22px;
+			font-size: 0.9rem;
+			overflow:hidden;
+			text-overflow:ellipsis;            
+            white-space:nowrap;
+			padding:0 10px;
+            font-size:12px;
+            text-align: center;
+            color:#ef004f;
+		}
+		dd span{
+			font-size:1.2rem;
+			font-weight: bold;
+		}
+     	.ft-mobile strong{font-size:20px!important;}
+		.click_a{
+			background-color: #fc6103;
+			color: #fff;
+			font-size: 1rem;
+			text-align: center;
+			line-height: 35px;
+			height: 35px;
+            display:block;
+            width:55%;
+            margin:0 auto;
+            border-radius: 5px;
+            margin-top:5px;
+		}								
+		.clearfix{
+			overflow: hidden;
+			clear: both;
+		}		
+		.descript_p{
+			text-align: center;
+			height:12px;
+			line-height:12px;         
+			margin-top: 6px;        
+			overflow:hidden;
+			text-overflow:ellipsis;            
+            white-space:nowrap;
+            font-size: 14px;  
+            font-weight:bold;
+		}
+		.title_div1{
+			width:1010px;
+			margin:0 auto;
+			margin-bottom:25px;
+		}	     		
+		.template_top{
+			width:100%;
+			background: #38d6f4;
+		}
+		.template_top_img{
+			display: block;
+			width:100%;
+			height:360px;
+		}
+		.sider_bar {
+			z-index: 20; 
+			position: fixed; 
+			display: none; 
+			top: 489px;			
+		}
+		.title_cover{
+			width:1000px;
+			text-align: center;
+			overflow: hidden;
+			margin:0 auto;
+			margin-bottom:16px;
+		}
+		.line{
+			margin-top:6px;
+			width:381px;			
+			float: left;
+		}
+		.title_word{
+			width:200px;
+			text-align: center;
+			float: left;
+			font-size:20px;
+			/*font-weight:bold;*/
+			font-family: "微软雅黑";
+			border-radius: 18px;
+			background: #fff;
+			color:#38d6f4;
+			margin:0 19px;
+            height: 30px;
+            line-height: 30px;
+		}
+		.line1{
+			width:148px;
+			height:50px;
+			border:1px solid #eee;
+			float: left;
+		}
+		.ad_img{
+			background:#fdf1db;
+			width:100%;
+			height:150px;
+			text-align: center;
+		}
+		.ad_img img{
+			width:1010px;
+			margin:0 auto;
+			height:150px;
+		}
+		.color{
+			color:#fff!important;
+		}		
+		.bottom_img{
+			display: block;
+			width: 100%;
+			height:34px;
+			/*position: absolute;*/
+			z-index: -100;
+		}
+		.bottom_img img{
+			display: block;
+		}		
+		.up{
+			-webkit-animation: gelatine 0.5s 1;
+		    animation: gelatine 0.5s 1;
+		    opacity: 0.9;
+		}
+		@-webkit-keyframes gelatine {
+			  25% {
+	        -webkit-transform: translateY(8px);
+		    }
+		    50%, 100% {
+		        -webkit-transform: translateY(0);
+		    }
+		    75% {
+		        -webkit-transform: translateY(-8px);
+		    }
+		}
+		.down{
+			-webkit-animation: bounceDown 0.5s 1;
+		    animation: bounceDown 0.5s 1;
+		}
+		@-webkit-keyframes bounceDown {
+		    25% {
+		        -webkit-transform: translateY(-4px);
+		    }
+		    50%, 100% {
+		        -webkit-transform: translateY(0);
+		    }
+		    75% {
+		        -webkit-transform: translateY(4px);
+		    }
+		}
+		.main_cover{
+			z-index: 100;
+			position: absolute;
+			top:0;
+			left:0;
+right:0;
+		}
+		</style>
+		
+	</head>
+	<body>		   	
+	    <div class="template_top">
+	    	<img src="images/temai-top.jpg" class="template_top_img">
+	    </div>	       
+		<div class="com_main">
+			<p class="title_cover">
+				<span class="line"><img src="images/line-left.jpg"></span>
+				<span class="title_word">手机通讯.TOP16</span>
+				<span class="line"><img src="images/line-right.jpg"></span>
+			</p>		
+			<div class="com_list clearfix">				
+							        				<div class="main_div">
+					<div class="main_cover">
+						<a href="/items/detail/14231" title="苹果Apple iPhone 6s国行 16G 玫瑰金色 "><p class="descript_p"  title="赠礼包，送完为止"></p></a>
+						<a href="/items/detail/14231" class="cover_a" title="苹果Apple iPhone 6s国行 16G 玫瑰金色 ">
+							<img class="lazy" data-original="images/ITEM_14231_1456998346293_1.jpg" src="images/gray-bg.jpg" alt="" title="苹果Apple iPhone 6s国行 16G 玫瑰金色 "/>
+						</a>
+						<a href="/items/detail/14231" title="苹果Apple iPhone 6s国行 16G 玫瑰金色 ">
+							<dl>
+								<dt title="苹果Apple iPhone 6s国行 16G 玫瑰金色 "> 苹果Apple iPhone 6s国行 16G 玫瑰金色 </dt>							
+								<dd>月供：￥<span>264.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="/items/detail/14231" title="苹果Apple iPhone 6s国行 16G 玫瑰金色 ">售价：4458.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>													
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="/items/detail/2715" title="苹果 iPhone 6 16G版 4G手机 金色"><p class="descript_p"  title="国行正品 品质保证"></p></a>
+						<a href="/items/detail/2715" class="cover_a" title="苹果 iPhone 6 16G版 4G手机 金色">
+							<img class="lazy" src="images/ITEM_2715_1448448107077_1.jpg" alt="" title="苹果 iPhone 6 16G版 4G手机 金色"/>
+						</a>
+						<a href="/items/detail/2715" title="苹果 iPhone 6 16G版 4G手机 金色">
+							<dl>
+								<dt title="苹果 iPhone 6 16G版 4G手机 金色"> 苹果 iPhone 6 16G版 4G手机 金色</dt>							
+								<dd>月供：￥<span>236.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="/items/detail/2715" title="苹果 iPhone 6 16G版 4G手机 金色">售价：3988.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>													
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="/items/detail/14223" title="苹果Apple iPhone 6s 16G 金色 "><p class="descript_p"  title="国行正品 品质保证"></p></a>
+						<a href="/items/detail/14223" class="cover_a" title="苹果Apple iPhone 6s 16G 金色 ">
+							<img class="lazy" src="images/ITEM_14223_1456998242916_1.jpg" alt="" title="苹果Apple iPhone 6s 16G 金色 "/>
+						</a>
+						<a href="/items/detail/14223" title="苹果Apple iPhone 6s 16G 金色 ">
+							<dl>
+								<dt title="苹果Apple iPhone 6s 16G 金色 "> 苹果Apple iPhone 6s 16G 金色 </dt>							
+								<dd>月供：￥<span>264.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="/items/detail/14223" title="苹果Apple iPhone 6s 16G 金色 ">售价：4458.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>													
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="/items/detail/28468" title="小米 5 全网通标准版4G手机"><p class="descript_p"  title="3GB内存 32GB 赠送自拍杆"></p></a>
+						<a href="/items/detail/28468" class="cover_a" title="小米 5 全网通标准版4G手机">
+							<img class="lazy" src="images/ITEM_28468_1456902749234_1.jpg" alt="" title="小米 5 全网通标准版4G手机"/>
+						</a>
+						<a href="/items/detail/28468" title="小米 5 全网通标准版4G手机">
+							<dl>
+								<dt title="小米 5 全网通标准版4G手机"> 小米 5 全网通标准版4G手机</dt>							
+								<dd>月供：￥<span>141.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="小米 5 全网通标准版4G手机">售价：2699.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>													
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="/items/detail/28586" title="苹果 iPhone 5s国行 16G 金色 "><p class="descript_p"  title="开放版4G手机"></p></a>
+						<a href="/items/detail/28586" class="cover_a" title="苹果 iPhone 5s国行 16G 金色 ">
+							<img class="lazy" src="images/ITEM_28586_1456977361254_1.jpg" alt="" title="苹果 iPhone 5s国行 16G 金色 "/>
+						</a>
+						<a href="/items/detail/28586" title="苹果 iPhone 5s国行 16G 金色 ">
+							<dl>
+								<dt title="苹果 iPhone 5s国行 16G 金色 "> 苹果 iPhone 5s国行 16G 金色 </dt>							
+								<dd>月供：￥<span>141.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="/items/detail/28586" title="苹果 iPhone 5s国行 16G 金色 ">售价：2388.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>													
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="乐视 乐1S  移动联通4G手机 双卡双待"><p class="descript_p"  title="32GB 金色 赠手机壳+贴膜"></p></a>
+						<a href="#" class="cover_a" title="乐视 乐1S  移动联通4G手机 双卡双待">
+							<img class="lazy" src="images/SKUGROUP_9196_1.jpg" alt="" title="乐视 乐1S  移动联通4G手机 双卡双待"/>
+						</a>
+						<a href="#" title="乐视 乐1S  移动联通4G手机 双卡双待">
+							<dl>
+								<dt title="乐视 乐1S  移动联通4G手机 双卡双待"> 乐视 乐1S  移动联通4G手机 双卡双待</dt>							
+								<dd>月供：￥<span>94.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="乐视 乐1S  移动联通4G手机 双卡双待">售价：1236.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>													
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="vivo X6 双4G手机 4GB+32GB  金色"><p class="descript_p"  title="首次还款后，返100元现金券"></p></a>
+						<a href="#" class="cover_a" title="vivo X6 双4G手机 4GB+32GB  金色">
+							<img class="lazy" src="images/SKUGROUP_10104_1.jpg" alt="" title="vivo X6 双4G手机 4GB+32GB  金色"/>
+						</a>
+						<a href="#" title="vivo X6 双4G手机 4GB+32GB  金色">
+							<dl>
+								<dt title="vivo X6 双4G手机 4GB+32GB  金色"> vivo X6 双4G手机 4GB+32GB  金色</dt>							
+								<dd>月供：￥<span>132.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="vivo X6 双4G手机 4GB+32GB  金色">售价：2525.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>													
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="苹果 iPhone 6国行 16G版 "><p class="descript_p"  title="4G手机 银色"></p></a>
+						<a href="#" class="cover_a" title="苹果 iPhone 6国行 16G版 ">
+							<img class="lazy"src="images/ITEM_2720_1436315083677_1.jpg" alt="" title="苹果 iPhone 6国行 16G版 "/>
+						</a>
+						<a href="#" title="苹果 iPhone 6国行 16G版 ">
+							<dl>
+								<dt title="苹果 iPhone 6国行 16G版 "> 苹果 iPhone 6国行 16G版 </dt>							
+								<dd>月供：￥<span>236.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="苹果 iPhone 6国行 16G版 ">售价：3988.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>													
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="苹果Apple iPhone 6s国行  4G手机"><p class="descript_p"  title="16G 深空灰色"></p></a>
+						<a href="#" class="cover_a" title="苹果Apple iPhone 6s国行  4G手机">
+							<img class="lazy" src="images/ITEM_14222_1443182409766_1.jpg" alt="" title="苹果Apple iPhone 6s国行  4G手机"/>
+						</a>
+						<a href="#" title="苹果Apple iPhone 6s国行  4G手机">
+							<dl>
+								<dt title="苹果Apple iPhone 6s国行  4G手机"> 苹果Apple iPhone 6s国行  4G手机</dt>							
+								<dd>月供：￥<span>264.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="苹果Apple iPhone 6s国行  4G手机">售价：4458.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>													
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="苹果Apple iPhone 6s 4G手机"><p class="descript_p"  title="国行  16G 银色"></p></a>
+						<a href="#" class="cover_a" title="苹果Apple iPhone 6s 4G手机">
+							<img class="lazy" src="images/ITEM_14230_1443182251848_1.jpg" alt="" title="苹果Apple iPhone 6s 4G手机"/>
+						</a>
+						<a href="#" title="苹果Apple iPhone 6s 4G手机">
+							<dl>
+								<dt title="苹果Apple iPhone 6s 4G手机"> 苹果Apple iPhone 6s 4G手机</dt>							
+								<dd>月供：￥<span>264.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="苹果Apple iPhone 6s 4G手机">售价：4458.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>													
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="OPPO R7 Plus全网通版4G+64G内存 金色 "><p class="descript_p"  title="赠蓝牙音箱：首次还款后，返100元现金券"></p></a>
+						<a href="#" class="cover_a" title="OPPO R7 Plus全网通版4G+64G内存 金色 ">
+							<img class="lazy" src="images/ITEM_11807_1448616221122_1.jpg" alt="" title="OPPO R7 Plus全网通版4G+64G内存 金色 "/>
+						</a>
+						<a href="#" title="OPPO R7 Plus全网通版4G+64G内存 金色 ">
+							<dl>
+								<dt title="OPPO R7 Plus全网通版4G+64G内存 金色 "> OPPO R7 Plus全网通版4G+64G内存 金色 </dt>							
+								<dd>月供：￥<span>176.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="OPPO R7 Plus全网通版4G+64G内存 金色 ">售价：2980.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>													
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="苹果Apple iPhone 6s 4G手机"><p class="descript_p"  title="国行 64G 玫瑰金色"></p></a>
+						<a href="#" class="cover_a" title="苹果Apple iPhone 6s 4G手机">
+							<img class="lazy" src="images/ITEM_14225_1456998320712_1.jpg" alt="" title="苹果Apple iPhone 6s 4G手机"/>
+						</a>
+						<a href="#" title="苹果Apple iPhone 6s 4G手机">
+							<dl>
+								<dt title="苹果Apple iPhone 6s 4G手机"> 苹果Apple iPhone 6s 4G手机</dt>							
+								<dd>月供：￥<span>325.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="苹果Apple iPhone 6s 4G手机">售价：5499.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>													
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="/items/detail/29344" title="三星 S7 32G版 4G手机 双卡双待"><p class="descript_p"  title="【新品官网同步首发】"></p></a>
+						<a href="/items/detail/29344" class="cover_a" title="三星 S7 32G版 4G手机 双卡双待">
+							<img class="lazy" src="images/SKUGROUP_12600_1.jpg" alt="" title="三星 S7 32G版 4G手机 双卡双待"/>
+						</a>
+						<a href="/items/detail/29344" title="三星 S7 32G版 4G手机 双卡双待">
+							<dl>
+								<dt title="三星 S7 32G版 4G手机 双卡双待"> 三星 S7 32G版 4G手机 双卡双待</dt>							
+								<dd>月供：￥<span>255.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="三星 S7 32G版 4G手机 双卡双待">售价：4888.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>													
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="vivo Xplay5曲屏全网通 香槟金"><p class="descript_p"  title="首次还款后，返100元现金券"></p></a>
+						<a href="#" class="cover_a" title="vivo Xplay5曲屏全网通 香槟金">
+							<img class="lazy" src="images/SKUGROUP_12591_1.jpg" alt="" title="vivo Xplay5曲屏全网通 香槟金"/>
+						</a>
+						<a href="#" title="vivo Xplay5曲屏全网通 香槟金">
+							<dl>
+								<dt title="vivo Xplay5曲屏全网通 香槟金"> vivo Xplay5曲屏全网通 香槟金</dt>							
+								<dd>月供：￥<span>193.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="vivo Xplay5曲屏全网通 香槟金">售价：3698.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>													
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="OPPO R9 全网通4G手机 双卡双待"><p class="descript_p"  title="首次还款后，返100元现金券"></p></a>
+						<a href="#" class="cover_a" title="OPPO R9 全网通4G手机 双卡双待">
+							<img class="lazy" src="images/SKUGROUP_12833_1.jpg" alt="" title="OPPO R9 全网通4G手机 双卡双待"/>
+						</a>
+						<a href="#" title="OPPO R9 全网通4G手机 双卡双待">
+							<dl>
+								<dt title="OPPO R9 全网通4G手机 双卡双待"> OPPO R9 全网通4G手机 双卡双待</dt>							
+								<dd>月供：￥<span>151.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="OPPO R9 全网通4G手机 双卡双待">售价：2899.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>													
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="小米4S 全网通4G智能手机 金"><p class="descript_p"  title="3GB+64GB 标准版 赠自拍杆"></p></a>
+						<a href="#" class="cover_a" title="小米4S 全网通4G智能手机 金">
+							<img class="lazy" src="images/SKUGROUP_12336_1.jpg" alt="" title="小米4S 全网通4G智能手机 金"/>
+						</a>
+						<a href="#" title="小米4S 全网通4G智能手机 金">
+							<dl>
+								<dt title="小米4S 全网通4G智能手机 金"> 小米4S 全网通4G智能手机 金</dt>							
+								<dd>月供：￥<span>122.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="小米4S 全网通4G智能手机 金">售价：1858.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>													
+							</div>
+		</div>
+		<div class="com_main">
+			<p class="title_cover">
+				<span class="line"><img src="images/line-left.jpg"></span>
+				<span class="title_word">电脑平板.TOP12</span>
+				<span class="line"><img src="images/line-right.jpg"></span>
+			</p>		
+			<div class="com_list clearfix">				
+							        				<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="苹果 iPad Air 2 MH0W2CH/A WiFi版 "><p class="descript_p"  title="3月大促送壳、膜、防尘塞"></p></a>
+						<a href="#" class="cover_a" title="苹果 iPad Air 2 MH0W2CH/A WiFi版 ">
+							<img class="lazy" src="images/item_2756_1.jpg" alt="" title="苹果 iPad Air 2 MH0W2CH/A WiFi版 "/>
+						</a>
+						<a href="#" title="苹果 iPad Air 2 MH0W2CH/A WiFi版 ">
+							<dl>
+								<dt title="苹果 iPad Air 2 MH0W2CH/A WiFi版 "> 苹果 iPad Air 2 MH0W2CH/A WiFi版 </dt>							
+								<dd>月供：￥<span>156.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="苹果 iPad Air 2 MH0W2CH/A WiFi版 ">售价：2999.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>													
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="苹果平板 MINI 2 16G 银 WIFI ME279CH/A "><p class="descript_p"  title="3月大促送壳、膜、防尘塞。"></p></a>
+						<a href="#" class="cover_a" title="苹果平板 MINI 2 16G 银 WIFI ME279CH/A ">
+							<img class="lazy" src="images/ITEM_666_1425957459826_1.jpg" alt="" title="苹果平板 MINI 2 16G 银 WIFI ME279CH/A "/>
+						</a>
+						<a href="#" title="苹果平板 MINI 2 16G 银 WIFI ME279CH/A ">
+							<dl>
+								<dt title="苹果平板 MINI 2 16G 银 WIFI ME279CH/A "> 苹果平板 MINI 2 16G 银 WIFI ME279CH/A </dt>							
+								<dd>月供：￥<span>135.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="苹果平板 MINI 2 16G 银 WIFI ME279CH/A ">售价：1866.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>													
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="Apple iPad mini 4 MK9J2CH 金"><p class="descript_p"  title=" 7.9英寸 64G WLAN "></p></a>
+						<a href="#" class="cover_a" title="Apple iPad mini 4 MK9J2CH 金">
+							<img class="lazy" src="images/ITEM_13812_1442915504319_1.jpg" alt="" title="Apple iPad mini 4 MK9J2CH 金"/>
+						</a>
+						<a href="#" title="Apple iPad mini 4 MK9J2CH 金">
+							<dl>
+								<dt title="Apple iPad mini 4 MK9J2CH 金"> Apple iPad mini 4 MK9J2CH 金</dt>							
+								<dd>月供：￥<span>178.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="Apple iPad mini 4 MK9J2CH 金">售价：3419.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>													
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="苹果 MacBook Air 13.3英寸笔记本电脑"><p class="descript_p"  title=" i5/4GB/128GB "></p></a>
+						<a href="#" class="cover_a" title="苹果 MacBook Air 13.3英寸笔记本电脑">
+							<img class="lazy" src="images/ITEM_5501_1428574889648_1.jpg" alt="" title="苹果 MacBook Air 13.3英寸笔记本电脑"/>
+						</a>
+						<a href="#" title="苹果 MacBook Air 13.3英寸笔记本电脑">
+							<dl>
+								<dt title="苹果 MacBook Air 13.3英寸笔记本电脑"> 苹果 MacBook Air 13.3英寸笔记本电脑</dt>							
+								<dd>月供：￥<span>323.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="苹果 MacBook Air 13.3英寸笔记本电脑">售价：6199.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>													
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="神舟 战神 K610D-I5D3 游戏笔记本"><p class="descript_p"  title="3月大促送包、鼠、键盘膜。"></p></a>
+						<a href="#" class="cover_a" title="神舟 战神 K610D-I5D3 游戏笔记本">
+							<img class="lazy" src="images/ITEM_20457_1456282591365_1.jpg" alt="" title="神舟 战神 K610D-I5D3 游戏笔记本"/>
+						</a>
+						<a href="#" title="神舟 战神 K610D-I5D3 游戏笔记本">
+							<dl>
+								<dt title="神舟 战神 K610D-I5D3 游戏笔记本"> 神舟 战神 K610D-I5D3 游戏笔记本</dt>							
+								<dd>月供：￥<span>189.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="神舟 战神 K610D-I5D3 游戏笔记本">售价：3199.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>													
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="宁美国度台式电脑主机 DIY组装机游戏主机"><p class="descript_p"  title="四核i5 4590/GTX750Ti独显"></p></a>
+						<a href="#" class="cover_a" title="宁美国度台式电脑主机 DIY组装机游戏主机">
+							<img class="lazy" src="images/SKUGROUP_7108_1.png" alt="" title="宁美国度台式电脑主机 DIY组装机游戏主机"/>
+						</a>
+						<a href="#" title="宁美国度台式电脑主机 DIY组装机游戏主机">
+							<dl>
+								<dt title="宁美国度台式电脑主机 DIY组装机游戏主机"> 宁美国度台式电脑主机 DIY组装机游戏主机</dt>							
+								<dd>月供：￥<span>175.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="宁美国度台式电脑主机 DIY组装机游戏主机">售价：3358.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>													
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="神舟(HASEE)战神15.6英寸游戏本灰色"><p class="descript_p"  title=" i7-4710MQ 4G 500G GTX950M 2G独显 1080P"></p></a>
+						<a href="#" class="cover_a" title="神舟(HASEE)战神15.6英寸游戏本灰色">
+							<img class="lazy" src="images/SKUGROUP_3669_1.jpg" alt="" title="神舟(HASEE)战神15.6英寸游戏本灰色"/>
+						</a>
+						<a href="#" title="神舟(HASEE)战神15.6英寸游戏本灰色">
+							<dl>
+								<dt title="神舟(HASEE)战神15.6英寸游戏本灰色"> 神舟(HASEE)战神15.6英寸游戏本灰色</dt>							
+								<dd>月供：￥<span>223.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="神舟(HASEE)战神15.6英寸游戏本灰色">售价：4274.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>													
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="雷神 15.6英寸游戏本 2G独显i7四核"><p class="descript_p"  title=" 4G内存 128G固态+1T硬盘"></p></a>
+						<a href="#" class="cover_a" title="雷神 15.6英寸游戏本 2G独显i7四核">
+							<img class="lazy" src="images/SKUGROUP_9393_1.jpg" alt="" title="雷神 15.6英寸游戏本 2G独显i7四核"/>
+						</a>
+						<a href="#" title="雷神 15.6英寸游戏本 2G独显i7四核">
+							<dl>
+								<dt title="雷神 15.6英寸游戏本 2G独显i7四核"> 雷神 15.6英寸游戏本 2G独显i7四核</dt>							
+								<dd>月供：￥<span>287.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="雷神 15.6英寸游戏本 2G独显i7四核">售价：5499.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>													
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="华硕 15.6英寸笔记本 黑"><p class="descript_p"  title="i5-5200U 4G 500G R5-M320 2G独显"></p></a>
+						<a href="#" class="cover_a" title="华硕 15.6英寸笔记本 黑">
+							<img class="lazy" src="images/SKUGROUP_6101_1.jpg" alt="" title="华硕 15.6英寸笔记本 黑"/>
+						</a>
+						<a href="#" title="华硕 15.6英寸笔记本 黑">
+							<dl>
+								<dt title="华硕 15.6英寸笔记本 黑"> 华硕 15.6英寸笔记本 黑</dt>							
+								<dd>月供：￥<span>171.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="华硕 15.6英寸笔记本 黑">售价：3277.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>													
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="神舟战神15.6英寸游戏本笔记本电脑"><p class="descript_p"  title="2950M 4G 128GB  2G独显"></p></a>
+						<a href="#" class="cover_a" title="神舟战神15.6英寸游戏本笔记本电脑">
+							<img class="lazy" data-original="http://cdn.ufenqi.com//SKUGROUP_10521_1.jpg" src="images/SKUGROUP_10521_1.jpg" alt="" title="神舟战神15.6英寸游戏本笔记本电脑"/>
+						</a>
+						<a href="#" title="神舟战神15.6英寸游戏本笔记本电脑">
+							<dl>
+								<dt title="神舟战神15.6英寸游戏本笔记本电脑"> 神舟战神15.6英寸游戏本笔记本电脑</dt>							
+								<dd>月供：￥<span>143.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="神舟战神15.6英寸游戏本笔记本电脑">售价：2418.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>													
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="宁美国度AMD 台式组装电脑主机"><p class="descript_p"  title="870K/R7 240/8G"></p></a>
+						<a href="#" class="cover_a" title="宁美国度AMD 台式组装电脑主机">
+							<img class="lazy" src="images/SKUGROUP_7121_1.jpg" alt="" title="宁美国度AMD 台式组装电脑主机"/>
+						</a>
+						<a href="#" title="宁美国度AMD 台式组装电脑主机">
+							<dl>
+								<dt title="宁美国度AMD 台式组装电脑主机"> 宁美国度AMD 台式组装电脑主机</dt>							
+								<dd>月供：￥<span>123.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="宁美国度AMD 台式组装电脑主机">售价：2080.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>													
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="华硕 15.6英寸笔记本"><p class="descript_p"  title="i5-5200U 8G 500G 2G独显"></p></a>
+						<a href="#" class="cover_a" title="华硕 15.6英寸笔记本">
+							<img class="lazy" data-original="http://cdn.ufenqi.com//SKUGROUP_9792_1.jpg" src="images/SKUGROUP_9792_1.jpg" alt="" title="华硕 15.6英寸笔记本"/>
+						</a>
+						<a href="#" title="华硕 15.6英寸笔记本">
+							<dl>
+								<dt title="华硕 15.6英寸笔记本"> 华硕 15.6英寸笔记本</dt>							
+								<dd>月供：￥<span>189.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="华硕 15.6英寸笔记本">售价：3616.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>													
+							</div>
+		</div>
+		<div class="com_main">
+			<p class="title_cover">
+				<span class="line"><img src="images/line-left.jpg"></span>
+				<span class="title_word">手表礼品.TOP12</span>
+				<span class="line"><img src="images/line-right.jpg"></span>
+			</p>
+			<div class="com_list clearfix">								  				     
+							        				<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="CK CITY系列商务时尚石英男表"><p class="descript_p"  title="送价值199元血龙木手串"></p></a>
+						<a href="#" class="cover_a" title="CK CITY系列商务时尚石英男表">
+							<img class="lazy" src="images/ITEM_16130_1451542627556_1.jpg" alt="" title="CK CITY系列商务时尚石英男表"/>
+						</a>
+						<a href="#" title="CK CITY系列商务时尚石英男表">
+							<dl>
+								<dt title="CK CITY系列商务时尚石英男表"> CK CITY系列商务时尚石英男表</dt>							
+								<dd>月供：￥<span>93.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="CK CITY系列商务时尚石英男表">售价：1119.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="DW 超薄时尚男表"><p class="descript_p"  title="送价值199元血龙木手串"></p></a>
+						<a href="#" class="cover_a" title="DW 超薄时尚男表">
+							<img class="lazy" src="images/ITEM_14764_1451543730289_1.jpg" alt="" title="DW 超薄时尚男表"/>
+						</a>
+						<a href="#" title="DW 超薄时尚男表">
+							<dl>
+								<dt title="DW 超薄时尚男表"> DW 超薄时尚男表</dt>							
+								<dd>月供：￥<span>93.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="DW 超薄时尚男表">售价：999.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="卡西欧 G-SHOCK系列多功能运动男表"><p class="descript_p"  title="赠送价值99元皮带"></p></a>
+						<a href="#" class="cover_a" title="卡西欧 G-SHOCK系列多功能运动男表">
+							<img class="lazy" src="images/ITEM_17778_1451386585051_1.jpg" alt="" title="卡西欧 G-SHOCK系列多功能运动男表"/>
+						</a>
+						<a href="#" title="卡西欧 G-SHOCK系列多功能运动男表">
+							<dl>
+								<dt title="卡西欧 G-SHOCK系列多功能运动男表"> 卡西欧 G-SHOCK系列多功能运动男表</dt>							
+								<dd>月供：￥<span>105.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="卡西欧 G-SHOCK系列多功能运动男表">售价：869.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="天梭 力洛克系列机械男表"><p class="descript_p"  title="世界名表 经典爆款 极致低价"></p></a>
+						<a href="#" class="cover_a" title="天梭 力洛克系列机械男表">
+							<img class="lazy" src="images/ITEM_13470_1451386627677_1.jpg" alt="" title="天梭 力洛克系列机械男表"/>
+						</a>
+						<a href="#" title="天梭 力洛克系列机械男表">
+							<dl>
+								<dt title="天梭 力洛克系列机械男表"> 天梭 力洛克系列机械男表</dt>							
+								<dd>月供：￥<span>138.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="天梭 力洛克系列机械男表">售价：2642.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="卡西欧 多功能防水运动男表 白盘钢带"><p class="descript_p"  title="赠送价值99元皮带"></p></a>
+						<a href="#" class="cover_a" title="卡西欧 多功能防水运动男表 白盘钢带">
+							<img class="lazy" src="images/ITEM_13772_1451386576157_1.jpg" alt="" title="卡西欧 多功能防水运动男表 白盘钢带"/>
+						</a>
+						<a href="#" title="卡西欧 多功能防水运动男表 白盘钢带">
+							<dl>
+								<dt title="卡西欧 多功能防水运动男表 白盘钢带"> 卡西欧 多功能防水运动男表 白盘钢带</dt>							
+								<dd>月供：￥<span>100.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="卡西欧 多功能防水运动男表 白盘钢带">售价：829.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="天梭 俊雅系列石英男表"><p class="descript_p"  title="浑然天成 成就自我"></p></a>
+						<a href="#" class="cover_a" title="天梭 俊雅系列石英男表">
+							<img class="lazy" src="images/ITEM_14357_1443506727760_1.jpg" alt="" title="天梭 俊雅系列石英男表"/>
+						</a>
+						<a href="#" title="天梭 俊雅系列石英男表">
+							<dl>
+								<dt title="天梭 俊雅系列石英男表"> 天梭 俊雅系列石英男表</dt>							
+								<dd>月供：￥<span>123.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="天梭 俊雅系列石英男表">售价：2361.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="/items/detail/16179" title="CK ACCENT系列皮带圆盘石英男表"><p class="descript_p"  title="送价值199元饰品"></p></a>
+						<a href="/items/detail/16179" class="cover_a" title="CK ACCENT系列皮带圆盘石英男表">
+							<img class="lazy" src="images/ITEM_16179_1449652790555_1.jpg" alt="" title="CK ACCENT系列皮带圆盘石英男表"/>
+						</a>
+						<a href="/items/detail/16179" title="CK ACCENT系列皮带圆盘石英男表">
+							<dl>
+								<dt title="CK ACCENT系列皮带圆盘石英男表"> CK ACCENT系列皮带圆盘石英男表</dt>							
+								<dd>月供：￥<span>109.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="/items/detail/16179" title="CK ACCENT系列皮带圆盘石英男表">售价：1169.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="卡西欧时尚皮带计时石英男表"><p class="descript_p"  title="EDIFICE系列 低价大促"></p></a>
+						<a href="#" class="cover_a" title="卡西欧时尚皮带计时石英男表">
+							<img class="lazy" src="images/ITEM_13781_1442909134561_1.jpg" alt="" title="卡西欧时尚皮带计时石英男表"/>
+						</a>
+						<a href="#" title="卡西欧时尚皮带计时石英男表">
+							<dl>
+								<dt title="卡西欧时尚皮带计时石英男表"> 卡西欧时尚皮带计时石英男表</dt>							
+								<dd>月供：￥<span>91.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="卡西欧时尚皮带计时石英男表">售价：751.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="BURBERRY 英伦式复古时尚女表"><p class="descript_p"  title="时尚大方  简约美观"></p></a>
+						<a href="#" class="cover_a" title="BURBERRY 英伦式复古时尚女表">
+							<img class="lazy" src="images/ITEM_14693_1444290329929_1.jpg" alt="" title="BURBERRY 英伦式复古时尚女表"/>
+						</a>
+						<a href="#" title="BURBERRY 英伦式复古时尚女表">
+							<dl>
+								<dt title="BURBERRY 英伦式复古时尚女表"> BURBERRY 英伦式复古时尚女表</dt>							
+								<dd>月供：￥<span>98.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="BURBERRY 英伦式复古时尚女表">售价：1047.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="/items/detail/15349" title="DW 吴邪同款超薄男士手表"><p class="descript_p"  title="送价值199元饰品"></p></a>
+						<a href="/items/detail/15349" class="cover_a" title="DW 吴邪同款超薄男士手表">
+							<img class="lazy" src="images/ITEM_15349_1451544802908_1.jpg" alt="" title="DW 吴邪同款超薄男士手表"/>
+						</a>
+						<a href="/items/detail/15349" title="DW 吴邪同款超薄男士手表">
+							<dl>
+								<dt title="DW 吴邪同款超薄男士手表"> DW 吴邪同款超薄男士手表</dt>							
+								<dd>月供：￥<span>94.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="/items/detail/15349" title="DW 吴邪同款超薄男士手表">售价：1229.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="ZIPPO 四面/五面雕刻康斯坦丁 "><p class="descript_p"  title="盔甲/纯铜/雕刻"></p></a>
+						<a href="#" class="cover_a" title="ZIPPO 四面/五面雕刻康斯坦丁 ">
+							<img class="lazy" src="images/SKUGROUP_3630_1.jpg" alt="" title="ZIPPO 四面/五面雕刻康斯坦丁 "/>
+						</a>
+						<a href="#" title="ZIPPO 四面/五面雕刻康斯坦丁 ">
+							<dl>
+								<dt title="ZIPPO 四面/五面雕刻康斯坦丁 "> ZIPPO 四面/五面雕刻康斯坦丁 </dt>							
+								<dd>月供：￥<span>105.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="ZIPPO 四面/五面雕刻康斯坦丁 ">售价：304.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="kepma 木吉他41寸吉它"><p class="descript_p"  title="民谣吉他黑色"></p></a>
+						<a href="#" class="cover_a" title="kepma 木吉他41寸吉它">
+							<img class="lazy" src="images/ITEM_24309_1452158617462_1.jpg" alt="" title="kepma 木吉他41寸吉它"/>
+						</a>
+						<a href="#" title="kepma 木吉他41寸吉它">
+							<dl>
+								<dt title="kepma 木吉他41寸吉它"> kepma 木吉他41寸吉它</dt>							
+								<dd>月供：￥<span>101.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="kepma 木吉他41寸吉它">售价：569.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+							</div>
+		</div>
+		<div class="com_main">
+			<p class="title_cover">
+				<span class="line"><img src="images/line-left.jpg"></span>
+				<span class="title_word">奢侈品.TOP12</span>
+				<span class="line"><img src="images/line-right.jpg"></span>
+			</p>
+			<div class="com_list clearfix">								  				     
+							        				<div class="main_div">
+					<div class="main_cover">
+						<a href="/items/detail/11809" title="施华洛世奇 银色经典天鹅水晶项链"><p class="descript_p"  title="闪耀群星"></p></a>
+						<a href="/items/detail/11809" class="cover_a" title="施华洛世奇 银色经典天鹅水晶项链">
+							<img class="lazy" src="images/SKUGROUP_4692_1.jpg" alt="" title="施华洛世奇 银色经典天鹅水晶项链"/>
+						</a>
+						<a href="/items/detail/11809" title="施华洛世奇 银色经典天鹅水晶项链">
+							<dl>
+								<dt title="施华洛世奇 银色经典天鹅水晶项链"> 施华洛世奇 银色经典天鹅水晶项链</dt>							
+								<dd>月供：￥<span>106.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="/items/detail/11809" title="施华洛世奇 银色经典天鹅水晶项链">售价：580.0</a>						
+					</div>
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="/items/detail/27058" title="阿菲娜AFFINER都锋往事吊坠"><p class="descript_p"  title="925银 施华洛世奇锆石"></p></a>
+						<a href="/items/detail/27058" class="cover_a" title="阿菲娜AFFINER都锋往事吊坠">
+							<img class="lazy" src="images/SKUGROUP_11762_1.jpg" alt="" title="阿菲娜AFFINER都锋往事吊坠"/>
+						</a>
+						<a href="/items/detail/27058" title="阿菲娜AFFINER都锋往事吊坠">
+							<dl>
+								<dt title="阿菲娜AFFINER都锋往事吊坠"> 阿菲娜AFFINER都锋往事吊坠</dt>							
+								<dd>月供：￥<span>131.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="/items/detail/27058" title="阿菲娜AFFINER都锋往事吊坠">售价：379.0</a>						
+					</div>
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="/items/detail/22264" title="COACH  波士顿水桶C纹斜跨手提女包"><p class="descript_p"  title="卡其玫红边色PVC"></p></a>
+						<a href="/items/detail/22264" class="cover_a" title="COACH  波士顿水桶C纹斜跨手提女包">
+							<img class="lazy" src="images/ITEM_22264_1452577037381_1.jpg" alt="" title="COACH  波士顿水桶C纹斜跨手提女包"/>
+						</a>
+						<a href="/items/detail/22264" title="COACH  波士顿水桶C纹斜跨手提女包">
+							<dl>
+								<dt title="COACH  波士顿水桶C纹斜跨手提女包"> COACH  波士顿水桶C纹斜跨手提女包</dt>							
+								<dd>月供：￥<span>96.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="/items/detail/22264" title="COACH  波士顿水桶C纹斜跨手提女包">售价：1469.0</a>						
+					</div>
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="/items/detail/20517" title="Burberry女士粉色长款钱包"><p class="descript_p"  title="牛皮拼接pvc"></p></a>
+						<a href="/items/detail/20517" class="cover_a" title="Burberry女士粉色长款钱包">
+							<img class="lazy" src="images/SKUGROUP_9355_1.jpg" alt="" title="Burberry女士粉色长款钱包"/>
+						</a>
+						<a href="/items/detail/20517" title="Burberry女士粉色长款钱包">
+							<dl>
+								<dt title="Burberry女士粉色长款钱包"> Burberry女士粉色长款钱包</dt>							
+								<dd>月供：￥<span>131.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="/items/detail/20517" title="Burberry女士粉色长款钱包">售价：2508.0</a>						
+					</div>
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="/items/detail/22229" title="法国乐上LEXON双肩包 蓝黑色"><p class="descript_p"  title="简约大方  内藏丘壑"></p></a>
+						<a href="/items/detail/22229" class="cover_a" title="法国乐上LEXON双肩包 蓝黑色">
+							<img class="lazy" src="images/SKUGROUP_10154_1.jpg" alt="" title="法国乐上LEXON双肩包 蓝黑色"/>
+						</a>
+						<a href="/items/detail/22229" title="法国乐上LEXON双肩包 蓝黑色">
+							<dl>
+								<dt title="法国乐上LEXON双肩包 蓝黑色"> 法国乐上LEXON双肩包 蓝黑色</dt>							
+								<dd>月供：￥<span>102.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="/items/detail/22229" title="法国乐上LEXON双肩包 蓝黑色">售价：289.0</a>						
+					</div>
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="/items/detail/12914" title="立正 牛皮短款钱包"><p class="descript_p"  title="学生时尚 青春登场"></p></a>
+						<a href="/items/detail/12914" class="cover_a" title="立正 牛皮短款钱包">
+							<img class="lazy" src="images/SKUGROUP_5123_1.jpg" alt="" title="立正 牛皮短款钱包"/>
+						</a>
+						<a href="/items/detail/12914" title="立正 牛皮短款钱包">
+							<dl>
+								<dt title="立正 牛皮短款钱包"> 立正 牛皮短款钱包</dt>							
+								<dd>月供：￥<span>89.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="/items/detail/12914" title="立正 牛皮短款钱包">售价：89.0</a>						
+					</div>
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="阿菲娜AFFINER风之羽耳钉"><p class="descript_p"  title="奢华，时尚，高贵，优雅"></p></a>
+						<a href="#" class="cover_a" title="阿菲娜AFFINER风之羽耳钉">
+							<img class="lazy" src="images/SKUGROUP_5123_1.jpg" alt="" title="阿菲娜AFFINER风之羽耳钉"/>
+						</a>
+						<a href="#" title="阿菲娜AFFINER风之羽耳钉">
+							<dl>
+								<dt title="阿菲娜AFFINER风之羽耳钉"> 阿菲娜AFFINER风之羽耳钉</dt>							
+								<dd>月供：￥<span>101.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="阿菲娜AFFINER风之羽耳钉">售价：286.0</a>						
+					</div>
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="施华洛世奇 Match心心相扣项链"><p class="descript_p"  title="爱之所选 选之所爱"></p></a>
+						<a href="#" class="cover_a" title="施华洛世奇 Match心心相扣项链">
+							<img class="lazy" src="images/SKUGROUP_5191_1.jpg" alt="" title="施华洛世奇 Match心心相扣项链"/>
+						</a>
+						<a href="#" title="施华洛世奇 Match心心相扣项链">
+							<dl>
+								<dt title="施华洛世奇 Match心心相扣项链"> 施华洛世奇 Match心心相扣项链</dt>							
+								<dd>月供：￥<span>95.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="施华洛世奇 Match心心相扣项链">售价：538.0</a>						
+					</div>
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="Michael Kors 深蓝色小斜挎包"><p class="descript_p"  title="简约明朗  清新风气"></p></a>
+						<a href="#" class="cover_a" title="Michael Kors 深蓝色小斜挎包">
+							<img class="lazy" src="images/ITEM_28948_1457336777307_1.jpg" alt="" title="Michael Kors 深蓝色小斜挎包"/>
+						</a>
+						<a href="#" title="Michael Kors 深蓝色小斜挎包">
+							<dl>
+								<dt title="Michael Kors 深蓝色小斜挎包"> Michael Kors 深蓝色小斜挎包</dt>							
+								<dd>月供：￥<span>112.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="Michael Kors 深蓝色小斜挎包">售价：1199.0</a>						
+					</div>
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="益盾 防辐射眼镜"><p class="descript_p"  title="翡翠绿膜金属半框"></p></a>
+						<a href="#" class="cover_a" title="益盾 防辐射眼镜">
+							<img class="lazy" src="images/ITEM_15658_1445009315644_1.jpg" alt="" title="益盾 防辐射眼镜"/>
+						</a>
+						<a href="#" title="益盾 防辐射眼镜">
+							<dl>
+								<dt title="益盾 防辐射眼镜"> 益盾 防辐射眼镜</dt>							
+								<dd>月供：￥<span>198.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="益盾 防辐射眼镜">售价：198.0</a>						
+					</div>
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="COACH 黑色牛皮手提单肩包"><p class="descript_p"  title="经典造型 明星同款"></p></a>
+						<a href="#" class="cover_a" title="COACH 黑色牛皮手提单肩包">
+							<img class="lazy" src="images/ITEM_20511_1450148739131_1.jpg" alt="" title="COACH 黑色牛皮手提单肩包"/>
+						</a>
+						<a href="#" title="COACH 黑色牛皮手提单肩包">
+							<dl>
+								<dt title="COACH 黑色牛皮手提单肩包"> COACH 黑色牛皮手提单肩包</dt>							
+								<dd>月供：￥<span>115.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="COACH 黑色牛皮手提单肩包">售价：1950.0</a>						
+					</div>
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="RayBan太阳镜飞行员系列墨镜"><p class="descript_p"  title="偏光001/58金框绿片 62mm"></p></a>
+						<a href="#" class="cover_a" title="RayBan太阳镜飞行员系列墨镜">
+							<img class="lazy" src="images/ITEM_14841_1444446555675_1.jpg" alt="" title="RayBan太阳镜飞行员系列墨镜"/>
+						</a>
+						<a href="#" title="RayBan太阳镜飞行员系列墨镜">
+							<dl>
+								<dt title="RayBan太阳镜飞行员系列墨镜"> RayBan太阳镜飞行员系列墨镜</dt>							
+								<dd>月供：￥<span>101.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="RayBan太阳镜飞行员系列墨镜">售价：833.0</a>						
+					</div>
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+							</div>
+		</div>
+		<div class="com_main">
+			<p class="title_cover">
+				<span class="line"><img src="images/line-left.jpg"></span>
+				<span class="title_word">美妆护肤.TOP12</span>
+				<span class="line"><img src="images/line-right.jpg"></span>
+			</p>
+			<div class="com_list clearfix">								  				     
+							        				<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="CHANEL唇膏水亮口红水润保湿"><p class="descript_p"  title=" COCO可可小姐"></p></a>
+						<a href="#" class="cover_a" title="CHANEL唇膏水亮口红水润保湿">
+							<img class="lazy" src="images/ITEM_20445_1451020465028_1.jpg" alt="" title="CHANEL唇膏水亮口红水润保湿"/>
+						</a>
+						<a href="#" title="CHANEL唇膏水亮口红水润保湿">
+							<dl>
+								<dt title="CHANEL唇膏水亮口红水润保湿"> CHANEL唇膏水亮口红水润保湿</dt>							
+								<dd>月供：￥<span>88.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="CHANEL唇膏水亮口红水润保湿">售价：256.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="雅漾 舒护活泉水化妆水爽肤水大喷300ml"><p class="descript_p"  title="清新一下  清爽一天"></p></a>
+						<a href="#" class="cover_a" title="雅漾 舒护活泉水化妆水爽肤水大喷300ml">
+							<img class="lazy" src="images/SKUGROUP_9023_1.jpg" alt="" title="雅漾 舒护活泉水化妆水爽肤水大喷300ml"/>
+						</a>
+						<a href="#" title="雅漾 舒护活泉水化妆水爽肤水大喷300ml">
+							<dl>
+								<dt title="雅漾 舒护活泉水化妆水爽肤水大喷300ml"> 雅漾 舒护活泉水化妆水爽肤水大喷300ml</dt>							
+								<dd>月供：￥<span>87.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="雅漾 舒护活泉水化妆水爽肤水大喷300ml">售价：87.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="杰威尔男士控油补水调理三件套"><p class="descript_p"  title=" 矿物泥磨砂洁面乳120g+控油调理魔水150ml+护肤霜50g+美白面膜单片"></p></a>
+						<a href="#" class="cover_a" title="杰威尔男士控油补水调理三件套">
+							<img class="lazy" src="images/SKUGROUP_9564_1.jpg" alt="" title="杰威尔男士控油补水调理三件套"/>
+						</a>
+						<a href="#" title="杰威尔男士控油补水调理三件套">
+							<dl>
+								<dt title="杰威尔男士控油补水调理三件套"> 杰威尔男士控油补水调理三件套</dt>							
+								<dd>月供：￥<span>100.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="杰威尔男士控油补水调理三件套">售价：100.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="Dior 真我粉魅惑花漾礼盒装5ml"><p class="descript_p"  title="女士香水小样Q版">40天免息</p></a>
+						<a href="#" class="cover_a" title="Dior 真我粉魅惑花漾礼盒装5ml">
+							<img class="lazy" src="images/SKUGROUP_8989_1.jpg" alt="" title="Dior 真我粉魅惑花漾礼盒装5ml"/>
+						</a>
+						<a href="#" title="Dior 真我粉魅惑花漾礼盒装5ml">
+							<dl>
+								<dt title="Dior 真我粉魅惑花漾礼盒装5ml"> Dior 真我粉魅惑花漾礼盒装5ml</dt>							
+								<dd>月供：￥<span>130.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="Dior 真我粉魅惑花漾礼盒装5ml">售价：130.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="CK 中性持久淡香水100ml"><p class="descript_p"  title="男士女士 舒适就好">40天免息</p></a>
+						<a href="#" class="cover_a" title="CK 中性持久淡香水100ml">
+							<img class="lazy" src="images/SKUGROUP_9003_1.jpg" alt="" title="CK 中性持久淡香水100ml"/>
+						</a>
+						<a href="#" title="CK 中性持久淡香水100ml">
+							<dl>
+								<dt title="CK 中性持久淡香水100ml"> CK 中性持久淡香水100ml</dt>							
+								<dd>月供：￥<span>130.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="CK 中性持久淡香水100ml">售价：130.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="兰芝致美焕颜套装"><p class="descript_p"  title="水+乳液+面霜"></p></a>
+						<a href="#" class="cover_a" title="兰芝致美焕颜套装">
+							<img class="lazy" src="images/SKUGROUP_5258_1.jpg" alt="" title="兰芝致美焕颜套装"/>
+						</a>
+						<a href="#" title="兰芝致美焕颜套装">
+							<dl>
+								<dt title="兰芝致美焕颜套装"> 兰芝致美焕颜套装</dt>							
+								<dd>月供：￥<span>111.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="兰芝致美焕颜套装">售价：920.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="兰芝气垫粉凝霜"><p class="descript_p"  title="自由呼吸 清净触及"></p></a>
+						<a href="#" class="cover_a" title="兰芝气垫粉凝霜">
+							<img class="lazy" src="images/SKUGROUP_5002_1.jpg" alt="" title="兰芝气垫粉凝霜"/>
+						</a>
+						<a href="#" title="兰芝气垫粉凝霜">
+							<dl>
+								<dt title="兰芝气垫粉凝霜"> 兰芝气垫粉凝霜</dt>							
+								<dd>月供：￥<span>92.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="兰芝气垫粉凝霜">售价：265.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="Chanel 摩登女士香水50ml"><p class="descript_p"  title="coco小姐"></p></a>
+						<a href="#" class="cover_a" title="Chanel 摩登女士香水50ml">
+							<img class="lazy" src="images/ITEM_20729_1451020478352_1.jpg" alt="" title="Chanel 摩登女士香水50ml"/>
+						</a>
+						<a href="#" title="Chanel 摩登女士香水50ml">
+							<dl>
+								<dt title="Chanel 摩登女士香水50ml"> Chanel 摩登女士香水50ml</dt>							
+								<dd>月供：￥<span>103.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="Chanel 摩登女士香水50ml">售价：619.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="Dior 花漾甜心女士淡香水30ML"><p class="descript_p"  title="花芳萦绕 爱恋随心">40天免息</p></a>
+						<a href="#" class="cover_a" title="Dior 花漾甜心女士淡香水30ML">
+							<img class="lazy" src="images/ITEM_4037_1428113570294_1.jpg" alt="" title="Dior 花漾甜心女士淡香水30ML"/>
+						</a>
+						<a href="#" title="Dior 花漾甜心女士淡香水30ML">
+							<dl>
+								<dt title="Dior 花漾甜心女士淡香水30ML"> Dior 花漾甜心女士淡香水30ML</dt>							
+								<dd>月供：￥<span>158.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="Dior 花漾甜心女士淡香水30ML">售价：475.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="Chanel 女士炫亮魅力丝绒口红"><p class="descript_p"  title="42#荧光粉">40天免息</p></a>
+						<a href="#" class="cover_a" title="Chanel 女士炫亮魅力丝绒口红">
+							<img class="lazy" src="images/SKUGROUP_9017_1.jpg" alt="" title="Chanel 女士炫亮魅力丝绒口红"/>
+						</a>
+						<a href="#" title="Chanel 女士炫亮魅力丝绒口红">
+							<dl>
+								<dt title="Chanel 女士炫亮魅力丝绒口红"> Chanel 女士炫亮魅力丝绒口红</dt>							
+								<dd>月供：￥<span>101.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="Chanel 女士炫亮魅力丝绒口红">售价：285.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="韩国SNP钻石美白提亮深层保湿锁水面膜"><p class="descript_p"  title="25ml*10片装"></p></a>
+						<a href="#" class="cover_a" title="韩国SNP钻石美白提亮深层保湿锁水面膜">
+							<img class="lazy" src="images/SKUGROUP_12110_1.jpg" alt="" title="韩国SNP钻石美白提亮深层保湿锁水面膜"/>
+						</a>
+						<a href="#" title="韩国SNP钻石美白提亮深层保湿锁水面膜">
+							<dl>
+								<dt title="韩国SNP钻石美白提亮深层保湿锁水面膜"> 韩国SNP钻石美白提亮深层保湿锁水面膜</dt>							
+								<dd>月供：￥<span>148.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="韩国SNP钻石美白提亮深层保湿锁水面膜">售价：148.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="/items/detail/27785" title="资生堂 滋润保湿防水隔离防晒乳霜"><p class="descript_p"  title="安耐晒/安热沙金瓶"></p></a>
+						<a href="/items/detail/27785" class="cover_a" title="资生堂 滋润保湿防水隔离防晒乳霜">
+							<img class="lazy" src="images/SKUGROUP_12101_1.jpg" alt="" title="资生堂 滋润保湿防水隔离防晒乳霜"/>
+						</a>
+						<a href="/items/detail/27785" title="资生堂 滋润保湿防水隔离防晒乳霜">
+							<dl>
+								<dt title="资生堂 滋润保湿防水隔离防晒乳霜"> 资生堂 滋润保湿防水隔离防晒乳霜</dt>							
+								<dd>月供：￥<span>167.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="/items/detail/27785" title="资生堂 滋润保湿防水隔离防晒乳霜">售价：167.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+							</div>
+		</div>
+<div class="com_main">
+			<p class="title_cover">
+				<span class="line"><img src="images/line-left.jpg"></span>
+				<span class="title_word">运动户外.TOP12</span>
+				<span class="line"><img src="images/line-right.jpg"></span>
+			</p>
+			<div class="com_list clearfix">								  				     
+							        				<div class="main_div">
+					<div class="main_cover">
+						<a href="/items/detail/21008" title="Adidas AKTIV男子跑步鞋"><p class="descript_p"  title="减震支撑耐磨"></p></a>
+						<a href="/items/detail/21008" class="cover_a" title="Adidas AKTIV男子跑步鞋">
+							<img class="lazy" src="images/SKUGROUP_9651_1.jpg" alt="" title="Adidas AKTIV男子跑步鞋"/>
+						</a>
+						<a href="/items/detail/21008" title="Adidas AKTIV男子跑步鞋">
+							<dl>
+								<dt title="Adidas AKTIV男子跑步鞋"> Adidas AKTIV男子跑步鞋</dt>							
+								<dd>月供：￥<span>112.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="/items/detail/21008" title="Adidas AKTIV男子跑步鞋">售价：669.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="阿迪达斯 运动服防风连帽夹克外套"><p class="descript_p"  title="男外套 2016春季新款"></p></a>
+						<a href="#" class="cover_a" title="阿迪达斯 运动服防风连帽夹克外套">
+							<img class="lazy" src="images/SKUGROUP_12363_1.jpg" alt="" title="阿迪达斯 运动服防风连帽夹克外套"/>
+						</a>
+						<a href="#" title="阿迪达斯 运动服防风连帽夹克外套">
+							<dl>
+								<dt title="阿迪达斯 运动服防风连帽夹克外套"> 阿迪达斯 运动服防风连帽夹克外套</dt>							
+								<dd>月供：￥<span>138.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="阿迪达斯 运动服防风连帽夹克外套">售价：399.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="/items/detail/28846" title="adidas 大logo防风衣茄克连帽外套"><p class="descript_p"  title="2016男子连帽">40天免息</p></a>
+						<a href="/items/detail/28846" class="cover_a" title="adidas 大logo防风衣茄克连帽外套">
+							<img class="lazy" src="images/ITEM_28846_1457079614409_1.jpg" alt="" title="adidas 大logo防风衣茄克连帽外套"/>
+						</a>
+						<a href="/items/detail/28846" title="adidas 大logo防风衣茄克连帽外套">
+							<dl>
+								<dt title="adidas 大logo防风衣茄克连帽外套"> adidas 大logo防风衣茄克连帽外套</dt>							
+								<dd>月供：￥<span>124.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="/items/detail/28846" title="adidas 大logo防风衣茄克连帽外套">售价：359.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="NIKE  运动篮球鞋"><p class="descript_p"  title="MJ  2016年男科比系列">40天免息</p></a>
+						<a href="#" class="cover_a" title="NIKE  运动篮球鞋">
+							<img class="lazy" src="images/SKUGROUP_11359_1.jpg" alt="" title="NIKE  运动篮球鞋"/>
+						</a>
+						<a href="#" title="NIKE  运动篮球鞋">
+							<dl>
+								<dt title="NIKE  运动篮球鞋"> NIKE  运动篮球鞋</dt>							
+								<dd>月供：￥<span>110.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="NIKE  运动篮球鞋">售价：625.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="阿迪达斯 运动裤小脚休闲长裤"><p class="descript_p"  title="男裤 2016新款"></p></a>
+						<a href="#" class="cover_a" title="阿迪达斯 运动裤小脚休闲长裤">
+							<img class="lazy" src="images/SKUGROUP_12327_1.jpg" alt="" title="阿迪达斯 运动裤小脚休闲长裤"/>
+						</a>
+						<a href="#" title="阿迪达斯 运动裤小脚休闲长裤">
+							<dl>
+								<dt title="阿迪达斯 运动裤小脚休闲长裤"> 阿迪达斯 运动裤小脚休闲长裤</dt>							
+								<dd>月供：￥<span>96.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="阿迪达斯 运动裤小脚休闲长裤">售价：279.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="/items/detail/28857" title="阿迪达斯 茄克连帽外套"><p class="descript_p"  title="2016男子连帽大logo防风衣"></p></a>
+						<a href="/items/detail/28857" class="cover_a" title="阿迪达斯 茄克连帽外套">
+							<img class="lazy" src="images/ITEM_28857_1457079682268_1.jpg" alt="" title="阿迪达斯 茄克连帽外套"/>
+						</a>
+						<a href="/items/detail/28857" title="阿迪达斯 茄克连帽外套">
+							<dl>
+								<dt title="阿迪达斯 茄克连帽外套"> 阿迪达斯 茄克连帽外套</dt>							
+								<dd>月供：￥<span>124.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="/items/detail/28857" title="阿迪达斯 茄克连帽外套">售价：359.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="耐克 AIR MAX气垫休闲鞋"><p class="descript_p"  title="女鞋 新款"></p></a>
+						<a href="#" class="cover_a" title="耐克 AIR MAX气垫休闲鞋">
+							<img class="lazy" src="images/ITEM_26489_1453713341061_1.jpg" alt="" title="耐克 AIR MAX气垫休闲鞋"/>
+						</a>
+						<a href="#" title="耐克 AIR MAX气垫休闲鞋">
+							<dl>
+								<dt title="耐克 AIR MAX气垫休闲鞋"> 耐克 AIR MAX气垫休闲鞋</dt>							
+								<dd>月供：￥<span>99.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="耐克 AIR MAX气垫休闲鞋">售价：559.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="Adidas 男子运动休闲鞋"><p class="descript_p"  title="NEO系列2016新款"></p></a>
+						<a href="#" class="cover_a" title="Adidas 男子运动休闲鞋">
+							<img class="lazy" src="images/SKUGROUP_12482_1.jpg" alt="" title="Adidas 男子运动休闲鞋"/>
+						</a>
+						<a href="#" title="Adidas 男子运动休闲鞋">
+							<dl>
+								<dt title="Adidas 男子运动休闲鞋"> Adidas 男子运动休闲鞋</dt>							
+								<dd>月供：￥<span>92.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="Adidas 男子运动休闲鞋">售价：519.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="#" title="Nike 男子复刻休闲篮球鞋"><p class="descript_p"  title="新款FLIGHT SQUAD"></p></a>
+						<a href="#" class="cover_a" title="Nike 男子复刻休闲篮球鞋">
+							<img class="lazy" src="images/ITEM_26442_1453709467619_1.jpg" alt="" title="Nike 男子复刻休闲篮球鞋"/>
+						</a>
+						<a href="#" title="Nike 男子复刻休闲篮球鞋">
+							<dl>
+								<dt title="Nike 男子复刻休闲篮球鞋"> Nike 男子复刻休闲篮球鞋</dt>							
+								<dd>月供：￥<span>122.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="#" title="Nike 男子复刻休闲篮球鞋">售价：689.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="/items/detail/28120" title="Nike耐克男子板鞋运动鞋555272-042 43"><p class="descript_p"  title=""></p></a>
+						<a href="/items/detail/28120" class="cover_a" title="Nike耐克男子板鞋运动鞋555272-042 43">
+							<img class="lazy" src="images/SKUGROUP_12276_1.jpg" alt="" title="Nike耐克男子板鞋运动鞋555272-042 43"/>
+						</a>
+						<a href="/items/detail/28120" title="Nike耐克男子板鞋运动鞋555272-042 43">
+							<dl>
+								<dt title="Nike耐克男子板鞋运动鞋555272-042 43"> Nike耐克男子板鞋运动鞋555272-042 43</dt>							
+								<dd>月供：￥<span>130.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="/items/detail/28120" title="Nike耐克男子板鞋运动鞋555272-042 43">售价：375.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="/items/detail/27229" title="耐克外套 连帽AJ夹克"><p class="descript_p"  title="2016春Jordan篮球运动服"></p></a>
+						<a href="/items/detail/27229" class="cover_a" title="耐克外套 连帽AJ夹克">
+							<img class="lazy" src="images/SKUGROUP_11908_1.jpg" alt="" title="耐克外套 连帽AJ夹克"/>
+						</a>
+						<a href="/items/detail/27229" title="耐克外套 连帽AJ夹克">
+							<dl>
+								<dt title="耐克外套 连帽AJ夹克"> 耐克外套 连帽AJ夹克</dt>							
+								<dd>月供：￥<span>93.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="/items/detail/27229" title="耐克外套 连帽AJ夹克">售价：529.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="/items/detail/28134" title="阿迪达斯 男鞋运动休闲鞋"><p class="descript_p"  title="2016春新款网球鞋"></p></a>
+						<a href="/items/detail/28134" class="cover_a" title="阿迪达斯 男鞋运动休闲鞋">
+							<img class="lazy" src="images/SKUGROUP_12279_1.jpg" alt="" title="阿迪达斯 男鞋运动休闲鞋"/>
+						</a>
+						<a href="/items/detail/28134" title="阿迪达斯 男鞋运动休闲鞋">
+							<dl>
+								<dt title="阿迪达斯 男鞋运动休闲鞋"> 阿迪达斯 男鞋运动休闲鞋</dt>							
+								<dd>月供：￥<span>147.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="/items/detail/28134" title="阿迪达斯 男鞋运动休闲鞋">售价：425.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+							</div>
+		</div>
+<div class="com_main">
+			<p class="title_cover">
+				<span class="line"><img src="images/line-left.jpg"></span>
+				<span class="title_word">摄影数码.TOP12</span>
+				<span class="line"><img src="images/line-right.jpg"></span>
+			</p>
+			<div class="com_list clearfix">								  				     
+							        				<div class="main_div">
+					<div class="main_cover">
+						<a href="/items/detail/324" title="佳能 700D 单反套机"><p class="descript_p"  title="EF-S 18-135/3.5-5.6 IS STM镜头"></p></a>
+						<a href="/items/detail/324" class="cover_a" title="佳能 700D 单反套机">
+							<img class="lazy" src="images/item_324_1.jpg" alt="" title="佳能 700D 单反套机"/>
+						</a>
+						<a href="/items/detail/324" title="佳能 700D 单反套机">
+							<dl>
+								<dt title="佳能 700D 单反套机"> 佳能 700D 单反套机</dt>							
+								<dd>月供：￥<span>245.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="/items/detail/324" title="佳能 700D 单反套机">售价：4699.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="/items/detail/13063" title="卡西欧 EX-TR500 数码相机（白色）"><p class="descript_p"  title="单机版  自拍神器"></p></a>
+						<a href="/items/detail/13063" class="cover_a" title="卡西欧 EX-TR500 数码相机（白色）">
+							<img class="lazy" src="images/ITEM_13063_1442375522030_1.jpg" alt="" title="卡西欧 EX-TR500 数码相机（白色）"/>
+						</a>
+						<a href="/items/detail/13063" title="卡西欧 EX-TR500 数码相机（白色）">
+							<dl>
+								<dt title="卡西欧 EX-TR500 数码相机（白色）"> 卡西欧 EX-TR500 数码相机（白色）</dt>							
+								<dd>月供：￥<span>259.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="/items/detail/13063" title="卡西欧 EX-TR500 数码相机（白色）">售价：4377.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="/items/detail/27132" title="小蚁运动相机"><p class="descript_p"  title="放在口袋里的好相机"></p></a>
+						<a href="/items/detail/27132" class="cover_a" title="小蚁运动相机">
+							<img class="lazy" src="images/SKUGROUP_11830_1.jpg" alt="" title="小蚁运动相机"/>
+						</a>
+						<a href="/items/detail/27132" title="小蚁运动相机">
+							<dl>
+								<dt title="小蚁运动相机"> 小蚁运动相机</dt>							
+								<dd>月供：￥<span>104.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="/items/detail/27132" title="小蚁运动相机">售价：586.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="/items/detail/2005" title="尼康 D7100 单反套机（18-105mm）"><p class="descript_p"  title="AF-S DX  f/3.5-5.6G ED VR 防抖镜头"></p></a>
+						<a href="/items/detail/2005" class="cover_a" title="尼康 D7100 单反套机（18-105mm）">
+							<img class="lazy" src="images/item_2005_1.jpg" alt="" title="尼康 D7100 单反套机（18-105mm）"/>
+						</a>
+						<a href="/items/detail/2005" title="尼康 D7100 单反套机（18-105mm）">
+							<dl>
+								<dt title="尼康 D7100 单反套机（18-105mm）"> 尼康 D7100 单反套机（18-105mm）</dt>							
+								<dd>月供：￥<span>276.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="/items/detail/2005" title="尼康 D7100 单反套机（18-105mm）">售价：5299.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="/items/detail/13966" title="Beats UrBeats 入耳式耳机 豪金色"><p class="descript_p"  title=" 手机耳机带麦 三键线控"></p></a>
+						<a href="/items/detail/13966" class="cover_a" title="Beats UrBeats 入耳式耳机 豪金色">
+							<img class="lazy" src="images/ITEM_13966_1443061224611_1.jpg" alt="" title="Beats UrBeats 入耳式耳机 豪金色"/>
+						</a>
+						<a href="/items/detail/13966" title="Beats UrBeats 入耳式耳机 豪金色">
+							<dl>
+								<dt title="Beats UrBeats 入耳式耳机 豪金色"> Beats UrBeats 入耳式耳机 豪金色</dt>							
+								<dd>月供：￥<span>110.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="/items/detail/13966" title="Beats UrBeats 入耳式耳机 豪金色">售价：599.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="/items/detail/13999" title="Beats Solo2 头戴式贴耳耳机 "><p class="descript_p"  title="独奏者第二代  酷黑色 带麦"></p></a>
+						<a href="/items/detail/13999" class="cover_a" title="Beats Solo2 头戴式贴耳耳机 ">
+							<img class="lazy" src="images/ITEM_13999_1443067063493_1.jpg" alt="" title="Beats Solo2 头戴式贴耳耳机 "/>
+						</a>
+						<a href="/items/detail/13999" title="Beats Solo2 头戴式贴耳耳机 ">
+							<dl>
+								<dt title="Beats Solo2 头戴式贴耳耳机 "> Beats Solo2 头戴式贴耳耳机 </dt>							
+								<dd>月供：￥<span>75.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="/items/detail/13999" title="Beats Solo2 头戴式贴耳耳机 ">售价：899.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="/items/detail/11336" title="iPod touch 32GB 深空灰色"><p class="descript_p"  title="把音乐装进口袋"></p></a>
+						<a href="/items/detail/11336" class="cover_a" title="iPod touch 32GB 深空灰色">
+							<img class="lazy" src="images/ITEM_11336_1440405084922_1.jpg" alt="" title="iPod touch 32GB 深空灰色"/>
+						</a>
+						<a href="/items/detail/11336" title="iPod touch 32GB 深空灰色">
+							<dl>
+								<dt title="iPod touch 32GB 深空灰色"> iPod touch 32GB 深空灰色</dt>							
+								<dd>月供：￥<span>135.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="/items/detail/11336" title="iPod touch 32GB 深空灰色">售价：1869.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="/items/detail/29301" title="索尼 PlayStation 4 星际战甲套装 （黑色）"><p class="descript_p"  title="【PS4国行主机】"></p></a>
+						<a href="/items/detail/29301" class="cover_a" title="索尼 PlayStation 4 星际战甲套装 （黑色）">
+							<img class="lazy" src="images/ITEM_29301_1457921660355_1.jpg" alt="" title="索尼 PlayStation 4 星际战甲套装 （黑色）"/>
+						</a>
+						<a href="/items/detail/29301" title="索尼 PlayStation 4 星际战甲套装 （黑色）">
+							<dl>
+								<dt title="索尼 PlayStation 4 星际战甲套装 （黑色）"> 索尼 PlayStation 4 星际战甲套装 （黑色）</dt>							
+								<dd>月供：￥<span>130.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="/items/detail/29301" title="索尼 PlayStation 4 星际战甲套装 （黑色）">售价：2488.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="/items/detail/29218" title="坚果（JmGO）P1高清投影仪 "><p class="descript_p"  title="3D智能家庭影院 便携无屏电视"></p></a>
+						<a href="/items/detail/29218" class="cover_a" title="坚果（JmGO）P1高清投影仪 ">
+							<img class="lazy" src="images/ITEM_29218_1457577762661_1.jpg" alt="" title="坚果（JmGO）P1高清投影仪 "/>
+						</a>
+						<a href="/items/detail/29218" title="坚果（JmGO）P1高清投影仪 ">
+							<dl>
+								<dt title="坚果（JmGO）P1高清投影仪 "> 坚果（JmGO）P1高清投影仪 </dt>							
+								<dd>月供：￥<span>136.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="/items/detail/29218" title="坚果（JmGO）P1高清投影仪 ">售价：2599.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="/items/detail/29245" title="大疆  航拍飞行器 无人机遥控飞机 "><p class="descript_p"  title="精灵3 Standard标准版(2.7K)"></p></a>
+						<a href="/items/detail/29245" class="cover_a" title="大疆  航拍飞行器 无人机遥控飞机 ">
+							<img class="lazy" src="images/SKUGROUP_12552_1.jpg" alt="" title="大疆  航拍飞行器 无人机遥控飞机 "/>
+						</a>
+						<a href="/items/detail/29245" title="大疆  航拍飞行器 无人机遥控飞机 ">
+							<dl>
+								<dt title="大疆  航拍飞行器 无人机遥控飞机 "> 大疆  航拍飞行器 无人机遥控飞机 </dt>							
+								<dd>月供：￥<span>156.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="/items/detail/29245" title="大疆  航拍飞行器 无人机遥控飞机 ">售价：2999.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="/items/detail/3943" title="JBL Pulse 音乐脉动便携蓝牙音箱 "><p class="descript_p"  title="炫彩360度LED灯 NFC 黑色"></p></a>
+						<a href="/items/detail/3943" class="cover_a" title="JBL Pulse 音乐脉动便携蓝牙音箱 ">
+							<img class="lazy" src="images/ITEM_3943_1427792302456_1.jpg" alt="" title="JBL Pulse 音乐脉动便携蓝牙音箱 "/>
+						</a>
+						<a href="/items/detail/3943" title="JBL Pulse 音乐脉动便携蓝牙音箱 ">
+							<dl>
+								<dt title="JBL Pulse 音乐脉动便携蓝牙音箱 "> JBL Pulse 音乐脉动便携蓝牙音箱 </dt>							
+								<dd>月供：￥<span>90.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="/items/detail/3943" title="JBL Pulse 音乐脉动便携蓝牙音箱 ">售价：966.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+								<div class="main_div">
+					<div class="main_cover">
+						<a href="/items/detail/27197" title="爱拼图 智能水杯 无线充电 白色款（赠移动电源）"><p class="descript_p"  title=" APP饮水提醒 LED水温显示"></p></a>
+						<a href="/items/detail/27197" class="cover_a" title="爱拼图 智能水杯 无线充电 白色款（赠移动电源）">
+							<img class="lazy" src="images/SKUGROUP_11892_1.jpg" alt="" title="爱拼图 智能水杯 无线充电 白色款（赠移动电源）"/>
+						</a>
+						<a href="/items/detail/27197" title="爱拼图 智能水杯 无线充电 白色款（赠移动电源）">
+							<dl>
+								<dt title="爱拼图 智能水杯 无线充电 白色款（赠移动电源）"> 爱拼图 智能水杯 无线充电 白色款（赠移动电源）</dt>							
+								<dd>月供：￥<span>138.0</span>起</dd>
+							</dl>
+						</a>
+						<a class="click_a" href="/items/detail/27197" title="爱拼图 智能水杯 无线充电 白色款（赠移动电源）">售价：399.0</a>						
+					</div>	
+					<div style="height:345.5px;"></div>
+					<div class="bottom_img">
+						<img src="images/bottom-p.jpg">
+					</div>
+				</div>
+							</div>
+		</div>
+	</body>
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery.lazyload.min.js"></script>
+	<script>
+$(function(){
+	$(".main_div").each(function(){
+		var main_cover=$(this).find(".main_cover");
+		var bottom_img=$(this).find(".bottom_img img");
+		$(this).mouseover(function(){
+			main_cover.addClass("up");
+			bottom_img.addClass("down")
+		})
+		$(this).mouseout(function(){
+			main_cover.removeClass("up");
+			bottom_img.removeClass("down")
+		})
+	})
+})
+$("img.lazy").lazyload({ 
+    event : "scroll"
+});
+	</script>
+</html>
+
+
+
+</section>
+    <footer class="ft-wrap">
+        <div class="ft-main-box main-wrap">
+        
+<ul class="ft-main">
+	<li class="left">
+		<strong class="block">分期说明</strong>
+		<a href="/help/info/help_center#fenqi" rel="nofollow" target="_blank">分期购物</a>
+	<li class="left">
+		<strong class="block">售后说明</strong>
+		<a href="/help/info/help_center#tuihuo" rel="nofollow" target="_blank">退换货说明</a>
+		<a href="/help/info/help_center#zhenjia" rel="nofollow" target="_blank">品牌真伪查询</a>
+
+	</li>
+	<li class="left">
+		<strong class="block">信用提现</strong>
+		<a href="/help/info/help_center#credit" rel="nofollow" target="_blank">提现（U基金）</a>
+	</li>
+	<li class="left">
+		<strong class="block">关于优分期</strong>
+		<a href="#" rel="nofollow" target="_blank">关于我们</a>
+		<a href="#" rel="nofollow" target="_blank">联系我们</a>
+		<a href="#" rel="nofollow" target="_blank">牛人加入</a>
+		<a href="#" rel="nofollow" target="_blank">校园招聘</a>
+	</li>
+	<li class="left ft-phoneapp">
+		<strong class="block">手机优分期</strong>
+		<a href="#" target="_blank" class="app-h5">http://ufenqi.com/app/</a>
+		<a href="#" target="_blank" class="ft-btn app app-ios"><i class="icon-iconfont-ios inline-block"></i>iPhone</a>
+		<a href="/app/" target="_blank" class="ft-btn app app-android"><i class="icon-iconfont-android inline-block"></i>Android</a>
+	</li>
+	<li class="left ft-mobile">
+		<p><strong>400-081-0707</strong>
+			</br>周一至周日9：00-22：00</p>
+		<a href="#" target="_blank" class="ft-btn ft-customer">在线客服</a>
+	</li>
+</ul>        	<div class="ft-copyright">
+		<ul class="ft-safety">
+			<li id="kx_verify" class="safety-1"><a href="#" target="_blank"></a></li>
+			<li class="safety-2">
+				<a href="#" target="_blank"></a>
+			</li>
+			<li class="safety-3">
+				<a href="#" target="_blank"></a>
+			</li>
+			<li class="safety-4">
+				<a href="#" target="_blank"></a>
+			</li>
+		</ul>
+		<div class="footer-info" >
+			<p>北京市公安局朝阳分局备案编号11010802015956|<a href="#" target="_blank">京ICP证备14020586号</a>|<a href="img/footer/businessLicence.jpg" target="_blank">营业执照号：110108016963882</a>|<a href="javascript:void(0);" target="_blank">食品流通许可证号：SP1101081510244633</a> </p>
+			<p>京海食药监械经营许20150358号 | 京海食药监械经营备20150440号</p>
+			<p>公司名称：北京和创未来网络科技有限公司|公司地址：北京市海淀区上地东路5号院京蒙高科A座6层|联系方式：400-081-0707</p>
+			<p>Copyright 2014-2015,版权所有UFENQI.COM</p>
+		</div>
+	</div>
+<script type="text/javascript">
+	var docByid = function(o){
+		return document.getElementById(o);
+	}
+	if(docByid('logout')){
+		docByid('logout').onclick = function(){
+			docByid('form-logout').submit();
+		}
+	}
+</script>
+<script src="js/jquery-1.11.1.min.js"></script>
+        </div>
+    </footer>
+
+</body>
+</html>
