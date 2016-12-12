@@ -15,7 +15,6 @@ public class RestfulExceptionInterceptor extends HandlerInterceptorAdapter {
 	
 	private RestfulExceptionHandler restfulExceptionHandler;
 	
-	
 
 	public RestfulExceptionHandler getRestfulExceptionHandler() {
 		return restfulExceptionHandler;
@@ -44,6 +43,4 @@ public class RestfulExceptionInterceptor extends HandlerInterceptorAdapter {
 		    }
 		}
 	}
-	
-	
 }

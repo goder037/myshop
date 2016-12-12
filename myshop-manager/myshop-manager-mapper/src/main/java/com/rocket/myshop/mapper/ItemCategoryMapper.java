@@ -55,7 +55,9 @@ public interface ItemCategoryMapper {
      */
     int updateByPrimaryKey(ItemCategory record);
 
-	List<ItemCategoryDto> listItemCategory(Map<String, Object> param);
-
 	int getCount(Map<String, Object> params);
+
+	List<ItemCategoryDto> getSubItemsCategory(Integer parentId);
+
+	List<ItemCategoryDto> listItemCategory(Map<String, Object> params);
 }

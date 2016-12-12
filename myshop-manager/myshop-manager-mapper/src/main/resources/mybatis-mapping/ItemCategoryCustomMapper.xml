@@ -9,6 +9,9 @@
     <result column="create_time_" jdbcType="TIMESTAMP" property="createTime" />
     <result column="update_time_" jdbcType="TIMESTAMP" property="updateTime" />
     <result column="parent_id_" jdbcType="INTEGER" property="parentId" />
+    <result column="items_num_" jdbcType="INTEGER" property="itemsNum" />
+    <result column="rank_" jdbcType="SMALLINT" property="rank" />
+    <result column="level_" jdbcType="TINYINT" property="level" />
   </resultMap>
   
   <select id="listItemCategory" resultMap="DtoResultMap" parameterType="map">
@@ -34,5 +37,8 @@
   			and name=#{name}
   		</if>
   	</where>
+  </select>
+  <select id="getSubItemsCategory" parameterType="_int" resultMap="DtoResultMap">
+  	select * from shop_item_category where parent_id_=#{parentId}
   </select>
 </mapper>

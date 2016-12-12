@@ -37,7 +37,7 @@
 				<div class="col-lg-12">
 					<div class="panel panel-default">
                     	<div class="panel-heading">
-                    		商品规格查询
+                    		商品类别查询
                     	</div>
                     	<div class="panel-body">
                     		<div class="row" style="">
@@ -77,9 +77,13 @@
 									<thead>
 										<tr class="">
 											<th>类别Id</th>
-											<th>类别名称</th>
+											<th style="width:250px;">类别名称</th>
+											<th>子类别数目</th>
+											<th>产品数量</th>
+											<th>排序值</th>
+											<th>类目等级</th>
 											<th>创建时间</th>
-											<th>状态</th>
+											<th>操作</th>
 										</tr>
 									</thead>
 									<tbody id="ittemCategoryBody">
@@ -115,15 +119,38 @@
 
 	<script id="itemCategoryList" type="text/html">
 	[[each list as value i]]
-    	<tr>
-			<td>[[value.id]]</td>
+    	<tr expand="false">
+			<td class="text-center">
+				<a href="javascript:void(0)" onclick="expandOrfoldCategory(this, [[value.id]], [[value.level]])"><span class="glyphicon glyphicon-plus"></span></href>
+			</td>
 			<td>[[value.name]]</td>
+			<td>[[value.subCategoryNum]]</td>
+			<td>[[value.itemsNum]]</td>
+			<td>[[]]</td>
 			<td>[[value.createTime]]</td>
 			<td>
-				[[if value.status]]
-					<span class="label label-success">正常</span>
-				[[/if]]
+				<button type="button" class="btn btn-sm btn-info">添加子类别</button>
+				<button type="button" class="btn btn-sm btn-warning">添加商品</button>
+				<button type="button" class="btn btn-sm btn-danger">删除</button>
 			</td>
+		</tr>
+	[[/each]]
+    </script>
+    <script type="text/html" id="expandItemCategory">
+	[[each list as value i]]
+    	<tr parent="[[value.parentId]]">
+			<td></td>
+			<td>
+			<a href="javascript:void(0)" onclick="expandOrfoldCategory(this, [[value.id]], [[value.level]])">
+			<span style="padding-left: ([[level]]*16)px;" class="glyphicon glyphicon-plus"></span></a>
+			<span style="padding-left: 15px;">[[value.name]]</span></td>
+			<td>[[value.itemsNum]]</td>
+			<td>[[value.rank]]</td>
+			<td>[[value.level]]</td>
+			<td>[[value.createTime]]</td>
+			<td><button type="button" class="btn btn-sm btn-info">添加子类别</button>
+			<button type="button" class="btn btn-sm btn-warning" style="">添加商品</button>
+			<button type="button" class="btn btn-sm btn-danger" style="">删除</button></td>
 		</tr>
 	[[/each]]
     </script>
@@ -132,6 +159,35 @@
 	template.config("openTag", "[[");
 	template.config("closeTag", "]]");
 	var date = new Date();
+	function expandOrfoldCategory(categoryNode, categoryId, level){
+		$(categoryNode).children().toggleClass("glyphicon-plus");
+		$(categoryNode).children().toggleClass("glyphicon-minus");
+		var categoryTr = $(categoryNode).parent().parent();
+		//console.log(categoryTr);
+		var expandFlag = categoryTr.attr("expand");
+		if(expandFlag=="true"){
+			categoryTr.attr("expand", "false");
+			//categoryTr.parent().remove("[parent='"+categoryId+"']");
+			$("tr").remove("[parent='"+categoryId+"']");
+		}else{
+			
+			$.ajax({
+				url:"/items/getSubItemsCategory.json",
+				data:"parentId="+categoryId,
+				type:"POST",
+				success: function(data, textStatus, jqXHR){
+					categoryTr.attr("expand", "true");
+					var expandItemCategoryHtml = template("expandItemCategory", data);
+					categoryTr.after(expandItemCategoryHtml);
+				},
+				error : function(XMLHttpRequest, textStatus, errorThrown) {
+					console.log(XMLHttpRequest);
+					console.log(textStatus);
+					console.log(errorThrown);
+				}
+			});
+		}
+	}
 	 $('#message_trigger_ok').on('click', function(e) {
 		    e.preventDefault();
 		    $.scojs_message('保存成功！', $.scojs_message.TYPE_OK);
@@ -142,21 +198,13 @@
 		var params = {"length":10,"start":startRecord};
 	    ajaxRequest({
 	    	type : "POST",
-			url : "/items/itemsCategory.json",
+			url : "/items/listItemsCategory.json",
 			success: function(data, textStatus, jqXHR){
 		    	var ittemCategoryListHtml = template("itemCategoryList", data);
-				// console.log(data.total);
 			     $("#ittemCategoryBody").html(ittemCategoryListHtml);
 			     var paginationText = renderPaginator(pageNum, data.total);
 			     $("#paginationText").html(paginationText);
-		    },
-		    error:function (XMLHttpRequest, textStatus, errorThrown) {
-		    	console.log(XMLHttpRequest);
-		    	console.log(textStatus);
-		    	console.log(errorThrown);
-				 e.preventDefault();
-				 $.scojs_message('查询失败！', $.scojs_message.TYPE_ERROR);
-			}
+		    }
 	    }, params);
 	}
 	$(function(){

@@ -22,5 +22,7 @@
     <link href="/third-party/sco.js/css/sco.message.css" rel="stylesheet" type="text/css">
     
     <link href="/third-party/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css">
+
+    <link href="/third-party/bootstrap3-dialog/css/bootstrap-dialog.css" rel="stylesheet" type="text/css">
     
      <link href="/css/customerTheme.css" rel="stylesheet">

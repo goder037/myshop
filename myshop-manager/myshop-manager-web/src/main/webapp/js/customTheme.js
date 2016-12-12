@@ -66,9 +66,7 @@ function renderPaginator(pageNum, totalRecord) {
 	}else{
 		source += '<li class="disabled"><a href="javascript:void(0)">下一页</a></li>';
 	}
-	if(page.totalPage == pageNum){
-		source += '<li class="disabled"><a href="javascript:pageRequestData(' + page.totalPage + ')">末页</a></li>';
-	}else{
+	if(page.totalPage != pageNum){
 		source += '<li><a href="javascript:pageRequestData(' + page.totalPage + ')">末页</a></li>';
 	}
 	source +='<span class="paginationText">共 '+totalRecord+' 条记录</span></ul>';
@@ -109,13 +107,39 @@ var ajaxRequest = function(settings, requestObj) {
 			if (data.success) {
 				settings.success(data, textStatus, jqXHR);
 			} else {
-				// show flash message
+				settings.success(data, textStatus, jqXHR);
 			}
 		},
 		error : function(XMLHttpRequest, textStatus, errorThrown) {
 			// 展示对话框
-			
+			//settings.error(data, textStatus, jqXHR);
+			console.log(XMLHttpRequest);
+			console.log(textStatus);
+			console.log(errorThrown);
+			var message = '系统出错， 请联系管理员！';
+			if(textStatus=='timeout' || errorThrown=='timeout'){
+				message = '请求服务器超时，请确认网络正常！';
+			}else if(textStatus=='error'){
+				var errorJson = XMLHttpRequest.responseJSON;
+				message = '<h4>远程服务器出错！</h4>错误码：'+errorJson.code+' <br/>'+
+				'发邮件反馈--<a href="'+errorJson.moreInfoUrl+'">发邮件</a>';
+			}
+			BootstrapDialog.show({
+				type: BootstrapDialog.TYPE_DANGER,
+				title: '系统提示',
+				message: message,
+				closable: false,
+				buttons: [{
+                    label: '确认',
+                    cssClass: 'btn-danger',
+                    action: function(dialogRef){
+                        dialogRef.close();
+                    }
+                }]
+			});
 		},
 	};
 	$.ajax(options);
 };
+
+
