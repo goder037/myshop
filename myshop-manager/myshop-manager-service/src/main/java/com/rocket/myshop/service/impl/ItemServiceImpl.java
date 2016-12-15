@@ -8,7 +8,7 @@ import javax.annotation.Resource;
 import org.springframework.stereotype.Service;
 
 import com.rocket.myshop.dto.ItemDto;
-import com.rocket.myshop.dto.common.ShopResult;
+import com.rocket.myshop.dto.common.ShopQueryResult;
 import com.rocket.myshop.mapper.ItemMapper;
 import com.rocket.myshop.service.ItemService;
 
@@ -19,9 +19,9 @@ public class ItemServiceImpl implements ItemService {
 	ItemMapper itemMapper;
 
 	@Override
-	public ShopResult listItem(Map<String, Object> params) {
+	public ShopQueryResult listItem(Map<String, Object> params) {
 		int count = itemMapper.getCount(params);
-		ShopResult result = new ShopResult();
+		ShopQueryResult result = new ShopQueryResult();
 		result.setTotal(count);
 		if (count > 0) {
 			Integer length = (Integer) params.get("length");

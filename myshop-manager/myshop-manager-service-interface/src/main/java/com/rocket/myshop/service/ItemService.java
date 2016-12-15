@@ -3,9 +3,9 @@ package com.rocket.myshop.service;
 
 import java.util.Map;
 
-import com.rocket.myshop.dto.common.ShopResult;
+import com.rocket.myshop.dto.common.ShopQueryResult;
 
 public interface ItemService {
 
-	ShopResult listItem(Map<String, Object> params);
+	ShopQueryResult listItem(Map<String, Object> params);
 }

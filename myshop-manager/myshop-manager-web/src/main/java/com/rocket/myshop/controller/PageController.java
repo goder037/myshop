@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class PageController {
 
-	@RequestMapping(value="/*.json", method = RequestMethod.POST)
+	@RequestMapping(value={"/{module}/{page}.json", "/{page}.json"})
 	public @ResponseBody Object unmappedAjaxRequest(HttpServletRequest request,	HttpServletResponse response) {
 		Map<String, String> error = new HashMap<>();
 		error.put("code", "Error.1");

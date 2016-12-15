@@ -60,4 +60,6 @@ public interface ItemCategoryMapper {
 	List<ItemCategoryDto> getSubItemsCategory(Integer parentId);
 
 	List<ItemCategoryDto> listItemCategory(Map<String, Object> params);
+
+	int checkCategoryNameIsExist(Map<String, Object> params);
 }

@@ -4,6 +4,8 @@ import java.util.Map;
 
 import javax.validation.Valid;
 
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -11,9 +13,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.alibaba.dubbo.config.annotation.Reference;
+import com.rocket.myshop.common.validattion.FirstValid;
 import com.rocket.myshop.domain.Item;
 import com.rocket.myshop.domain.ItemBrand;
-import com.rocket.myshop.dto.common.ShopResult;
+import com.rocket.myshop.dto.ItemCategoryDto;
+import com.rocket.myshop.dto.common.ShopQueryResult;
+import com.rocket.myshop.dto.common.ShopTxResult;
 import com.rocket.myshop.service.ItemBrandService;
 import com.rocket.myshop.service.ItemCategoryService;
 import com.rocket.myshop.service.ItemService;
@@ -41,8 +46,8 @@ public class ItemController {
 	//------------------------- 商品----------------------------------------
 	
 	@RequestMapping(value = "/listItem.json", method = RequestMethod.POST)
-	public ShopResult listItem(Map<String, Object> params) {
-		ShopResult result = itemService.listItem(params);
+	public ShopQueryResult listItem(Map<String, Object> params) {
+		ShopQueryResult result = itemService.listItem(params);
 		result.setSuccess(true);
 		return result;
 	}
@@ -66,7 +71,7 @@ public class ItemController {
 	
 	@RequestMapping(value = "/listItemsBrand.json", method = RequestMethod.POST)
 	public Object listItemBrand(@RequestBody Map<String, Object> params){
-		ShopResult result = itemBrandService.listItemBrands(params);
+		ShopQueryResult result = itemBrandService.listItemBrands(params);
 		result.setSuccess(true);
 		result.setVersion("1.0.0");
 		return result;
@@ -93,33 +98,43 @@ public class ItemController {
 	//------------------------- 商品类别----------------------------------------
 	
 	@RequestMapping(value = "/listItemsCategory.json", method = RequestMethod.POST)
-	public ShopResult listItemsCategory(@RequestBody Map<String, Object> params) {
-		ShopResult result = itemCategoryService.listItemCategory(params);
+	public Object listItemsCategory(@RequestBody Map<String, Object> params) {
+		ShopQueryResult result = itemCategoryService.listItemCategory(params);
 		return result;
 	}
 	
 	@RequestMapping(value = "/getSubItemsCategory.json", method = RequestMethod.POST)
-	public ShopResult getSubItemsCategory(@RequestParam Integer parentId) {
-		ShopResult result = itemCategoryService.getSubItemsCategory(parentId);
+	public Object getSubItemsCategory(@RequestParam Integer parentId) {
+		ShopQueryResult result = itemCategoryService.getSubItemsCategory(parentId);
 		return result;
 	}
 	
 	@RequestMapping(value = "/addItemsCategory.json", method = RequestMethod.POST)
-	public Object addItemCategory(@RequestBody Map<String, Object> params){
-		
-		return null;
-	} 
+	public Object addItemCategory(@RequestBody @Validated(FirstValid.class) ItemCategoryDto itemCategory, BindingResult errors) throws Exception{
+		ShopTxResult result = null;
+		if(errors.hasErrors()){
+			result = new ShopTxResult(errors);
+			return result;
+		}
+		result = itemCategoryService.addItemsCategory(itemCategory);
+		return result;
+	}
 	
 	@RequestMapping(value = "/updateItemsCategory.json", method = RequestMethod.POST)
-	public Object updateItemsCategory(@RequestBody Map<String, Object> params){
-		
-		return null;
+	public Object updateItemsCategory(@RequestBody @Validated(FirstValid.class) ItemCategoryDto itemCategory, BindingResult errors) throws Exception {
+		ShopTxResult result = null;
+		if(errors.hasErrors()){
+			result = new ShopTxResult(errors);
+			return result;
+		}
+		result = itemCategoryService.updateItemsCategory(itemCategory);
+		return result;
 	} 
 	
 	@RequestMapping(value = "/deleteItemsCategory.json", method = RequestMethod.POST)
-	public Object deleteItemsCategory(@RequestBody Map<String, Object> params){
-		
-		return null;
+	public Object deleteItemsCategory(@RequestParam Integer categoryId){
+		ShopTxResult result = itemCategoryService.deleteItemsCategory(categoryId);
+		return result;
 	} 
 	
 }

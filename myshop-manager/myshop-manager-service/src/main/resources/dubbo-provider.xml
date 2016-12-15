@@ -22,7 +22,7 @@
     <!-- Dubbo注册地址 -->
 	<dubbo:registry protocol="zookeeper" address="127.0.0.1:2181" />
 	
-	<dubbo:protocol name="dubbo" port="20881" threadpool="cached" threads="1000" accepts="2000" serialization="java"/>
+	<dubbo:protocol name="dubbo" port="20881"/>
 
 
 	<dubbo:service interface="com.rocket.myshop.service.DemoService" ref="DemoService" timeout="30000" retries="0"/>
@@ -31,4 +31,5 @@
 	
 	<dubbo:service interface="com.rocket.myshop.service.ItemCategoryService" ref="ItemCategoryService" timeout="30000" retries="0"/>
 	
+	<dubbo:service interface="com.rocket.myshop.service.ItemBrandService" ref="ItemBrandService" timeout="30000" retries="0"/>
 </beans>

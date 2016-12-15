@@ -3,11 +3,11 @@
   font-size: 15px;
   overflow: visible;
   text-align: center;
-  left: 0;
+  left: 10%;
   top: 0;
   /* place over all elements, also over modals */
   z-index: 10001;
-  width: 100%;
+  width: 80%;
   border-bottom: 1px solid;
   color: white;
   padding: 15px;

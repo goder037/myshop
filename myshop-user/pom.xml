@@ -1,0 +1,26 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>myshop-user</artifactId>
+  <packaging>pom</packaging>
+  <parent>
+  	<groupId>com.rocket.shop</groupId>
+  	<artifactId>myshop-parent</artifactId>
+  	<version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <dependencies>
+  	<dependency>
+  		<groupId>com.rocket.shop</groupId>
+  		<artifactId>myshop-common</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  </dependencies>
+  <modules>
+  	<module>myshop-user-common</module>
+  	<module>myshop-user-dto</module>
+  	<module>myshop-user-pojo</module>
+  	<module>myshop-user-service</module>
+  	<module>myshop-user-service-interface</module>
+  	<module>myshop-user-web</module>
+  	<module>myshop-user-mapper</module>
+  </modules>
+</project>

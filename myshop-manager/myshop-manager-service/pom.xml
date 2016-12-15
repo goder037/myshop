@@ -41,6 +41,11 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.derby</groupId>
+			<artifactId>derbyclient</artifactId>
+			<version>10.12.1.1</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<resources>
@@ -55,20 +60,35 @@
 	</build>
 	<profiles>
 		<profile>
-			<id>local</id>
+			<id>developer</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+			</activation>
+			<properties>
+				<mvn.dubbo.registry.center>127.0.0.1:2181</mvn.dubbo.registry.center>
+				<mvn.dubbo.protocol.port>20884</mvn.dubbo.protocol.port>
+				<mvn.db.url>jdbc:derby://localhost:1527/myshop;create=True</mvn.db.url>
+				<mvn.db.username></mvn.db.username>
+				<mvn.db.password></mvn.db.password>
+				<mvn.db.driver>org.apache.derby.jdbc.ClientDriver</mvn.db.driver>
+				<mvn.redis.server>127.0.0.1:6379</mvn.redis.server>
+				<mvn.db.validationQuery>values 1</mvn.db.validationQuery>
+			</properties>
+		</profile>
+		<profile>
+			<id>test</id>
 			<activation>
 				<activeByDefault>true</activeByDefault>
 			</activation>
 			<properties>
 				<mvn.dubbo.registry.center>127.0.0.1:2181</mvn.dubbo.registry.center>
 				<mvn.dubbo.protocol.port>20884</mvn.dubbo.protocol.port>
-				<mvn.al.db.url>jdbc:sqlserver://10.92.1.203:1433;DatabaseName=OBOA</mvn.al.db.url>
-				<mvn.al.db.encrypt.un>43AA823709B1DE67DC1604A03B53F57D</mvn.al.db.encrypt.un>
-				<mvn.al.db.encrypt.pw>FDFA031658E0AC4331F3BFE7026E4FE3</mvn.al.db.encrypt.pw>
-				<mvn.assemble.conf.file>assembly-sit.xml</mvn.assemble.conf.file>
-				<mvn.redis.server>10.92.1.200:6379,10.92.1.201:6379</mvn.redis.server>
-				<mvn.logback.appender>STDOUT</mvn.logback.appender>
-				<mvn.redisDefaultExpiredSeconds>120</mvn.redisDefaultExpiredSeconds>
+				<mvn.db.url>jdbc:mysql://192.168.201.129:3306/myshop</mvn.db.url>
+				<mvn.db.username>guest</mvn.db.username>
+				<mvn.db.password>!Gue123456</mvn.db.password>
+				<mvn.db.driver>com.mysql.jdbc.Driver</mvn.db.driver>
+				<mvn.redis.server>127.0.0.1:6379</mvn.redis.server>
+				<mvn.db.validationQuery>SELECT 'x'</mvn.db.validationQuery>
 			</properties>
 		</profile>
 	</profiles>

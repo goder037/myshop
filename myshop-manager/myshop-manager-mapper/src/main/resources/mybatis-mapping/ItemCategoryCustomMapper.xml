@@ -12,33 +12,50 @@
     <result column="items_num_" jdbcType="INTEGER" property="itemsNum" />
     <result column="rank_" jdbcType="SMALLINT" property="rank" />
     <result column="level_" jdbcType="TINYINT" property="level" />
+    <result column="sub_category_num_" jdbcType="SMALLINT" property="subCategoryNum" />
   </resultMap>
   
   <select id="listItemCategory" resultMap="DtoResultMap" parameterType="map">
-  	select * from shop_item_category 
-  	<where>
-  		<if test="status!=null">
-  			and status=#{status}
-  		</if>
-  		<if test="name!=null">
-  			and name=#{name}
-  		</if>
-  	</where>
+  	select * from shop_item_category where  status_='1'
+		<if test="name!=null and name!=''">
+			and name_=#{name}
+		</if>
+		<if test="level!=null">
+			and level_=#{level}
+		</if>
+		<if test="createTimeBegin!=null and createTimeBegin!=''">
+			and create_time_ &gt;#{createTimeBegin}
+		</if>
+		<if test="createTimeEnd!=null and createTimeEnd!=''">
+			and create_time_&lt; #{createTimeEnd}
+		</if>
   	LIMIT #{start}, #{length}
   </select>
   
   <select id="getCount" resultType="_int" parameterType="map">
-  	select count(1) from shop_item_category
-  	<where>
-  		<if test="status!=null">
-  			and status=#{status}
-  		</if>
-  		<if test="name!=null">
-  			and name=#{name}
-  		</if>
-  	</where>
+  	select count(1) from shop_item_category where  status_='1'
+		<if test="name!=null and name!=''">
+			and name_=#{name}
+		</if>
+		<if test="level!=null">
+			and level_=#{level}
+		</if>
+		<if test="createTimeBegin!=null and createTimeBegin!=''">
+			and create_time_ &gt;#{createTimeBegin}
+		</if>
+		<if test="createTimeEnd!=null and createTimeEnd!=''">
+			and create_time_&lt; #{createTimeEnd}
+		</if>
   </select>
   <select id="getSubItemsCategory" parameterType="_int" resultMap="DtoResultMap">
-  	select * from shop_item_category where parent_id_=#{parentId}
+  	select * from shop_item_category where parent_id_=#{parentId} and status_='1'
+  </select>
+  
+  <select id="checkCategoryNameIsExist" parameterType="map" resultType="_int">
+  	select count(1) from shop_item_category 
+  	where name_=#{name}
+  	<if test="categoryId!=null">
+		and id!=#{categoryId}
+	</if>
   </select>
 </mapper>

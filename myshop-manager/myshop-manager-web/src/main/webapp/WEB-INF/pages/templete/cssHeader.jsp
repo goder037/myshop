@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"	pageEncoding="utf-8"%>
-<!-- Bootstrap Core CSS -->
+	
+	<link rel="shortcut icon" href="/favicon.ico"/> 
+	<!-- Bootstrap Core CSS -->
     <link href="/third-party/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
@@ -18,7 +20,6 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     
-    <link href="/third-party/sco.js/css/scojs.css" rel="stylesheet" type="text/css">
     <link href="/third-party/sco.js/css/sco.message.css" rel="stylesheet" type="text/css">
     
     <link href="/third-party/bootstrap-datetimepicker/css/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css">

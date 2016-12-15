@@ -7,7 +7,7 @@ import javax.annotation.Resource;
 import org.springframework.stereotype.Service;
 
 import com.rocket.myshop.domain.Demo;
-import com.rocket.myshop.dto.common.ShopResult;
+import com.rocket.myshop.dto.common.ShopQueryResult;
 import com.rocket.myshop.mapper.DemoMapper;
 import com.rocket.myshop.service.DemoService;
 
@@ -18,9 +18,9 @@ public class DemoServiceImpl implements DemoService {
 	DemoMapper demoMapper;
 
 	@Override
-	public ShopResult listDemo() {
+	public ShopQueryResult listDemo() {
 		int count = demoMapper.getCount();
-		ShopResult result = new ShopResult();
+		ShopQueryResult result = new ShopQueryResult();
 		result.setTotal(count);
 		if (count > 0) {
 			List<Demo> data = demoMapper.listAllDemo();

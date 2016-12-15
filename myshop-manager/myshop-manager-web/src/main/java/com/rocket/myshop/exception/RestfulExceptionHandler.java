@@ -308,7 +308,7 @@ public class RestfulExceptionHandler implements MessageSourceAware, Initializing
 		return getDepth(exceptionMapping, exceptionClass.getSuperclass(), depth + 1);
 	}
 	
-	@SuppressWarnings("unchecked")
+	@SuppressWarnings({ "unchecked", "resource" })
 	public <T> void handleResponseBody(T body, ServletWebRequest webRequest) throws ServletException, IOException {
 
         HttpInputMessage inputMessage = new ServletServerHttpRequest(webRequest.getRequest());
@@ -324,21 +324,23 @@ public class RestfulExceptionHandler implements MessageSourceAware, Initializing
         Class<?> bodyType = body.getClass();
 
         List<HttpMessageConverter<?>> converters = getMessageConverters();
-
+        boolean isConverter = false;
         if (converters != null) {
             for (MediaType acceptedMediaType : acceptedMediaTypes) {
                 for (HttpMessageConverter<?> messageConverter : converters) {
                     if (messageConverter.canWrite(bodyType, acceptedMediaType)) {
                     	if (body != null) {
                     		((HttpMessageConverter<T>) messageConverter).write(body, acceptedMediaType, outputMessage);
+                    		return;
                     	}
-                    }else{
-						if (logger.isWarnEnabled()) {
-						     logger.warn("没有找到 HttpMessageConverter 支持处理异常信息 [" + bodyType +"] 类型是 " + acceptedMediaTypes);
-						}
                     }
                 }
             }
+        }
+        if(!isConverter){
+        	if (logger.isWarnEnabled()) {
+			     logger.warn("没有找到 HttpMessageConverter 支持处理异常信息 [" + bodyType +"] 类型是 " + acceptedMediaTypes);
+			}
         }
         return;
     }

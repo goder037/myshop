@@ -1,9 +1,9 @@
 package com.rocket.myshop.service;
 
 
-import com.rocket.myshop.dto.common.ShopResult;
+import com.rocket.myshop.dto.common.ShopQueryResult;
 
 public interface DemoService {
 
-	ShopResult listDemo();
+	ShopQueryResult listDemo();
 }

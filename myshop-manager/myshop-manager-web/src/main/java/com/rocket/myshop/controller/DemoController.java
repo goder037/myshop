@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.rocket.myshop.dto.common.ShopResult;
+import com.rocket.myshop.dto.common.ShopQueryResult;
 import com.rocket.myshop.service.DemoService;
 
 @RestController
@@ -21,19 +21,19 @@ public class DemoController {
 	
 	@RequestMapping(value = "/listDemo", method = RequestMethod.GET)
 	public Object viewDemo() {
-		ShopResult data = demoService.listDemo();
+		ShopQueryResult data = demoService.listDemo();
 		return data;
 	}
 	
 	@RequestMapping(value = "/showData", method = RequestMethod.GET)
 	public Object getDemo(ModelMap map){
-		ShopResult data = demoService.listDemo();
+		ShopQueryResult data = demoService.listDemo();
 		return data;
 	}
 	
 	@RequestMapping(value = "/error", method = RequestMethod.GET)
     public Object error(Exception error, HttpServletRequest request, HttpServletResponse response) {
-		//ShopResult data = demoService.listDemo();
+		//ShopQueryResult data = demoService.listDemo();
         //这里异常处理使用了全局消息处理，详见properties配置
         throw new ValidationException("Error.1");
        // return mav;
