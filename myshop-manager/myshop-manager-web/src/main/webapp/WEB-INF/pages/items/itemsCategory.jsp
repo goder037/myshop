@@ -76,7 +76,7 @@
 									<thead>
 										<tr>
 											<th>类别Id</th>
-											<th style="width:250px;">类别名称</th>
+											<th style="width:230px;">类别名称</th>
 											<th>子类别数目</th>
 											<th>商品数量</th>
 											<th>排序值</th>
@@ -85,7 +85,7 @@
 											<th>操作</th>
 										</tr>
 									</thead>
-									<tbody id="ittemCategoryBody">
+									<tbody id="itemCategoryBody">
 									
 									</tbody>
 								</table>
@@ -153,15 +153,26 @@
 	var date = new Date();
 	function queryItemCategory(){
 		var params = formDataToJson($("#queryItemCategoryForm"));
+		var isParamEmpty = true;
+		for(var key in params){
+			if(params[key]!=null || params[key]!=undefined){
+				isParamEmpty = false;
+			}
+		}
+		if(isParamEmpty){
+			params.level = "1";
+		}
 		params.length = 10;
 		params.start = 0;
+		
+		
 		ajaxRequest({
 	    	type : "POST",
 			url : "/items/listItemsCategory.json",
 			success: function(data, textStatus, jqXHR){
 		    	var ittemCategoryListHtml = template("itemCategoryList", data);
-			     $("#ittemCategoryBody").html(ittemCategoryListHtml);
-			     var paginationText = renderPaginator(pageNum, data.total);
+			     $("#itemCategoryBody").html(ittemCategoryListHtml);
+			     var paginationText = renderPaginator(1, data.total);
 			     $("#paginationText").html(paginationText);
 		    }
 	    }, params);
@@ -391,7 +402,7 @@
 			url : "/items/listItemsCategory.json",
 			success: function(data, textStatus, jqXHR){
 		    	var ittemCategoryListHtml = template("itemCategoryList", data);
-			     $("#ittemCategoryBody").html(ittemCategoryListHtml);
+			     $("#itemCategoryBody").html(ittemCategoryListHtml);
 			     var paginationText = renderPaginator(pageNum, data.total);
 			     $("#paginationText").html(paginationText);
 		    }

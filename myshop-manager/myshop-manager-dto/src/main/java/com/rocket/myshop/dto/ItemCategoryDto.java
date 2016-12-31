@@ -5,13 +5,13 @@ import java.util.Date;
 
 import javax.validation.constraints.NotNull;
 
-import org.hibernate.validator.constraints.NotBlank;
-
 import lombok.Data;
 
+import org.hibernate.validator.constraints.NotBlank;
+
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.rocket.myshop.common.validattion.FirstValid;
-import com.rocket.myshop.common.validattion.SecondValid;
+import com.rocket.myshop.dto.validattion.FirstValid;
+import com.rocket.myshop.dto.validattion.SecondValid;
 
 @Data
 public class ItemCategoryDto implements Serializable {

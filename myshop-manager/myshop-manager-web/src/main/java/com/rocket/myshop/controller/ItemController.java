@@ -13,12 +13,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.rocket.myshop.common.validattion.FirstValid;
 import com.rocket.myshop.domain.Item;
 import com.rocket.myshop.domain.ItemBrand;
 import com.rocket.myshop.dto.ItemCategoryDto;
 import com.rocket.myshop.dto.common.ShopQueryResult;
 import com.rocket.myshop.dto.common.ShopTxResult;
+import com.rocket.myshop.dto.validattion.FirstValid;
 import com.rocket.myshop.service.ItemBrandService;
 import com.rocket.myshop.service.ItemCategoryService;
 import com.rocket.myshop.service.ItemService;
@@ -46,7 +46,7 @@ public class ItemController {
 	//------------------------- 商品----------------------------------------
 	
 	@RequestMapping(value = "/listItem.json", method = RequestMethod.POST)
-	public ShopQueryResult listItem(Map<String, Object> params) {
+	public ShopQueryResult listItem(@RequestBody Map<String, Object> params) {
 		ShopQueryResult result = itemService.listItem(params);
 		result.setSuccess(true);
 		return result;

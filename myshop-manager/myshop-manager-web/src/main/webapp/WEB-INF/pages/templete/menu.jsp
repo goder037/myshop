@@ -20,19 +20,19 @@
                     <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> 商品管理<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level">
                         <li>
-                            <a href="flot.html">添加商品</a>
+                            <a href="/items/additem.html">添加商品</a>
                         </li>
                         <li>
-                            <a href="morris.html">商品列表</a>
+                            <a href="/items/itemList.html">商品列表</a>
                         </li>
                         <li>
-                            <a href="items/itemsCategory.html">商品类别列表</a>
+                            <a href="/items/itemsCategory.html">商品类别列表</a>
                         </li>
                         <li>
-                             <a href="#">商品规格设置</a>
+                             <a href="/items/itemsSpec.html">商品规格设置</a>
                          </li>
                         <li>
-                            <a href="listGoodsBrands.html">商品品牌管理</a>
+                            <a href="/items/itemsBrands.html">商品品牌管理</a>
                         </li>
                         
                     </ul>

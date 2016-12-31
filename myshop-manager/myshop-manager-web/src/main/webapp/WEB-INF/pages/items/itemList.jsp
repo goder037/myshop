@@ -2,403 +2,215 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<meta charset="utf-8">
+<link rel="shortcut icon" type="image/ico" href="/favicon.ico">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
 
-    <title>商品列表</title>
+<title>商品列表</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="/third-party/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- MetisMenu CSS -->
-    <link href="/third-party/metisMenu/metisMenu.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="/css/sb-admin-2.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="/third-party/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+<%@include file="../templete/cssHeader.jsp"%>
+<link href="/third-party/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" type="text/css">
 
 </head>
 
 <body>
 
-    <div id="wrapper">
-
+	<div id="wrapper">
+		<!-- Navigation -->
+		<%@include file="../templete/navheader.jsp"%>
         <!-- Navigation -->
-        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">云商城</a>
-            </div>
-            <!-- /.navbar-header -->
-
-            <ul class="nav navbar-top-links navbar-right">
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-envelope fa-fw"></i> <i class="fa fa-caret-down"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-messages">
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <strong>John Smith</strong>
-                                    <span class="pull-right text-muted">
-                                        <em>Yesterday</em>
-                                    </span>
-                                </div>
-                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <strong>John Smith</strong>
-                                    <span class="pull-right text-muted">
-                                        <em>Yesterday</em>
-                                    </span>
-                                </div>
-                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <strong>John Smith</strong>
-                                    <span class="pull-right text-muted">
-                                        <em>Yesterday</em>
-                                    </span>
-                                </div>
-                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a class="text-center" href="#">
-                                <strong>Read All Messages</strong>
-                                <i class="fa fa-angle-right"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- /.dropdown-messages -->
-                </li>
-                <!-- /.dropdown -->
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-tasks fa-fw"></i> <i class="fa fa-caret-down"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-tasks">
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <p>
-                                        <strong>Task 1</strong>
-                                        <span class="pull-right text-muted">40% Complete</span>
-                                    </p>
-                                    <div class="progress progress-striped active">
-                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                                            <span class="sr-only">40% Complete (success)</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <p>
-                                        <strong>Task 2</strong>
-                                        <span class="pull-right text-muted">20% Complete</span>
-                                    </p>
-                                    <div class="progress progress-striped active">
-                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-                                            <span class="sr-only">20% Complete</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <p>
-                                        <strong>Task 3</strong>
-                                        <span class="pull-right text-muted">60% Complete</span>
-                                    </p>
-                                    <div class="progress progress-striped active">
-                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                                            <span class="sr-only">60% Complete (warning)</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <p>
-                                        <strong>Task 4</strong>
-                                        <span class="pull-right text-muted">80% Complete</span>
-                                    </p>
-                                    <div class="progress progress-striped active">
-                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                            <span class="sr-only">80% Complete (danger)</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a class="text-center" href="#">
-                                <strong>See All Tasks</strong>
-                                <i class="fa fa-angle-right"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- /.dropdown-tasks -->
-                </li>
-                <!-- /.dropdown -->
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-bell fa-fw"></i> <i class="fa fa-caret-down"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-alerts">
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <i class="fa fa-comment fa-fw"></i> New Comment
-                                    <span class="pull-right text-muted small">4 minutes ago</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
-                                    <span class="pull-right text-muted small">12 minutes ago</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <i class="fa fa-envelope fa-fw"></i> Message Sent
-                                    <span class="pull-right text-muted small">4 minutes ago</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <i class="fa fa-tasks fa-fw"></i> New Task
-                                    <span class="pull-right text-muted small">4 minutes ago</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <i class="fa fa-upload fa-fw"></i> Server Rebooted
-                                    <span class="pull-right text-muted small">4 minutes ago</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a class="text-center" href="#">
-                                <strong>See All Alerts</strong>
-                                <i class="fa fa-angle-right"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- /.dropdown-alerts -->
-                </li>
-                <!-- /.dropdown -->
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
-                        </li>
-                        <li class="divider"></li>
-                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
-                        </li>
-                    </ul>
-                    <!-- /.dropdown-user -->
-                </li>
-                <!-- /.dropdown -->
-            </ul>
-            <!-- /.navbar-top-links -->
-
-            <div class="navbar-default sidebar" role="navigation">
-                <div class="sidebar-nav navbar-collapse">
-                    <ul class="nav" id="side-menu">
-                        <li class="sidebar-search">
-                            <div class="input-group custom-search-form">
-                                <input type="text" class="form-control" placeholder="Search...">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button">
-                                        <i class="fa fa-search"></i>
-                                    </button>
-                                </span>
-                            </div>
-                            <!-- /input-group -->
-                        </li>
-                        <li>
-                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> 个人工作台</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> 商品管理<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="flot.html">添加商品</a>
-                                </li>
-                                <li>
-                                    <a href="morris.html">商品列表</a>
-                                </li>
-                                 <li>
-                                    <a href="goods/goodscategory.html">商品类别列表</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-                        <li>
-                            <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
-                        </li>
-                        <li>
-                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="panels-wells.html">Panels and Wells</a>
-                                </li>
-                                <li>
-                                    <a href="buttons.html">Buttons</a>
-                                </li>
-                                <li>
-                                    <a href="notifications.html">Notifications</a>
-                                </li>
-                                <li>
-                                    <a href="typography.html">Typography</a>
-                                </li>
-                                <li>
-                                    <a href="icons.html"> Icons</a>
-                                </li>
-                                <li>
-                                    <a href="grid.html">Grid</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="#">Second Level Item</a>
-                                </li>
-                                <li>
-                                    <a href="#">Second Level Item</a>
-                                </li>
-                                <li>
-                                    <a href="#">Third Level <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
-                                        <li>
-                                            <a href="#">Third Level Item</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Third Level Item</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Third Level Item</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Third Level Item</a>
-                                        </li>
-                                    </ul>
-                                    <!-- /.nav-third-level -->
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-                        <li class="active">
-                            <a href="#"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a class="active" href="blank.html">Blank Page</a>
-                                </li>
-                                <li>
-                                    <a href="login.html">Login Page</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.sidebar-collapse -->
-            </div>
-            <!-- /.navbar-static-side -->
-        </nav>
-
-        <!-- Page Content -->
-        <div id="page-wrapper">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1 class="page-header">Blank</h1>
+		<%@include file="../templete/menu.jsp"%>
+		<!-- Page Content -->
+		<div id="page-wrapper">
+			<div class="row">
+				<div class="col-lg-12">
+					<ul class="breadcrumb">
+						<li><a href="#">首页</a> <span class="divider">/商品列表</span></li>
+					</ul>
+				</div>
+				<!-- /.col-lg-12 -->
+			</div>
+			<!-- /.row -->
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="panel panel-default">
+                    	<div class="panel-heading">
+                    		商品查询
+                    	</div>
+                    	<div class="panel-body">
+                    		<form class="form-horizontal" id="queryItemForm">
+                    			<div class="row" style="padding-bottom: 16px;">
+			                		<div class="col-sm-3">
+								  		<div class="input-group">
+											<span class="input-group-addon" id="basic-addon1">商品名称:</span>
+											<input type="text" name="name" class="form-control" placeholder="商品名称">
+										</div>
+									</div>
+									<div class="col-sm-3">
+								  		<div class="input-group">
+											<span class="input-group-addon" id="basic-addon1">品牌名称:</span>
+											<input type="text" name="name" class="form-control" placeholder="品牌名称">
+										</div>
+									</div>
+									<div class="col-sm-6">
+								  		<div class="input-group">
+											<span class="input-group-addon" id="basic-addon1">创建日期:</span>
+											<input type="text" name="createTimeBegin" class="form-control form-datetime" placeholder="开始日期">
+											<span  class="input-group-addon">至</span>
+											<input type="text" name="createTimeEnd" class="form-control form-datetime" placeholder="结束日期">
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-2">
+										<select class="form-control selectpicker show-tick" name="itemClient" title="请选择销售渠道">
+			                            	<option value="0">云商城</option>
+			                            	<option value="1">微信</option>
+			                            	<option value="1">android端</option>
+                                      	</select>
+									</div>
+									<div class="col-sm-3">
+										<select class="form-control selectpicker show-tick" data-live-search="true" name="itemCategory" id="itemCategory" title="请选择商品类别">
+                                      	</select>
+									</div>
+									<div class="col-sm-2">
+										<select class="form-control selectpicker show-tick" title="库存状态">
+				                            <option value="0">库存充足</option>
+				                            <option value="1">库存预警</option>
+                                       	</select>
+									</div>
+									<div class="col-sm-1">
+								  		<button type="button" class="btn btn-primary" onclick="queryItem()">搜索</button>
+									</div>
+				                </div>
+				            </form>
+                    	</div>
                     </div>
-                    <!-- /.col-lg-12 -->
-                </div>
-                <!-- /.row -->
-            </div>
-            <!-- /.container-fluid -->
-        </div>
-        <!-- /#page-wrapper -->
+					<div class="panel panel-default">
+						<div class="panel-heading">商品列表查询</div>
+						<!-- /.panel-heading -->
+						<div class="panel-body">
+				            <div class="row">
+								<table width="100%"	class="table table-striped table-bordered table-hover">
+									<thead>
+										<tr class="">
+											<th>商品图片</th>
+											<th>商品名称</th>
+											<th>SPU商家编码</th>
+											<th>商品类目</th>
+											<th>品牌</th>
+											<th>销售价</th>
+											<th>销售渠道</th>
+											<th>库存</th>
+											<th>操作</th>
+										</tr>
+									</thead>
+									<tbody id="itemBody">
+									
+									</tbody>
+								</table>
+								<!-- /.table-responsive -->
+							</div>
+						</div>
+						<!-- /.panel-body -->
+						<div class="panel-footer">
+	                        <div class="row">
+	                            <div class="col-lg-12" id="paginationText">
+	                                
+	                            </div>
+	                        </div>
+                    	</div>
+                    	<!-- /.panel-footer -->
+					</div>
+					<!-- /.panel -->
+				</div>
+				<!-- /.col-lg-12 -->
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /#page-wrapper -->
 
-    </div>
-    <!-- /#wrapper -->
+	</div>
+	<!-- /#wrapper -->
+	
+	<%@include file="../templete/footjs.jsp" %>
+	<script type="text/javascript" src="/third-party/bootstrap-select/js/bootstrap-select.js" charset="UTF-8"/></script>
+	<script type="text/javascript" src="/third-party/bootstrap-select/js/i18n/defaults-zh_CN.js" charset="UTF-8"/></script>
 
-    <!-- jQuery -->
-    <script src="/third-party/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="/third-party/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Metis Menu Plugin JavaScript -->
-    <script src="/third-party/metisMenu/metisMenu.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="/js/sb-admin-2.js"></script>
-
+	<script id="itemList" type="text/html">
+	[[each list as value i]]
+    	<tr>
+			<td>
+				<img src="[[value.imgLogo]]" width="90px;" height="60px;"/>
+			</td>
+			<td>[[value.title]]</td>
+			<td>[[value.sellerId]]</td>
+			<td>[[value.itemCategoryName]]</td>
+			<td>[[value.itemBrandName]]</td>
+			<td>[[value.price]]</td>
+			<td>[[value.saleClients]]</td>
+			<td>[[value.num]]</td>
+			<td>
+				<button type="button" onclick="viewItemDetail([[value.id]])" class="btn btn-sm btn-success">预览</button>
+				<button type="button" onclick="updateCategory(this, [[value.id]])" class="btn btn-sm btn-warning">修改</button>
+				<button type="button" onclick="deleteCategory(this, [[value.id]])" class="btn btn-sm btn-danger">删除</button>
+			</td>
+		</tr>
+	[[/each]]
+    </script>
 </body>
-
+<script type="text/javascript">
+	template.config("openTag", "[[");
+	template.config("closeTag", "]]");
+	var date = new Date();
+	function queryItem(){
+		var params = formDataToJson($("#queryItemForm"));
+		params.length = 10;
+		params.start = 0;
+		ajaxRequest({
+	    	type : "POST",
+			url : "/items/listItem.json",
+			success: function(data, textStatus, jqXHR){
+		    	var ittemListHtml = template("itemList", data);
+			     $("#itemBody").html(ittemListHtml);
+			     var paginationText = renderPaginator(1, data.total);
+			     $("#paginationText").html(paginationText);
+		    }
+	    }, params);
+	}
+	function pageRequestData(pageNum){ 
+		var startRecord = (pageNum - 1) * 10;
+		var params = {"length":10,"start":startRecord};
+	    ajaxRequest({
+	    	type : "POST",
+			url : "/items/listItem.json",
+			success: function(data, textStatus, jqXHR){
+		    	var ittemListHtml = template("itemList", data);
+				// console.log(data.total);
+			     $("#itemBody").html(ittemListHtml);
+			     var paginationText = renderPaginator(pageNum, data.total);
+			     $("#paginationText").html(paginationText);
+		    }		    
+	    }, params);
+	}
+	$(function(){
+		pageRequestData(1);
+		var params = {"start":0, "length":-1};
+		ajaxRequest({
+		   	type : "POST",
+			url : "/items/listItemsCategory.json",
+			success: function(data, textStatus, jqXHR){
+				var optionStr = "";
+				$.each(data.list, function(i, value){
+					optionStr += '<option value='+value.id+'>'+value.name+'</option>';
+				});
+			   	$("#itemCategory").html(optionStr);
+			   	$('#itemCategory').selectpicker('refresh');
+			}	    
+		   }, params);
+	});
+</script>
 </html>

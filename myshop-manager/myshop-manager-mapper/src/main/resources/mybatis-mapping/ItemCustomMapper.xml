@@ -9,10 +9,14 @@
     <result column="price_" jdbcType="DECIMAL" property="price" />
     <result column="num_" jdbcType="INTEGER" property="num" />
     <result column="barcode_" jdbcType="VARCHAR" property="barcode" />
-    <result column="img_" jdbcType="VARCHAR" property="img" />
+    <result column="img_logo_" jdbcType="VARCHAR" property="imgLogo" />
     <result column="status_" jdbcType="CHAR" property="status" />
     <result column="create_time_" jdbcType="TIMESTAMP" property="createTime" />
     <result column="update_time_" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="seller_id_" jdbcType="VARCHAR" property="sellerId" />
+    <result column="item_category_name_" jdbcType="VARCHAR" property="itemCategoryName" />
+    <result column="item_brand_name_" jdbcType="VARCHAR" property="itemBrandName" />
+    <result column="sale_clients_" jdbcType="VARCHAR" property="saleClients" />
   </resultMap>
   
   <select id="listItem" resultMap="DtoResultMap" parameterType="map">

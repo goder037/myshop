@@ -7,10 +7,5 @@
   </parent> 
   <artifactId>myshop-manager-dto</artifactId>
   <dependencies>
-  	<dependency>
-  		<groupId>com.rocket.shop</groupId>
-  		<artifactId>myshop-manager-common</artifactId>
-  		<version>0.0.1-SNAPSHOT</version>
-  	</dependency>
   </dependencies>
 </project>

@@ -27,7 +27,7 @@
 			and create_time_ &gt;#{createTimeBegin}
 		</if>
 		<if test="createTimeEnd!=null and createTimeEnd!=''">
-			and create_time_&lt; #{createTimeEnd}
+			and create_time_ &lt; #{createTimeEnd}
 		</if>
   	LIMIT #{start}, #{length}
   </select>

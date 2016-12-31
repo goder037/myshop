@@ -10,27 +10,39 @@
     <result column="logo_" jdbcType="VARCHAR" property="logo" />
   </resultMap>
   
-  <select id="listItemCategory" resultMap="DtoResultMap" parameterType="map">
+  <select id="listItemBrand" resultMap="DtoResultMap" parameterType="map">
   	select * from shop_item_brand
   	<where>
   		<if test="status!=null">
-  			and status=#{status}
+  			and status_=#{status}
   		</if>
-  		<if test="name!=null">
-  			and name=#{name}
+  		<if test="name!=null and name!=''">
+  			and name_=#{name}
+  		</if>
+  		<if test="createTimeBegin!=null and createTimeBegin!=''">
+  			and #{createTimeBegin} &lt;create_time_
+  		</if>
+  		<if test="createTimeEnd!=null and createTimeEnd!=''">
+  			and #{createTimeEnd} &gt; create_time_
   		</if>
   	</where>
-  	LIMIT #{start}, #{length}
+  	order by create_time_ desc LIMIT #{start}, #{length}
   </select>
   
   <select id="getCount" resultType="_int" parameterType="map">
   	select count(1) from shop_item_brand
   	<where>
   		<if test="status!=null">
-  			and status=#{status}
+  			and status_=#{status}
   		</if>
-  		<if test="name!=null">
-  			and name=#{name}
+  		<if test="name!=null and name!=''">
+  			and name_=#{name}
+  		</if>
+  		<if test="createTimeBegin!=null and createTimeBegin!=''">
+  			and #{createTimeBegin} &lt;create_time_
+  		</if>
+  		<if test="createTimeEnd!=null and createTimeEnd!=''">
+  			and #{createTimeEnd} &gt; create_time_
   		</if>
   	</where>
   </select>

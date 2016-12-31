@@ -54,8 +54,8 @@ public interface ItemMapper {
      * @mbg.generated
      */
     int updateByPrimaryKey(Item record);
-
-	int getCount(Map<String, Object> params);
+    
+    int getCount(Map<String, Object> params);
 
 	List<ItemDto> listItem(Map<String, Object> params);
 }

@@ -34,7 +34,7 @@
 	</repositories>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<spring.version>4.1.5.RELEASE</spring.version>
+		<spring.version>4.1.7.RELEASE</spring.version>
 		<java.version>1.7</java.version>
 		<junit.version>4.12</junit.version>
 		<jsp.version>2.2</jsp.version>
@@ -66,6 +66,9 @@
 		<zkclient.version>0.10</zkclient.version>
 		<solr-solrj.version>6.1.0</solr-solrj.version>
 		<zookeeper.version>3.4.9</zookeeper.version>
+		<spring-rabbit.version>1.4.6.RELEASE</spring-rabbit.version>
+		<spring-data-redis.version>1.6.1.RELEASE</spring-data-redis.version>
+		
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -95,6 +98,16 @@
 				<artifactId>spring-oxm</artifactId>
 				<version>${spring.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-context-support</artifactId>
+				<version>${spring.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-test</artifactId>
+				<version>${spring.version}</version>
+			</dependency>
 			<!-- 数据库操作依赖 -->
 			<dependency>
 				<groupId>com.alibaba</groupId>
@@ -111,15 +124,29 @@
 				<artifactId>mysql-connector-java</artifactId>
 				<version>${mysql-connector.version}</version>
 			</dependency>
+			<!-- <dependency> <groupId>com.oracle</groupId> <artifactId>ojdbc14</artifactId> 
+				<version>${oracle.driver.version}</version> <scope>system</scope> <systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/ojdbc14-10.2.0.4.0.jar</systemPath> 
+				</dependency> -->
 			<dependency>
 				<groupId>org.mybatis</groupId>
 				<artifactId>mybatis-spring</artifactId>
 				<version>${mybatis-spring.version}</version>
 			</dependency>
+			<!--jms消息-->
+			<dependency>
+				<groupId>org.springframework.amqp</groupId>
+				<artifactId>spring-rabbit</artifactId>
+				<version>${spring-rabbit.version}</version>
+			</dependency>
 			<!-- 安全权限依赖 -->
 			<dependency>
 				<groupId>org.apache.shiro</groupId>
 				<artifactId>shiro-spring</artifactId>
+				<version>${shiro.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.shiro</groupId>
+				<artifactId>shiro-ehcache</artifactId>
 				<version>${shiro.version}</version>
 			</dependency>
 			<!-- 日志依赖 -->
@@ -251,6 +278,11 @@
 				<artifactId>zkclient</artifactId>
 				<version>${zkclient.version}</version>
 			</dependency>
+			<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-redis</artifactId>
+			<version>${spring-data-redis.version}</version>
+		</dependency>
 		</dependencies>
 	</dependencyManagement>
 	<build>

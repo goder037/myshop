@@ -11,17 +11,24 @@
 	<modules>
 		<module>myshop-manager-pojo</module>
 		<module>myshop-manager-mapper</module>
-		<module>myshop-manager-service</module>
 		<module>myshop-manager-web</module>
 		<module>myshop-manager-service-interface</module>
 		<module>myshop-manager-dto</module>
 		<module>myshop-manager-common</module>
+		<module>myshop-manager-service-user</module>
+		<module>myshop-manager-service-order</module>
+		<module>myshop-manager-service-goods</module>
+		<module>myshop-manager-service-sale</module>
 	</modules>
 	<dependencies>
 		<dependency>
 			<groupId>com.rocket.shop</groupId>
 			<artifactId>myshop-common</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
 		</dependency>
 	</dependencies>
 	<build>

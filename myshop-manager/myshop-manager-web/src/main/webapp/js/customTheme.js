@@ -83,9 +83,13 @@ function formDataToJson(formNode) {
 			if (!dataArray[this.name].push) {
 				dataArray[this.name] = [ dataArray[this.name] ];
 			}
-			dataArray[this.name].push(this.value || '');
+			dataArray[this.name].push(this.value || null);
 		} else {
-			dataArray[this.name] = this.value || '';
+			if(this.name=="createTimeEnd"){
+				dataArray[this.name] = this.value ? this.value+" 23:59:59" : null;
+			}else{
+				dataArray[this.name] = this.value || null;
+			}
 		}
 	});
 	return dataArray;
@@ -269,8 +273,4 @@ var ajaxRequest = function(settings, requestObj) {
 		},
 	};
 	$.ajax(options);
-};
-
-var formValidation = function(formNode, rules) {
-
 };

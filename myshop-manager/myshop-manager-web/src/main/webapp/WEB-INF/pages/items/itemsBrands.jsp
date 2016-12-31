@@ -27,7 +27,7 @@
 			<div class="row">
 				<div class="col-lg-12">
 					<ul class="breadcrumb">
-						<li><a href="#">首页</a> <span class="divider">/商品类别列表</span></li>
+						<li><a href="#">首页</a> <span class="divider">/商品品牌列表</span></li>
 					</ul>
 				</div>
 				<!-- /.col-lg-12 -->
@@ -42,26 +42,26 @@
                     	<div class="panel-body">
                     		<div class="row" style="">
 				                <div class="col-sm-12">
-				                	<form class="form-horizontal">
+				                	<form class="form-horizontal" id="queryItemBrandForm">
 				                		<div class="col-sm-3">
 									  		<div class="input-group">
 												<span class="input-group-addon" id="basic-addon1">品牌名称:</span>
-												<input type="text" class="form-control" placeholder="规格名称" aria-describedby="basic-addon1">
+												<input type="text" name="name" class="form-control" placeholder="品牌名称">
 											</div>
 										</div>
 										<div class="col-sm-6">
 									  		<div class="input-group">
 												<span class="input-group-addon" id="basic-addon1">创建日期:</span>
-												<input type="text" class="form-control form-datetime" placeholder="开始日期" aria-describedby="basic-addon1">
+												<input type="text" name="createTimeBegin" class="form-control form-datetime" placeholder="开始日期">
 												<span  class="input-group-addon">至</span>
-												<input type="text" class="form-control form-datetime" placeholder="结束日期" aria-describedby="basic-addon1">
+												<input type="text" name="createTimeEnd" class="form-control form-datetime" placeholder="结束日期">
 											</div>
 										</div>
 										<div class="col-sm-1">
-									  		<button type="button" class="btn btn-primary">搜索</button>
+									  		<button type="button" class="btn btn-primary" onclick="queryItemBrand()">搜索</button>
 										</div>
 										<div class="col-sm-2">
-									  		<button type="button" class="btn btn-success" onclick="showSpec('新增')">新增</button>
+									  		<button type="button" class="btn btn-success" onclick="addItemBrand()">新增</button>
 										</div>
 				                	</form>
 				                </div>
@@ -83,7 +83,7 @@
 											<th>操作</th>
 										</tr>
 									</thead>
-									<tbody id="ittemCategoryBody">
+									<tbody id="itemBrandBody">
 									
 									</tbody>
 								</table>
@@ -110,20 +110,22 @@
 
 	</div>
 	<!-- /#wrapper -->
-	<a id="message_trigger_ok" href="#">Click to see the info message</a>
 	
 	<%@include file="../templete/footjs.jsp" %>
 
-	<script id="itemCategoryList" type="text/html">
+	<script id="itemBrandList" type="text/html">
 	[[each list as value i]]
     	<tr>
 			<td>[[value.id]]</td>
 			<td>[[value.name]]</td>
 			<td>[[value.createTime]]</td>
 			<td>
-				[[if value.status]]
-					<span class="label label-success">正常</span>
-				[[/if]]
+				<img src="[[value.logo]]" width="130px;" height="80px;"/>
+			</td>
+			<td>
+				<button type="button" onclick="addItemForCategory([[value.id]])" class="btn btn-sm btn-success">添加商品</button>
+				<button type="button" onclick="updateCategory(this, [[value.id]])" class="btn btn-sm btn-warning">修改</button>
+				<button type="button" onclick="deleteCategory(this, [[value.id]])" class="btn btn-sm btn-danger">删除</button>
 			</td>
 		</tr>
 	[[/each]]
@@ -133,21 +135,31 @@
 	template.config("openTag", "[[");
 	template.config("closeTag", "]]");
 	var date = new Date();
-	 $('#message_trigger_ok').on('click', function(e) {
-		    e.preventDefault();
-		    $.scojs_message('保存成功！', $.scojs_message.TYPE_OK);
-	});
-	
+	function queryItemBrand(){
+		var params = formDataToJson($("#queryItemBrandForm"));
+		params.length = 10;
+		params.start = 0;
+		ajaxRequest({
+	    	type : "POST",
+			url : "/items/listItemsBrand.json",
+			success: function(data, textStatus, jqXHR){
+		    	var ittemCategoryListHtml = template("itemBrandList", data);
+			     $("#itemBrandBody").html(ittemCategoryListHtml);
+			     var paginationText = renderPaginator(1, data.total);
+			     $("#paginationText").html(paginationText);
+		    }
+	    }, params);
+	}
 	function pageRequestData(pageNum){ 
 		var startRecord = (pageNum - 1) * 10;
 		var params = {"length":10,"start":startRecord};
 	    ajaxRequest({
 	    	type : "POST",
-			url : "/items/itemsBrands.json",
+			url : "/items/listItemsBrand.json",
 			success: function(data, textStatus, jqXHR){
-		    	var ittemCategoryListHtml = template("itemCategoryList", data);
+		    	var ittemCategoryListHtml = template("itemBrandList", data);
 				// console.log(data.total);
-			     $("#ittemCategoryBody").html(ittemCategoryListHtml);
+			     $("#itemBrandBody").html(ittemCategoryListHtml);
 			     var paginationText = renderPaginator(pageNum, data.total);
 			     $("#paginationText").html(paginationText);
 		    }		    
